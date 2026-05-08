@@ -71,7 +71,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 30px 20px; /* Moved further left to 20px */
+    padding: 30px 60px; /* Moved inwards to 60px */
     background: transparent;
 }
 
@@ -284,7 +284,7 @@ header {
 .hero-left {
     position: absolute;
     bottom: 8vh;
-    left: 20px;  /* Matches new header horizontal padding */
+    left: 60px;  /* Matches header horizontal padding */
     max-width: 450px;
     z-index: 20;
 }
@@ -359,7 +359,7 @@ header {
 .hero-cards-row {
     position: absolute;
     bottom: 30px;
-    right: 0; /* Align perfectly to the right edge */
+    right: 60px; /* Moved inwards to 60px */
     display: flex;
     align-items: flex-end;
     gap: 15px;
