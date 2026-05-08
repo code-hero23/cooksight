@@ -604,8 +604,21 @@ header {
 @media (max-width: 1024px) {
     .nav-links { display: none; } /* Hide complex nav on tablet */
     .hero-foreground { flex-direction: column; height: auto; padding-top: 100px; padding-bottom: 50px; }
-    .hero-left { position: static; transform: none; width: 100%; text-align: center; margin-bottom: 50px; }
-    .hero-center { position: static; transform: none; width: 60vw; margin: 0 auto 50px; }
+    .hero-left { 
+        position: static; 
+        transform: none; 
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 50px; 
+        order: 2; /* Move text AFTER the image */
+    }
+    .hero-center { 
+        position: static; 
+        transform: none; 
+        width: 60vw; 
+        margin: 0 auto 50px; 
+        order: 1; /* Move image to TOP */
+    }
     .hero-cards-row { 
         position: static; 
         flex-direction: row; 
@@ -614,6 +627,7 @@ header {
         width: 100%; 
         bottom: auto; 
         right: auto;
+        order: 3; /* Keep cards at bottom */
     }
     .midground-text { font-size: 25vw; }
 }
@@ -641,7 +655,11 @@ header {
     }
     .hero-cards-row { flex-direction: column; align-items: center; gap: 20px; }
     .glass-card, .solid-card-special { width: 100%; max-width: 350px; min-height: auto; }
-    .midground-text { display: none; } /* Hide massive text on mobile for clarity */
+    .midground-text { 
+        display: flex; 
+        font-size: 15vw; 
+        opacity: 0.25; /* Subtle background presence on mobile */
+    }
     
     .section-title { font-size: 2.2rem; margin-bottom: 40px; }
     .advantage-section { padding: 60px 0; }
