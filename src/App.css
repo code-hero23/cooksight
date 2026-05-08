@@ -68,38 +68,15 @@ header {
     max-width: 100% !important; /* Ignore global container max-width to stay aligned left */
 }
 
-.logo-text {
+.logo-container {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    background: var(--secondary-red);
-    padding: 10px 20px;
-    border-radius: 4px;
+    align-items: center;
 }
 
-.brand-name {
-    font-family: var(--font-main);
-    font-size: 2.2rem;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-    color: var(--primary-white);
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.brand-tagline {
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: var(--primary-white);
-    text-transform: uppercase;
-    background: var(--tertiary-green);
-    padding: 4px 8px;
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    white-space: nowrap;
+.brand-logo-img {
+    height: 45px; /* Perfect height for the header */
+    width: auto;
+    object-fit: contain;
 }
 
 /* Eye-catching Pulse Animation */
@@ -641,8 +618,18 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 15px 20px !important; /* Reduce padding to give button more space */
+    }
+    .brand-logo-img {
+        height: 35px; /* Slightly smaller logo for mobile */
+    }
+    .btn-resources {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+    }
     .container { padding: 0 20px; }
-    .nav-bar { padding: 20px 0; }
+    .nav-bar { padding: 10px 0; align-items: center; }
     .hero-title { font-size: 3.5rem; }
     .hero-center { width: 80vw; }
     .active-users-pill { 

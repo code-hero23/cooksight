@@ -17,9 +17,8 @@ function App() {
       {/* Premium Header */}
       <header id="header">
         <nav className="container nav-bar">
-          <div className="logo-text">
-            <span className="brand-name">COOKSCAPE</span>
-            <span className="brand-tagline">INTERIORS AND BEYOND</span>
+          <div className="logo-container">
+            <img src="/logo.jpeg" alt="Cookscape Logo" className="brand-logo-img" />
           </div>
           <ul className="nav-links">
             <li><a href="#">Home</a></li>
