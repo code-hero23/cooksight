@@ -44,7 +44,20 @@ function App() {
 
           {/* Static Background Layer */}
           <div className="hero-layers">
-            <div className="midground-text">COOKSCAPE</div>
+            <div className="midground-text">
+              {"COOKSCAPE".split("").map((char, index) => (
+                <span 
+                  key={index} 
+                  style={{ 
+                    display: "inline-block", 
+                    transform: `translateY(${scrollY * (0.1 + index * 0.04)}px)`, /* More dramatic parallax */
+                    transition: "transform 0.1s ease-out" 
+                  }}
+                >
+                  {char}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* Foreground Content */}
