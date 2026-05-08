@@ -629,6 +629,10 @@ header {
         right: auto;
         order: 3; /* Keep cards at bottom */
     }
+    .hero-layers {
+        top: 35vh; /* Align background text behind the image on mobile */
+        transform: translateY(-50%);
+    }
     .midground-text { font-size: 25vw; }
 }
 
