@@ -39,6 +39,9 @@ function App() {
       <main>
         {/* Hero Section */}
         <section className="hero">
+          {/* Decorative Blur Circle */}
+          <div className="hero-blur-circle"></div>
+
           {/* Static Background Layer */}
           <div className="hero-layers">
             <div className="midground-text">COOKSCAPE</div>

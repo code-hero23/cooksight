@@ -42,6 +42,22 @@ body {
     transform: scale(1.05);
 }
 
+.hero-blur-circle {
+    position: absolute;
+    bottom: -15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140vw;
+    height: 50vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(120px);
+    -webkit-backdrop-filter: blur(120px);
+    border-radius: 50% 50% 0 0;
+    z-index: 2;
+    pointer-events: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -271,8 +287,8 @@ header {
 /* Hero Left Text */
 .hero-left {
     position: absolute;
-    bottom: 15vh; /* Tucked in the bottom left like Bluebird */
-    left: 60px;
+    bottom: 8vh; /* Moved slightly down from 15vh */
+    left: 40px;  /* Moved slightly left from 60px */
     max-width: 450px;
     z-index: 20;
 }
@@ -346,7 +362,7 @@ header {
 /* Cards Row Aligned to Bottom Right like Bluebird */
 .hero-cards-row {
     position: absolute;
-    bottom: -120px; /* Pushed significantly lower as requested */
+    bottom: 30px; /* Moved upward from -120px to be visible on screen */
     right: 20px;
     display: flex;
     align-items: flex-end;
