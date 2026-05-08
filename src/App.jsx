@@ -19,7 +19,7 @@ function App() {
         <nav className="container nav-bar">
           <div className="logo-text">
             <span className="brand-name">COOKSCAPE</span>
-            <span className="brand-tagline">INTERIORS & BEYOND</span>
+            <span className="brand-tagline">INTERIORS AND BEYOND</span>
           </div>
           <ul className="nav-links">
             <li><a href="#">Home</a></li>
@@ -39,9 +39,6 @@ function App() {
       <main>
         {/* Hero Section */}
         <section className="hero">
-          {/* Decorative Blur Circle */}
-          <div className="hero-blur-circle"></div>
-
           {/* Static Background Layer */}
           <div className="hero-layers">
             <div className="midground-text">
@@ -92,26 +89,6 @@ function App() {
                   <img src="https://i.pravatar.cc/150?u=3" alt="U3" />
                 </div>
                 <span>Happy Clients <strong>+500</strong></span>
-              </div>
-
-              <div className="card glass-card">
-                <div className="card-body">
-                  <span className="card-tag"></span>
-                  <h3 className="card-heading">Our Services</h3>
-                  <p className="card-paragraph">Interior Design Thoughtfully designed interior services for modern living.</p>
-                </div>
-                <span className="card-link-icon">↗</span>
-              </div>
-
-              <div className="card solid-card-special">
-                <div className="card-icon-area-orb">
-                  <div className="blue-orb"></div>
-                </div>
-                <div className="card-body">
-                  <h3 className="card-heading">Smart Home</h3>
-                  <p className="card-paragraph">Personalized interiors crafted to match your lifestyle.</p>
-                </div>
-                <span className="card-link-icon">↗</span>
               </div>
 
               <div className="card glass-card">

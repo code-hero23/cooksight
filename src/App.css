@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --bg-start: #F7CD6A;
-    --bg-end: #ffffff;
-    --text-primary: #111111;
-    --text-secondary: #555555;
-    --accent-blue: #007bff;
+    --primary-white: #ffffff;
+    --secondary-red: #d40000;
+    --tertiary-green: #005a32;
+    --text-dark: #111111;
+    --text-light: #555555;
     --font-main: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --glass: rgba(255, 255, 255, 0.2);
     --glass-border: rgba(255, 255, 255, 0.4);
@@ -32,31 +32,16 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    background-color: #ffffff;
+    background-color: var(--primary-white);
     background-image: 
-        radial-gradient(at 0% 0%, rgba(247, 205, 106, 0.9) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(247, 205, 106, 0.6) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, rgba(247, 205, 106, 0.5) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(247, 205, 106, 0.8) 0px, transparent 50%);
-    filter: blur(10px); /* Further reduced blur for sharper gradients */
+        radial-gradient(at 0% 0%, rgba(212, 0, 0, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(0, 90, 50, 0.05) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(0, 90, 50, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(212, 0, 0, 0.05) 0px, transparent 50%);
+    filter: blur(40px);
     transform: scale(1.05);
 }
 
-.hero-blur-circle {
-    position: absolute;
-    bottom: -15vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140vw;
-    height: 50vh;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(120px);
-    -webkit-backdrop-filter: blur(120px);
-    border-radius: 50% 50% 0 0;
-    z-index: 2;
-    pointer-events: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 .container {
     max-width: 1440px;
@@ -86,26 +71,35 @@ header {
 .logo-text {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    position: relative;
+    background: var(--secondary-red);
+    padding: 10px 20px;
+    border-radius: 4px;
 }
 
 .brand-name {
     font-family: var(--font-main);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 900;
     letter-spacing: -0.02em;
-    color: var(--text-primary);
+    color: var(--primary-white);
     line-height: 1;
+    text-transform: uppercase;
 }
 
 .brand-tagline {
     font-family: 'Outfit', sans-serif;
-    font-size: 0.55rem;
+    font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 0.35em;
-    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+    color: var(--primary-white);
     text-transform: uppercase;
-    padding-left: 2px;
+    background: var(--tertiary-green);
+    padding: 4px 8px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    white-space: nowrap;
 }
 
 /* Eye-catching Pulse Animation */
@@ -143,7 +137,7 @@ header {
 .btn-resources {
     padding: 12px 35px;
     border-radius: 100px;
-    background: #111;
+    background: var(--tertiary-green);
     border: none;
     color: #fff;
     font-size: 0.85rem;
@@ -153,7 +147,7 @@ header {
     overflow: hidden;
     transition: all 0.3s ease;
     display: inline-block;
-    box-shadow: 0 0 15px rgba(247, 205, 106, 0.2); /* Steady attractive glow */
+    box-shadow: 0 0 15px rgba(0, 90, 50, 0.2); /* Green glow */
 }
 
 /* Wood Carving Animation Effect */
@@ -231,7 +225,7 @@ header {
 }
 
 .midground-text span {
-    background: linear-gradient(to bottom, #F7CD6A 0%, #ffffff 100%);
+    background: linear-gradient(to bottom, var(--secondary-red) 0%, var(--primary-white) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     will-change: transform;
@@ -319,9 +313,9 @@ header {
 }
 
 .btn-blue-pill {
-    background: var(--accent-blue);
+    background: var(--secondary-red);
     color: white;
-    padding: 10px 10px 10px 25px; /* Reduced padding */
+    padding: 10px 10px 10px 25px;
     border-radius: 100px;
     text-decoration: none;
     font-weight: 600;
@@ -334,8 +328,8 @@ header {
 
 .arrow-circle {
     background: white;
-    color: var(--accent-blue);
-    width: 30px; /* Reduced size */
+    color: var(--secondary-red);
+    width: 30px;
     height: 30px;
     border-radius: 50%;
     display: flex;
@@ -463,7 +457,7 @@ header {
 .glass-card .card-heading, 
 .glass-card .card-paragraph, 
 .glass-card .promo-big {
-    color: #ffffff; /* White font for these cards */
+    color: #000000; /* Changed to black for contrast */
 }
 
 .card-paragraph {
@@ -518,8 +512,8 @@ header {
 }
 
 .gold-tag {
-    color: #F7CD6A; /* Premium Gold color */
-    border-bottom: 1px solid rgba(247, 205, 106, 0.3);
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding-bottom: 2px;
 }
 
