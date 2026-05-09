@@ -497,10 +497,9 @@ header {
 
 
 
-/* The Cookscape Advantage Section */
-.advantage-section {
+/* About Section */
+.about-section {
     padding: 100px 0;
-    text-align: center;
     position: relative;
     z-index: 10;
 }
@@ -513,44 +512,36 @@ header {
     color: var(--text-primary);
 }
 
-.advantage-grid {
+.about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
 }
 
-.advantage-card {
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 40px;
-    border-radius: 30px;
-    text-align: left;
-    transition: all 0.3s ease;
+.about-content {
+    max-width: 600px;
 }
 
-.advantage-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.6);
-}
-
-.advantage-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.advantage-card h3 {
-    font-family: var(--font-main);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: var(--text-primary);
-}
-
-.advantage-card p {
-    font-size: 0.9rem;
+.about-description {
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.8;
+}
+
+.about-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.about-blob-svg {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));
+    transform-style: preserve-3d;
 }
 
 /* Perspective for 3D Parallax */

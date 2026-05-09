@@ -102,73 +102,31 @@ function App() {
           </div>
         </section>
 
-        {/* The Cookscape Advantage Section */}
-        <section className="advantage-section container">
-      
-          <div className="advantage-grid">
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 600) * -0.05)}px)` }}
-            >
-              <div className="advantage-icon">🎨</div>
-              <h3>15+ Variants</h3>
-              <p>From minimalist modern to heritage classic, explore over 15 unique design languages tailored to your personality.</p>
+        {/* About Section */}
+        <section className="about-section container">
+          <div className="about-grid">
+            <div className="about-content">
+              <h2 className="section-title" style={{ marginBottom: '20px', textAlign: 'left' }}>Chennai’s Trusted Interior Transformation Experts</h2>
+              <p className="about-description">
+                As one of Chennai’s leading home interior brands with 25+ years of expertise, we specialize in creating unique, elegant, and functional living spaces. Our commitment to quality, transparency, and guaranteed service sets us apart from the rest.
+              </p>
+              <div style={{ marginTop: '30px' }}>
+                <a href="#" className="btn-blue-pill" style={{ display: 'inline-flex', width: 'max-content' }}>Know More <span className="arrow-circle">→</span></a>
+              </div>
             </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 600) * -0.1)}px)` }}
-            >
-              <div className="advantage-icon">🚚</div>
-              <h3>45 Days Delivery</h3>
-              <p>Our streamlined supply chain ensures your dream home is ready for move-in within 45 days, guaranteed.</p>
-            </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 600) * -0.07)}px)` }}
-            >
-              <div className="advantage-icon">🛡️</div>
-              <h3>10 Years Warranty</h3>
-              <p>Enjoy peace of mind with our comprehensive 10-year Warranty & Guarantee covering all structural components.</p>
-            </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 600) * -0.12)}px)` }}
-            >
-              <div className="advantage-icon">📋</div>
-              <h3>Free PDI Check</h3>
-              <p>A rigorous 100-point Pre-Delivery Inspection ensures every detail meets our uncompromising quality standards.</p>
-            </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 800) * -0.05)}px)` }}
-            >
-              <div className="advantage-icon">🏗️</div>
-              <h3>No Middle Men</h3>
-              <p>By eliminating intermediaries, we provide direct factory-to-home pricing without compromising on quality.</p>
-            </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 800) * -0.1)}px)` }}
-            >
-              <div className="advantage-icon">🛠️</div>
-              <h3>5 Years Free Service</h3>
-              <p>Our commitment continues long after installation with 5 years of complimentary maintenance and support.</p>
-            </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 800) * -0.07)}px)` }}
-            >
-              <div className="advantage-icon">🍳</div>
-              <h3>15 Days Installation</h3>
-              <p>Experience rapid transformation with our expert teams completing kitchen installations in just 15 working days.</p>
-            </div>
-            <div 
-              className="advantage-card"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 800) * -0.12)}px)` }}
-            >
-              <div className="advantage-icon">💰</div>
-              <h3>No Hidden Charges</h3>
-              <p>What you see is what you pay. Our transparent pricing model includes all taxes, delivery, and installation costs.</p>
+            <div className="about-visual">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="about-blob-svg">
+                <defs>
+                  <clipPath id="blob-clip">
+                    <path d="M39.7,-58C50.6,-46.8,57.8,-34,63.9,-19.7C70,-5.4,74.9,10.3,73.6,26.8C72.2,43.4,64.5,60.8,51.2,67.9C37.9,75.1,18.9,72,2.1,69.1C-14.8,66.2,-29.6,63.7,-42.2,56.3C-54.8,48.9,-65.2,36.7,-72.7,21.7C-80.1,6.7,-84.6,-11.1,-79.9,-26.1C-75.2,-41,-61.3,-53.1,-46.4,-63C-31.6,-72.9,-15.8,-80.6,-0.7,-79.7C14.5,-78.7,28.9,-69.2,39.7,-58Z" transform="translate(100 100)" />
+                  </clipPath>
+                </defs>
+                <foreignObject x="0" y="0" width="200" height="200" clipPath="url(#blob-clip)">
+                  <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
+                    <source src="/about-video.mp4" type="video/mp4" />
+                  </video>
+                </foreignObject>
+              </svg>
             </div>
           </div>
         </section>
