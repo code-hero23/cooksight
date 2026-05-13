@@ -22,13 +22,13 @@ function App() {
             <img src="/logo.jpeg" alt="Cookscape Logo" className="brand-logo-img" />
           </div>
           <ul className="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">More</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#more">More</a></li>
           </ul>
           <div className="nav-cta">
             <a href="#" className="btn-resources pulse-animation">Get Estimate</a>
@@ -38,7 +38,7 @@ function App() {
 
       <main>
         {/* Hero Section */}
-        <section className="hero">
+        <section id="home" className="hero">
           {/* Static Background Layer */}
           <div className="hero-layers">
             <div className="midground-text">
@@ -104,7 +104,7 @@ function App() {
         </section>
 
         {/* About Section */}
-        <section className="about-section container">
+        <section id="about" className="about-section container">
           <div className="about-grid">
             <div className="about-content">
               <h2 className="section-title" style={{ marginBottom: '20px', textAlign: 'left' }}>Chennai’s Trusted Interior Transformation Experts</h2>
@@ -133,7 +133,7 @@ function App() {
         </section>
 
         {/* Gallery Section - Refined UX Marquee */}
-        <section className="gallery-section">
+        <section id="gallery" className="gallery-section">
           <div className="container" style={{ marginBottom: '40px' }}>
             <h2 className="section-title">Design Gallery</h2>
           </div>
@@ -142,7 +142,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section className="contact-section container">
+        <section id="contact" className="contact-section container">
           <div className="contact-box">
             <h2 className="section-title">Start Your Journey</h2>
             <p>Ready to transform your space? Get a free consultation today.</p>
