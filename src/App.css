@@ -593,16 +593,15 @@ header {
 
 .marquee-track {
     display: flex;
-    gap: 60px; /* Large spacing */
+    gap: 40px; 
     will-change: transform;
-    padding-left: 60px;
 }
 
 .marquee-item {
-    flex: 0 0 450px; /* Consistent card width */
-    height: 560px; /* 4:5 Aspect Ratio approximately */
+    flex: 0 0 380px; 
+    height: 480px; 
     position: relative;
-    border-radius: 32px;
+    border-radius: 28px;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
