@@ -554,25 +554,136 @@ header {
     will-change: transform;
 }
 
-/* Gallery Section */
-.gallery-section { padding: 100px 0; }
-.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 350px; gap: 30px; }
-.gallery-item { position: relative; overflow: hidden; border-radius: 40px; cursor: pointer; }
-.gallery-item.large { grid-row: span 2; }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+/* Gallery Section - Refined Marquee */
+.gallery-section {
+    padding: 120px 0;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+}
+
+.marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Edge Fade Masks */
+.marquee-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.marquee-mask.left {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+}
+
+.marquee-mask.right {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 60px; /* Large spacing */
+    will-change: transform;
+    padding-left: 60px;
+}
+
+.marquee-item {
+    flex: 0 0 450px; /* Consistent card width */
+    height: 560px; /* 4:5 Aspect Ratio approximately */
+    position: relative;
+    border-radius: 32px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform-origin: center center;
+    transition: box-shadow 0.4s ease, filter 0.4s ease;
+    
+    /* Floating Effect */
+    animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Offset float for variety */
+.marquee-item:nth-child(even) {
+    animation-delay: -3s;
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.glass-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.glass-card-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.marquee-item:hover .glass-card-inner img {
+    transform: scale(1.05);
+}
+
 .gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent 60%);
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
     display: flex;
     align-items: flex-end;
-    padding: 40px;
-    opacity: 1; /* Always visible for better UX */
-    transition: background 0.4s ease;
+    padding: 30px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
-.gallery-overlay h3 { color: white; font-family: var(--font-main); font-size: 2rem; font-weight: 300; }
-.gallery-item:hover img { transform: scale(1.1); }
-.gallery-item:hover .gallery-overlay { opacity: 1; }
+
+.marquee-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    color: white;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* Scale Mapping Mock - Using an animation that peaks in the middle */
+/* In a real production app with Framer Motion, we'd use scroll-based logic. 
+   Here we simulate it with a slow keyframe loop if needed, but the hover 
+   elevation already provides great focus. */
+
+/* Responsive Design for Marquee */
+@media (max-width: 1024px) {
+    .marquee-item { flex: 0 0 350px; height: 440px; }
+    .marquee-track { gap: 40px; }
+    .marquee-mask { width: 150px; }
+}
+
+@media (max-width: 768px) {
+    .marquee-item { flex: 0 0 280px; height: 350px; border-radius: 20px; }
+    .marquee-track { gap: 25px; }
+    .marquee-mask { width: 80px; }
+    .gallery-overlay h3 { font-size: 1.1rem; }
+}
 
 /* Contact Section */
 .contact-section { padding: 150px 0; }

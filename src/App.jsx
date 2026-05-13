@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import { motion, useAnimationControls } from 'framer-motion';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -131,22 +132,43 @@ function App() {
           </div>
         </section>
 
-        {/* Gallery Section */}
-        <section className="gallery-section container">
-          <h2 className="section-title">Design Gallery</h2>
-          <div className="gallery-grid">
-            <div className="gallery-item large">
-              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Living Room" />
-              <div className="gallery-overlay"><h3>Minimalist Luxury</h3></div>
-            </div>
-            <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800" alt="Kitchen" />
-              <div className="gallery-overlay"><h3>Smart Kitchens</h3></div>
-            </div>
-            <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=800" alt="Bedroom" />
-              <div className="gallery-overlay"><h3>Heritage Bedrooms</h3></div>
-            </div>
+        {/* Gallery Section - Refined UX Marquee */}
+        <section className="gallery-section">
+          <div className="container" style={{ marginBottom: '40px' }}>
+            <h2 className="section-title">Design Gallery</h2>
+          </div>
+          
+          <div className="marquee-wrapper">
+            {/* Edge Masks */}
+            <div className="marquee-mask left"></div>
+            <div className="marquee-mask right"></div>
+            
+            <motion.div 
+              className="marquee-track"
+              animate={{ x: [0, -1920] }} // Adjusted for image width + gap
+              transition={{ 
+                duration: 35, 
+                repeat: Infinity, 
+                ease: "linear" 
+              }}
+              whileHover={{ animationPlayState: 'paused' }}
+            >
+              {[
+                "BEDROOM (2).png", "BEDROOM (3).png", "BEDROOM.jpg", "BEDROOM.png", 
+                "DINING.png", "FOYER.png", "KIDS ROOM.jpg", "KITCHEN (2).png", 
+                "KITCHEN.png", "LIVING.png", "TV UNIT.png"
+              ].map((img, index) => (
+                <GalleryItem key={index} src={`/RENDER IMAGES/${img}`} title={img.replace(/\.[^/.]+$/, "")} />
+              ))}
+              {/* Duplicate for seamless loop */}
+              {[
+                "BEDROOM (2).png", "BEDROOM (3).png", "BEDROOM.jpg", "BEDROOM.png", 
+                "DINING.png", "FOYER.png", "KIDS ROOM.jpg", "KITCHEN (2).png", 
+                "KITCHEN.png", "LIVING.png", "TV UNIT.png"
+              ].map((img, index) => (
+                <GalleryItem key={`dup-${index}`} src={`/RENDER IMAGES/${img}`} title={img.replace(/\.[^/.]+$/, "")} />
+              ))}
+            </motion.div>
           </div>
         </section>
 
@@ -167,6 +189,28 @@ function App() {
         </section>
       </main>
     </div>
+  );
+}
+
+function GalleryItem({ src, title }) {
+  return (
+    <motion.div 
+      className="marquee-item"
+      whileHover={{ 
+        scale: 1.12, 
+        zIndex: 50,
+        filter: "brightness(1.1)",
+        boxShadow: "0 20px 40px rgba(0,0,0,0.3)"
+      }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
+      <div className="glass-card-inner">
+        <img src={src} alt={title} loading="lazy" />
+        <div className="gallery-overlay">
+          <h3>{title}</h3>
+        </div>
+      </div>
+    </motion.div>
   );
 }
 
