@@ -233,6 +233,58 @@ const Home = ({ scrollY }) => {
             </form>
           </div>
         </section>
+        {/* Footer Section */}
+        <footer className="premium-footer">
+          <div className="container">
+            <div className="footer-grid">
+              <div className="footer-brand">
+                <img src="/logo.jpeg" alt="Cookscape Logo" className="footer-logo" />
+                <p>Transforming spaces into luxury experiences for over 25 years. Chennai’s most trusted interior design partner.</p>
+                <div className="social-links-v2">
+                  <a href="#">Fb</a>
+                  <a href="#">Ig</a>
+                  <a href="#">In</a>
+                </div>
+              </div>
+              
+              <div className="footer-links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><Link to="/blog">Blog</Link></li>
+                </ul>
+              </div>
+
+              <div className="footer-links-col">
+                <h4>Services</h4>
+                <ul>
+                  <li><a href="#services">Modular Kitchen</a></li>
+                  <li><a href="#services">Full Home Interiors</a></li>
+                  <li><a href="#services">Home Renovation</a></li>
+                  <li><a href="#services">Wardrobes</a></li>
+                </ul>
+              </div>
+
+              <div className="footer-contact-col">
+                <h4>Visit Us</h4>
+                <p>Chennai, Tamil Nadu, India</p>
+                <a href="tel:+919600005679" className="footer-phone">+91 96000 05679</a>
+                <p className="footer-email">contact@cookscape.in</p>
+              </div>
+            </div>
+            
+            <div className="footer-bottom">
+              <p>&copy; {new Date().getFullYear()} Cookscape Interiors. All Rights Reserved.</p>
+              <div className="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
   );
 };
