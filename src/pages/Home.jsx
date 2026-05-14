@@ -105,6 +105,44 @@ const Home = ({ scrollY }) => {
           </div>
         </section>
 
+        {/* Services Section */}
+        <section id="services" className="services-section container">
+          <div className="section-header-v2">
+            <h2 className="section-title">Our <span>Services</span></h2>
+            <p className="section-subtitle">Exquisite design solutions tailored for your lifestyle.</p>
+          </div>
+          <div className="services-grid">
+            {[
+              { title: "Full Home Interiors", icon: "🏠" },
+              { title: "Home Renovation", icon: "🛠️" },
+              { title: "Modular Kitchen", icon: "🍳" },
+              { title: "Wardrobe", icon: "👗" },
+              { title: "Crockery Unit", icon: "🍽️" },
+              { title: "Laundry Unit", icon: "🧺" },
+              { title: "Living Room", icon: "🛋️" },
+              { title: "Bedroom", icon: "🛏️" },
+              { title: "TV Unit", icon: "📺" },
+              { title: "Pooja Unit", icon: "🙏" },
+              { title: "Kids Furniture", icon: "🧸" }
+            ].map((service, idx) => (
+              <motion.a 
+                key={idx}
+                href="#gallery"
+                className="service-card-v2 glass-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05 }}
+                whileHover={{ scale: 1.05, y: -10 }}
+              >
+                <div className="service-icon-v2">{service.icon}</div>
+                <h3 className="service-title-v2">{service.title}</h3>
+                <span className="service-link-v2">View Designs →</span>
+              </motion.a>
+            ))}
+          </div>
+        </section>
+
         {/* Gallery Section */}
         <section id="gallery" className="gallery-section">
           <div className="container" style={{ marginBottom: '40px' }}>
