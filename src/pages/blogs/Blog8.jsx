@@ -2,19 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
-const blog71 = '/blog-images/cookscape-blog-71 .webp';
-const blog72 = '/blog-images/cookscape-blog-72 .webp';
-const blog73 = '/blog-images/cookscape-blog-73 .webp';
-const blog74 = '/blog-images/cookscape-blog-74 .webp';
-const blog75 = '/blog-images/cookscape-blog-75 .webp';
-const blog76 = '/blog-images/cookscape-blog-76 .webp';
-const blog77 = '/blog-images/cookscape-blog-77 .webp';
+const blog71 = '/blog-images/cookscape-blog-71.webp';
+const blog72 = '/blog-images/cookscape-blog-72.webp';
+const blog73 = '/blog-images/cookscape-blog-73.webp';
+const blog74 = '/blog-images/cookscape-blog-74.webp';
+const blog75 = '/blog-images/cookscape-blog-75.webp';
+const blog76 = '/blog-images/cookscape-blog-76.webp';
+const blog77 = '/blog-images/cookscape-blog-77.webp';
 
-const arsowmi = '/architects/Cookscape-Architect-Sowmithra .webp';
-const arbagya = '/architects/Cookscape-Architect-Bagya-Lakshmi .webp';
-const aranu = '/architects/Cookscape-Architect-Anulekha .webp';
-const armeena = '/architects/Cookscape-Architect-Meena .webp';
-const arapsana = '/architects/Cookscape--Architect-Apsana .webp';
+const arsowmi = '/architects/Cookscape-Architect-Sowmithra.webp';
+const arbagya = '/architects/Cookscape-Architect-Bagya-Lakshmi.webp';
+const aranu = '/architects/Cookscape-Architect-Anulekha.webp';
+const armeena = '/architects/Cookscape-Architect-Meena.webp';
+const arapsana = '/architects/Cookscape--Architect-Apsana.webp';
 function Blog8() {
   return (
     <>

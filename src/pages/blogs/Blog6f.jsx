@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
-const blog56 = '/blog-images/cookscape-blog-56 .webp';
-const blog56a = '/blog-images/cookscape-blog-56a .webp';
-const blog56b = '/blog-images/cookscape-blog-56b .webp';
-const blog56c = '/blog-images/cookscape-blog-56c .webp';
-const arapsana = '/architects/Cookscape--Architect-Apsana .webp';
+const blog56 = '/blog-images/cookscape-blog-56.webp';
+const blog56a = '/blog-images/cookscape-blog-56a.webp';
+const blog56b = '/blog-images/cookscape-blog-56b.webp';
+const blog56c = '/blog-images/cookscape-blog-56c.webp';
+const arapsana = '/architects/Cookscape--Architect-Apsana.webp';
 const Blog6f = () => {
 return (
 <>

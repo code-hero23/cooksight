@@ -1,14 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
-const blog11 = '/blog-images/cookscape-blog-11 .webp';
-const blog11a = '/blog-images/cookscape-blog-11a .webp';
-const blog11b = '/blog-images/cookscape-blog-11b .webp';
-const blog11c = '/blog-images/cookscape-blog-11c .webp';
-const blog11d = '/blog-images/cookscape-blog-11d .webp';
-const blog11e = '/blog-images/cookscape-blog-11e .webp';
-const blog11f = '/blog-images/cookscape-blog-11f .webp';
-const arnavanitha = '/architects/Cookscape--Architect-navanitha .webp';
+const blog11 = '/blog-images/cookscape-blog-11.webp';
+const blog11a = '/blog-images/cookscape-blog-11a.webp';
+const blog11b = '/blog-images/cookscape-blog-11b.webp';
+const blog11c = '/blog-images/cookscape-blog-11c.webp';
+const blog11d = '/blog-images/cookscape-blog-11d.webp';
+const blog11e = '/blog-images/cookscape-blog-11e.webp';
+const blog11f = '/blog-images/cookscape-blog-11f.webp';
+const arnavanitha = '/architects/Cookscape--Architect-navanitha.webp';
 const Blog2a = () => {
 return (
 <>

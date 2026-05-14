@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
-const blog69 = '/blog-images/cookscape-blog-69 .webp';
-const aranu = '/architects/Cookscape-Architect-Anulekha .webp';
+const blog69 = '/blog-images/cookscape-blog-69.webp';
+const aranu = '/architects/Cookscape-Architect-Anulekha.webp';
 const Blog7c = () => {
         return (
                 <>

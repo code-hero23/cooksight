@@ -2,27 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
-const blog11 = '/blog-images/cookscape-blog-11 .webp';
-const blog12 = '/blog-images/cookscape-blog-12 .webp';
-const blog13 = '/blog-images/cookscape-blog-13 .webp';
-const blog14 = '/blog-images/cookscape-blog-14 .webp';
-const blog15 = '/blog-images/cookscape-blog-15 .webp';
-const blog16 = '/blog-images/cookscape-blog-16 .webp';
-const blog17 = '/blog-images/cookscape-blog-17 .webp';
-const blog18 = '/blog-images/cookscape-blog-18 .webp';
-const blog19 = '/blog-images/cookscape-blog-19 .webp';
-const blog20 = '/blog-images/cookscape-blog-20 .webp';
+const blog11 = '/blog-images/cookscape-blog-11.webp';
+const blog12 = '/blog-images/cookscape-blog-12.webp';
+const blog13 = '/blog-images/cookscape-blog-13.webp';
+const blog14 = '/blog-images/cookscape-blog-14.webp';
+const blog15 = '/blog-images/cookscape-blog-15.webp';
+const blog16 = '/blog-images/cookscape-blog-16.webp';
+const blog17 = '/blog-images/cookscape-blog-17.webp';
+const blog18 = '/blog-images/cookscape-blog-18.webp';
+const blog19 = '/blog-images/cookscape-blog-19.webp';
+const blog20 = '/blog-images/cookscape-blog-20.webp';
 
-const arnavanitha = '/architects/Cookscape--Architect-navanitha .webp';
-const arsunitha = '/architects/Cookscape--Architect-sunitha .webp';
-const armanikandan = '/architects/Cookscape--Architect-manikandan .webp';
-const arvarshini = '/architects/Cookscape--Architect-varshini .webp';
-const arraakesh = '/architects/Cookscape--Architect-raakesh-natarajan .webp';
-const arangaiyar = '/architects/Cookscape--Architect-angaiyarkanni .webp';
-const ardinesh = '/architects/Cookscape--Architect-dinesh .webp';
-const arnivetha = '/architects/Cookscape--Architect-nivetha-senthil .webp';
-const arsaranya = '/architects/Cookscape-Architect-Saranya .webp';
-const armathivathini = '/architects/Cookscape--Architect-mathivathini .webp';
+const arnavanitha = '/architects/Cookscape--Architect-navanitha.webp';
+const arsunitha = '/architects/Cookscape--Architect-sunitha.webp';
+const armanikandan = '/architects/Cookscape--Architect-manikandan.webp';
+const arvarshini = '/architects/Cookscape--Architect-varshini.webp';
+const arraakesh = '/architects/Cookscape--Architect-raakesh-natarajan.webp';
+const arangaiyar = '/architects/Cookscape--Architect-angaiyarkanni.webp';
+const ardinesh = '/architects/Cookscape--Architect-dinesh.webp';
+const arnivetha = '/architects/Cookscape--Architect-nivetha-senthil.webp';
+const arsaranya = '/architects/Cookscape-Architect-Saranya.webp';
+const armathivathini = '/architects/Cookscape--Architect-mathivathini.webp';
 function Blog2() {
 return (
 <>

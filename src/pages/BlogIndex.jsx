@@ -28,20 +28,25 @@ const BlogIndex = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index % 3 * 0.1 }}
+              transition={{ delay: (index % 3) * 0.1 }}
               whileHover={{ y: -10 }}
             >
               <div className="blog-card-image">
                 <img src={blog.image || '/blog-images/cookscape-blog-1 .webp'} alt={blog.title} />
+                <div className="blog-card-overlay"></div>
                 <div className="blog-category">Interiors</div>
               </div>
               <div className="blog-card-content">
-                <span className="blog-author">By Architect {blog.author}</span>
+                <div className="blog-meta">
+                  <span className="blog-author">By Architect {blog.author}</span>
+                </div>
                 <h2 className="blog-card-title">{blog.title}</h2>
-                <p className="blog-card-excerpt">{blog.excerpt.substring(0, 120)}...</p>
-                <Link to={`/blog/${blog.id}`} className="btn-read-more">
-                  Read Article <span className="arrow">→</span>
-                </Link>
+                <p className="blog-card-excerpt">{blog.excerpt.substring(0, 110)}...</p>
+                <div className="blog-card-footer">
+                  <Link to={`/blog/${blog.id}`} className="btn-read-more">
+                    Read Article <span className="arrow">→</span>
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}

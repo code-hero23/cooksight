@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
-const blog53 = '/blog-images/cookscape-blog-53 .webp';
-const blog53a = '/blog-images/cookscape-blog-53a .webp';
-const blog53b = '/blog-images/cookscape-blog-53b .webp';
-const arragul = '/architects/Cookscape-Architect-Raghul .webp';
+const blog53 = '/blog-images/cookscape-blog-53.webp';
+const blog53a = '/blog-images/cookscape-blog-53a.webp';
+const blog53b = '/blog-images/cookscape-blog-53b.webp';
+const arragul = '/architects/Cookscape-Architect-Raghul.webp';
 const Blog6c = () => {
 return (
 <>
