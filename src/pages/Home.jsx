@@ -111,33 +111,39 @@ const Home = ({ scrollY }) => {
             <h2 className="section-title">Our <span>Services</span></h2>
             <p className="section-subtitle">Exquisite design solutions tailored for your lifestyle.</p>
           </div>
-          <div className="services-grid">
+          <div className="services-grid-premium">
             {[
-              { title: "Full Home Interiors", icon: "🏠" },
-              { title: "Home Renovation", icon: "🛠️" },
-              { title: "Modular Kitchen", icon: "🍳" },
-              { title: "Wardrobe", icon: "👗" },
-              { title: "Crockery Unit", icon: "🍽️" },
-              { title: "Laundry Unit", icon: "🧺" },
-              { title: "Living Room", icon: "🛋️" },
-              { title: "Bedroom", icon: "🛏️" },
-              { title: "TV Unit", icon: "📺" },
-              { title: "Pooja Unit", icon: "🙏" },
-              { title: "Kids Furniture", icon: "🧸" }
+              { title: "Full Home Interiors", img: "full-home.webp" },
+              { title: "Home Renovation", img: "renovation.webp" },
+              { title: "Modular Kitchen", img: "kitchen.webp" },
+              { title: "Wardrobe", img: "wardrobe.webp" },
+              { title: "Crockery Unit", img: "crockery.webp" },
+              { title: "Laundry Unit", img: "laundry.webp" },
+              { title: "Living Room", img: "living.webp" },
+              { title: "Bedroom", img: "bedroom.webp" },
+              { title: "TV Unit", img: "tv-unit.webp" },
+              { title: "Pooja Unit", img: "pooja.webp" },
+              { title: "Kids Furniture", img: "kids.webp" }
             ].map((service, idx) => (
               <motion.a 
                 key={idx}
                 href="#gallery"
-                className="service-card-v2 glass-card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                className="service-card-premium"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.05 }}
-                whileHover={{ scale: 1.05, y: -10 }}
+                transition={{ delay: idx * 0.05, duration: 0.5 }}
+                whileHover={{ y: -15 }}
               >
-                <div className="service-icon-v2">{service.icon}</div>
-                <h3 className="service-title-v2">{service.title}</h3>
-                <span className="service-link-v2">View Designs →</span>
+                <div className="service-card-image-wrap">
+                  <img src={`/services/${service.img}`} alt={service.title} onError={(e) => e.target.src = '/hero-image.png'} />
+                  <div className="service-card-overlay-premium"></div>
+                </div>
+                <div className="service-card-content-premium">
+                  <h3 className="service-title-premium">{service.title}</h3>
+                  <div className="service-divider-premium"></div>
+                  <span className="service-explore-premium">Discover Designs</span>
+                </div>
               </motion.a>
             ))}
           </div>
