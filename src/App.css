@@ -894,14 +894,15 @@ header.header-solid {
 
 /* Blog Section Styles */
 .blog-index-page {
-    padding-top: 320px; /* Even more padding to accommodate centered nav */
+    padding-top: 420px; /* Drastic padding to ensure no overlap ever */
+    padding-top: 500px; /* Drastic padding to ensure no overlap ever */
     background: transparent;
 }
 
 .blog-header {
     text-align: center;
-    margin-bottom: 80px;
-    padding-top: 40px; /* Additional internal padding */
+    margin-bottom: 100px;
+    padding-top: 60px;
 }
 
 .blog-intro {
@@ -1050,7 +1051,7 @@ header.header-solid {
 
 /* Blog Post Page */
 .blog-post-page {
-    padding-top: 320px;
+    padding-top: 420px;
     padding-bottom: 100px;
 }
 
