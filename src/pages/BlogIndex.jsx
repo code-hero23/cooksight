@@ -32,13 +32,21 @@ const BlogIndex = () => {
               whileHover={{ y: -10 }}
             >
               <div className="blog-card-image">
-                <img src={blog.image || '/blog-images/cookscape-blog-1 .webp'} alt={blog.title} />
+                <img src={blog.image} alt={blog.title} />
                 <div className="blog-card-overlay"></div>
                 <div className="blog-category">Interiors</div>
               </div>
               <div className="blog-card-content">
                 <div className="blog-meta">
-                  <span className="blog-author">By Architect {blog.author}</span>
+                  <div className="blog-author-info">
+                    <img 
+                      src={`/architects/cookscape--architect-${blog.author.toLowerCase().replace(' ', '-')}.webp`} 
+                      alt={blog.author}
+                      className="blog-author-avatar"
+                      onError={(e) => e.target.src = '/logo.jpeg'}
+                    />
+                    <span className="blog-author">By Architect {blog.author}</span>
+                  </div>
                 </div>
                 <h2 className="blog-card-title">{blog.title}</h2>
                 <p className="blog-card-excerpt">{blog.excerpt.substring(0, 110)}...</p>

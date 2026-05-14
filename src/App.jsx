@@ -23,6 +23,7 @@ function AppContent() {
   }, [location]);
 
   const isHome = location.pathname === '/';
+  const isBlog = location.pathname.startsWith('/blog');
 
   return (
     <div className="app-wrapper">
@@ -30,7 +31,7 @@ function AppContent() {
       <div className="bg-mesh"></div>
       
       {/* Premium Header */}
-      <header id="header" className={!isHome ? 'header-solid' : ''}>
+      <header id="header" className={(isBlog || !isHome) ? 'header-solid' : ''}>
         <nav className="container nav-bar">
           <div className="logo-container">
             <Link to="/">
@@ -43,7 +44,6 @@ function AppContent() {
             <li><a href="/#gallery">Gallery</a></li>
             <li><a href="/#services">Services</a></li>
             <li><a href="/#contact">Contact</a></li>
-            <li><a href="/#about">About</a></li>
           </ul>
           <div className="nav-cta">
             <a href="/#contact" className="btn-resources pulse-animation">Get Estimate</a>
