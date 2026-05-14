@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimationControls, useMotionValue, useSpring, useTransform, useAnimationFrame } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const IMAGES = [
   "BEDROOM (2).png", "BEDROOM (3).png", "BEDROOM.jpg", "BEDROOM.png", 
