@@ -14,18 +14,6 @@ const FloatingActions = () => {
       color: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
       shadow: '0 10px 20px rgba(37, 211, 102, 0.3)',
       link: 'https://wa.me/919677081181?text=Hello%2C%20I%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20more%20details.'
-    },
-    {
-      id: 'livechat',
-      icon: (
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-        </svg>
-      ),
-      label: 'Live Chat',
-      color: 'linear-gradient(135deg, #111111 0%, #333333 100%)',
-      shadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
-      link: '#'
     }
   ];
 
