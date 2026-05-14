@@ -106,47 +106,14 @@ const Home = ({ scrollY }) => {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="services-section container">
-          <div className="section-header-v2">
-            <h2 className="section-title">Our <span>Services</span></h2>
-            <p className="section-subtitle">Exquisite design solutions tailored for your lifestyle.</p>
+        <section id="services" className="services-section">
+          <div className="container" style={{ marginBottom: '40px' }}>
+            <div className="section-header-v2">
+              <h2 className="section-title">Our <span>Services</span></h2>
+              <p className="section-subtitle">Exquisite design solutions tailored for your lifestyle.</p>
+            </div>
           </div>
-          <div className="services-grid-premium">
-            {[
-              { title: "Full Home Interiors", img: "/services/full-home-interiors.png" },
-              { title: "Home Renovation", img: "/services/renovation.png" },
-              { title: "Modular Kitchen", img: "/services/kitchen.png" },
-              { title: "Wardrobe", img: "/services/wardrobe.png" },
-              { title: "Crockery Unit", img: "/services/crockery-unit.png" },
-              { title: "Laundry Unit", img: "/services/laundry-unit.png" },
-              { title: "Living Room", img: "/RENDER IMAGES/LIVING.png" },
-              { title: "Bedroom", img: "/services/bedroom.png" },
-              { title: "TV Unit", img: "/RENDER IMAGES/TV UNIT.png" },
-              { title: "Pooja Unit", img: "/services/pooja-unit.png" },
-              { title: "Kids Furniture", img: "/services/kids-furniture.png" }
-            ].map((service, idx) => (
-              <motion.a 
-                key={idx}
-                href="#gallery"
-                className="service-card-premium"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.05, duration: 0.5 }}
-                whileHover={{ y: -15 }}
-              >
-                <div className="service-card-image-wrap">
-                  <img src={service.img} alt={service.title} onError={(e) => e.target.src = '/hero-image.png'} />
-                  <div className="service-card-overlay-premium"></div>
-                </div>
-                <div className="service-card-content-premium">
-                  <h3 className="service-title-premium">{service.title}</h3>
-                  <div className="service-divider-premium"></div>
-                  <span className="service-explore-premium">Discover Designs</span>
-                </div>
-              </motion.a>
-            ))}
-          </div>
+          <MarqueeServices />
         </section>
 
         {/* Gallery Section */}
@@ -246,5 +213,94 @@ function MarqueeGallery() {
       </motion.div>
     );
   }
+
+const SERVICES = [
+  { title: "Full Home Interiors", img: "/services/full-home-interiors.png" },
+  { title: "Home Renovation", img: "/services/renovation.png" },
+  { title: "Modular Kitchen", img: "/services/kitchen.png" },
+  { title: "Wardrobe", img: "/services/wardrobe.png" },
+  { title: "Crockery Unit", img: "/services/crockery-unit.png" },
+  { title: "Laundry Unit", img: "/services/laundry-unit.png" },
+  { title: "Living Room", img: "/RENDER IMAGES/LIVING.png" },
+  { title: "Bedroom", img: "/services/bedroom.png" },
+  { title: "TV Unit", img: "/RENDER IMAGES/TV UNIT.png" },
+  { title: "Pooja Unit", img: "/services/pooja-unit.png" },
+  { title: "Kids Furniture", img: "/services/kids-furniture.png" }
+];
+
+function MarqueeServices() {
+  const [isPaused, setIsPaused] = useState(false);
+  const baseVelocity = -1.0; 
+  const baseX = useMotionValue(0);
+  const cardWidth = 320; // Width of service card + gap
+  const totalWidth = SERVICES.length * cardWidth;
+
+  useAnimationFrame((t, delta) => {
+    if (!isPaused) {
+      let moveBy = baseVelocity * (delta / 16);
+      let nextX = baseX.get() + moveBy;
+      if (nextX <= -totalWidth) nextX = 0;
+      baseX.set(nextX);
+    }
+  });
+
+  return (
+    <div 
+      className="marquee-wrapper services-marquee"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      <div className="marquee-mask left"></div>
+      <div className="marquee-mask right"></div>
+      <motion.div className="marquee-track" style={{ x: baseX }}>
+        {[...SERVICES, ...SERVICES].map((service, index) => (
+          <ServiceMarqueeItem 
+            key={index} 
+            service={service}
+            trackX={baseX}
+          />
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
+function ServiceMarqueeItem({ service, trackX }) {
+  const ref = useRef(null);
+  const centerScale = useTransform(trackX, (latest) => {
+    if (!ref.current) return 0.85;
+    const rect = ref.current.getBoundingClientRect();
+    const centerX = window.innerWidth / 2;
+    const distanceFromCenter = Math.abs(centerX - (rect.left + rect.width / 2));
+    const maxDistance = window.innerWidth / 2;
+    const normalizedDistance = Math.min(distanceFromCenter / maxDistance, 1);
+    const curve = Math.cos(normalizedDistance * (Math.PI / 2));
+    const intensity = Math.pow(curve, 2);
+    return 0.85 + (1.1 - 0.85) * intensity;
+  });
+
+  const smoothScale = useSpring(centerScale, { stiffness: 300, damping: 40 });
+
+  return (
+    <motion.a 
+      ref={ref}
+      href="#gallery"
+      className="service-card-premium marquee-item-service"
+      style={{ scale: smoothScale }}
+      whileHover={{ scale: 1.15, zIndex: 100 }}
+      transition={{ type: "spring", stiffness: 400, damping: 25 }}
+    >
+      <div className="service-card-image-wrap">
+        <img src={service.img} alt={service.title} onError={(e) => e.target.src = '/hero-image.png'} />
+        <div className="service-card-overlay-premium"></div>
+      </div>
+      <div className="service-card-content-premium">
+        <h3 className="service-title-premium">{service.title}</h3>
+        <div className="service-divider-premium"></div>
+        <span className="service-explore-premium">Discover Designs</span>
+      </div>
+    </motion.a>
+  );
+}
 
 export default Home;

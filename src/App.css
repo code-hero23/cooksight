@@ -1349,3 +1349,22 @@ header.header-solid {
     color: var(--secondary-red);
 }
 
+
+/* Services Marquee Styling */
+.services-marquee {
+    height: 480px;
+    margin-top: 40px;
+}
+
+.marquee-item-service {
+    flex: 0 0 320px; /* Fixed width for consistent marquee math */
+    margin-right: 30px;
+    height: 400px !important; /* Force height for marquee item */
+}
+
+.services-marquee .marquee-track {
+    display: flex;
+    align-items: center;
+    padding-left: 50vw; /* Start from center */
+}
+
