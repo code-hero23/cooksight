@@ -17,7 +17,8 @@ const BlogPost = () => {
   }
 
   // Dynamically import the blog component
-  const ContentComponent = lazy(() => import(`./blogs/${blog.file.replace('.js', '.jsx')}`));
+  const componentName = blog.file.replace('.js', '');
+  const ContentComponent = lazy(() => import(`./blogs/${componentName}.jsx`));
 
   return (
     <div className="blog-post-page">

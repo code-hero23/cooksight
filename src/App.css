@@ -874,6 +874,7 @@ header {
     .btn-label {
         display: none; /* Hide labels on mobile for cleaner look */
     }
+}
 
 /* Blog Section Styles */
 .blog-index-page {
