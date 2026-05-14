@@ -786,3 +786,92 @@ header {
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn-blue-pill, .btn-outline-pill { text-align: center; justify-content: center; }
 }
+
+/* Floating Action Buttons */
+.floating-actions-container {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+    pointer-events: none; /* Only buttons should be interactive */
+}
+
+.floating-action-btn {
+    pointer-events: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.btn-label {
+    position: absolute;
+    right: 75px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.floating-action-btn:hover .btn-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.btn-glow {
+    position: absolute;
+    inset: -5px;
+    background: inherit;
+    filter: blur(15px);
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.floating-action-btn:hover .btn-glow {
+    opacity: 0.4;
+}
+
+/* Mobile Adjustments for FABs */
+@media (max-width: 768px) {
+    .floating-actions-container {
+        right: 20px;
+        bottom: 30px;
+        gap: 12px;
+    }
+    
+    .floating-action-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btn-label {
+        display: none; /* Hide labels on mobile for cleaner look */
+    }
+}

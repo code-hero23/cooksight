@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
 import { motion, useAnimationControls, useMotionValue, useSpring, useTransform, useAnimationFrame } from 'framer-motion';
+import FloatingActions from './FloatingActions';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -157,6 +158,7 @@ function App() {
           </div>
         </section>
       </main>
+      <FloatingActions />
     </div>
   );
 }
