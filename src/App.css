@@ -10,7 +10,7 @@ html {
     --tertiary-green: #005a32;
     --text-dark: #111111;
     --text-light: #555555;
-    --font-main: 'Montserrat', 'Outfit', sans-serif;
+    --font-main: 'Inter', sans-serif;
     --glass: rgba(255, 255, 255, 0.2);
     --glass-border: rgba(255, 255, 255, 0.4);
 }
@@ -905,14 +905,13 @@ header.header-solid {
 }
 
 .blog-main-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
-    font-weight: 800;
+    font-weight: 300;
     line-height: 1.1;
     margin-bottom: 20px;
     margin-top: 60px;
     color: var(--text-primary);
-    letter-spacing: -0.03em;
 }
 
 .blog-main-title span {
@@ -1042,7 +1041,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     margin: 0;
 }
@@ -1359,13 +1358,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-title-premium {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
     color: #fff;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    letter-spacing: -0.02em;
 }
 
 .service-divider-premium {
