@@ -113,17 +113,17 @@ const Home = ({ scrollY }) => {
           </div>
           <div className="services-grid-premium">
             {[
-              { title: "Full Home Interiors", img: "full-home.webp" },
-              { title: "Home Renovation", img: "renovation.webp" },
-              { title: "Modular Kitchen", img: "kitchen.webp" },
-              { title: "Wardrobe", img: "wardrobe.webp" },
-              { title: "Crockery Unit", img: "crockery.webp" },
-              { title: "Laundry Unit", img: "laundry.webp" },
-              { title: "Living Room", img: "living.webp" },
-              { title: "Bedroom", img: "bedroom.webp" },
-              { title: "TV Unit", img: "tv-unit.webp" },
-              { title: "Pooja Unit", img: "pooja.webp" },
-              { title: "Kids Furniture", img: "kids.webp" }
+              { title: "Full Home Interiors", img: "/services/full-home-interiors.png" },
+              { title: "Home Renovation", img: "/services/renovation.png" },
+              { title: "Modular Kitchen", img: "/services/kitchen.png" },
+              { title: "Wardrobe", img: "/services/wardrobe.png" },
+              { title: "Crockery Unit", img: "/services/crockery-unit.png" },
+              { title: "Laundry Unit", img: "/services/laundry-unit.png" },
+              { title: "Living Room", img: "/RENDER IMAGES/LIVING.png" },
+              { title: "Bedroom", img: "/services/bedroom.png" },
+              { title: "TV Unit", img: "/RENDER IMAGES/TV UNIT.png" },
+              { title: "Pooja Unit", img: "/services/pooja-unit.png" },
+              { title: "Kids Furniture", img: "/services/kids-furniture.png" }
             ].map((service, idx) => (
               <motion.a 
                 key={idx}
@@ -136,7 +136,7 @@ const Home = ({ scrollY }) => {
                 whileHover={{ y: -15 }}
               >
                 <div className="service-card-image-wrap">
-                  <img src={`/services/${service.img}`} alt={service.title} onError={(e) => e.target.src = '/hero-image.png'} />
+                  <img src={service.img} alt={service.title} onError={(e) => e.target.src = '/hero-image.png'} />
                   <div className="service-card-overlay-premium"></div>
                 </div>
                 <div className="service-card-content-premium">
