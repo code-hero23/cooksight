@@ -116,13 +116,6 @@ const Home = ({ scrollY }) => {
           <MarqueeServices />
         </section>
 
-        {/* Gallery Section */}
-        <section id="gallery" className="gallery-section">
-          <div className="container" style={{ marginBottom: '40px' }}>
-            <h2 className="section-title">Design Gallery</h2>
-          </div>
-          <MarqueeGallery />
-        </section>
 
         {/* Contact Section */}
         <section id="contact" className="contact-section container">
@@ -253,7 +246,7 @@ function MarqueeServices() {
       <div className="marquee-mask left"></div>
       <div className="marquee-mask right"></div>
       <motion.div className="marquee-track" style={{ x: baseX }}>
-        {[...SERVICES, ...SERVICES].map((service, index) => (
+        {[...SERVICES, ...SERVICES, ...SERVICES].map((service, index) => (
           <ServiceMarqueeItem 
             key={index} 
             service={service}
@@ -284,7 +277,7 @@ function ServiceMarqueeItem({ service, trackX }) {
   return (
     <motion.a 
       ref={ref}
-      href="#gallery"
+      href="#contact"
       className="service-card-premium marquee-item-service"
       style={{ scale: smoothScale }}
       whileHover={{ scale: 1.15, zIndex: 100 }}

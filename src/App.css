@@ -1365,6 +1365,5 @@ header.header-solid {
 .services-marquee .marquee-track {
     display: flex;
     align-items: center;
-    padding-left: 50vw; /* Start from center */
 }
 

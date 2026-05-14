@@ -41,7 +41,6 @@ function AppContent() {
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
             <li><a href="/#services">Services</a></li>
-            <li><a href="/#gallery">Gallery</a></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><a href="/#testimonials">Testimonials</a></li>
             <li><a href="/#about">About</a></li>
