@@ -10,7 +10,7 @@ html {
     --tertiary-green: #005a32;
     --text-dark: #111111;
     --text-light: #555555;
-    --font-main: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-main: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --glass: rgba(255, 255, 255, 0.2);
     --glass-border: rgba(255, 255, 255, 0.4);
 }
@@ -905,13 +905,14 @@ header.header-solid {
 }
 
 .blog-main-title {
-    font-family: 'Playfair Display', serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
     font-size: 4.5rem;
-    font-weight: 300;
+    font-weight: 700; /* Bolder for iOS feel */
     line-height: 1.1;
     margin-bottom: 20px;
     margin-top: 60px; /* Slightly more space from nav */
     color: var(--text-primary);
+    letter-spacing: -0.02em; /* Tight tracking for premium iOS look */
 }
 
 .blog-main-title span {
@@ -1028,11 +1029,38 @@ header.header-solid {
     letter-spacing: 0.05em;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--primary-white);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
 .read-time-v2 {
     font-size: 0.7rem;
     color: var(--text-secondary);
     opacity: 0.6;
     font-weight: 500;
+}
+
+.blog-.section-title {
+    font-size: 3.5rem;
+    font-family: var(--font-main);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--text-dark);
 }
 
 .blog-card-title-v2 {
@@ -1197,19 +1225,6 @@ header.header-solid {
     margin-bottom: 60px;
 }
 
-.section-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    opacity: 0.7;
-    margin-top: 10px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 30px;
-}
-
 .service-card-v2 {
     text-decoration: none;
     padding: 40px 30px;
@@ -1256,6 +1271,37 @@ header.header-solid {
 .service-card-v2:hover {
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* Services Title Live Animation */
+.services-section .section-title span {
+    color: var(--secondary-red);
+    position: relative;
+    display: inline-block;
+}
+
+.services-section .section-title span::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: var(--secondary-red);
+    transition: width 0.8s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.services-section:hover .section-title span::after {
+    width: 100%;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 
@@ -1313,12 +1359,13 @@ header.header-solid {
 }
 
 .service-title-premium {
-    font-family: "Playfair Display", serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
     font-size: 1.6rem;
     color: #fff;
     margin-bottom: 15px;
     font-weight: 600;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: -0.01em;
 }
 
 .service-divider-premium {

@@ -108,10 +108,16 @@ const Home = ({ scrollY }) => {
         {/* Services Section */}
         <section id="services" className="services-section">
           <div className="container" style={{ marginBottom: '40px' }}>
-            <div className="section-header-v2">
+            <motion.div 
+              className="section-header-v2"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               <h2 className="section-title">Our <span>Services</span></h2>
               <p className="section-subtitle">Exquisite design solutions tailored for your lifestyle.</p>
-            </div>
+            </motion.div>
           </div>
           <MarqueeServices />
         </section>
