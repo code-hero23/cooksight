@@ -341,8 +341,8 @@ function MarqueeServices() {
   return (
     <div 
       className="marquee-wrapper services-marquee"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      onClick={() => setIsPaused(!isPaused)}
+      style={{ cursor: 'pointer' }}
     >
       <div className="marquee-mask left"></div>
       <div className="marquee-mask right"></div>
