@@ -3,22 +3,30 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { blogs } from '../data/blogsData';
 
+const blogsModules = import.meta.glob('./blogs/*.jsx');
+
 const BlogPost = () => {
   const { id } = useParams();
   const blog = blogs.find(b => b.id === id);
 
   if (!blog) {
     return (
-      <div className="container" style={{ padding: '150px 0', textAlign: 'center' }}>
+      <div className="container" style={{ padding: '200px 0', textAlign: 'center' }}>
         <h2>Blog post not found</h2>
         <Link to="/blog" className="btn-blue-pill">Back to Blogs</Link>
       </div>
     );
   }
 
-  // Dynamically import the blog component
-  const componentName = blog.file.replace('.js', '');
-  const ContentComponent = lazy(() => import(`./blogs/${componentName}.jsx`));
+  // Dynamically get the blog component from the glob map
+  const componentPath = `./blogs/${blog.file}`;
+  const ContentComponent = blogsModules[componentPath] 
+    ? lazy(blogsModules[componentPath])
+    : null;
+
+  if (!ContentComponent) {
+    return <div className="container" style={{ padding: '200px 0' }}>Content not found at {componentPath}</div>;
+  }
 
   return (
     <div className="blog-post-page">

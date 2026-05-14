@@ -11,7 +11,7 @@ const BlogIndex = () => {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="section-title"
+            className="blog-main-title"
           >
             Our Design <span>Stories</span>
           </motion.h1>
@@ -24,35 +24,50 @@ const BlogIndex = () => {
           {blogs.map((blog, index) => (
             <motion.div 
               key={blog.id}
-              className="blog-card glass-card"
+              className="blog-card-v2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: (index % 3) * 0.1 }}
-              whileHover={{ y: -10 }}
+              whileHover={{ y: -15 }}
             >
-              <div className="blog-card-image">
-                <img src={blog.image} alt={blog.title} />
-                <div className="blog-card-overlay"></div>
-                <div className="blog-category">Interiors</div>
-              </div>
-              <div className="blog-card-content">
-                <div className="blog-meta">
-                  <div className="blog-author-info">
-                    <img 
-                      src={`/architects/cookscape--architect-${blog.author.toLowerCase().replace(' ', '-')}.webp`} 
-                      alt={blog.author}
-                      className="blog-author-avatar"
-                      onError={(e) => e.target.src = '/logo.jpeg'}
-                    />
-                    <span className="blog-author">By Architect {blog.author}</span>
-                  </div>
+              <div className="blog-card-media">
+                <img 
+                  src={blog.image} 
+                  alt={blog.title} 
+                  onError={(e) => e.target.src = '/blog-images/cookscape-blog-1.webp'}
+                />
+                <div className="blog-card-badge">Interiors</div>
+                <div className="blog-card-overlay-v2"></div>
+                
+                {/* Overlapping Architect Avatar */}
+                <div className="blog-author-float">
+                  <img 
+                    src={`/architects/cookscape--architect-${blog.author.toLowerCase().replace(' ', '-')}.webp`} 
+                    alt={blog.author}
+                    onError={(e) => e.target.src = '/logo.jpeg'}
+                  />
                 </div>
-                <h2 className="blog-card-title">{blog.title}</h2>
-                <p className="blog-card-excerpt">{blog.excerpt.substring(0, 110)}...</p>
-                <div className="blog-card-footer">
-                  <Link to={`/blog/${blog.id}`} className="btn-read-more">
-                    Read Article <span className="arrow">→</span>
+              </div>
+
+              <div className="blog-card-body-v2">
+                <div className="blog-card-meta-v2">
+                  <span className="author-name-v2">Architect {blog.author}</span>
+                  <span className="read-time-v2">5 min read</span>
+                </div>
+                
+                <h2 className="blog-card-title-v2">{blog.title}</h2>
+                <p className="blog-card-excerpt-v2">
+                  {blog.excerpt.length > 120 ? blog.excerpt.substring(0, 120) + '...' : blog.excerpt}
+                </p>
+                
+                <div className="blog-card-footer-v2">
+                  <Link to={`/blog/${blog.id}`} className="read-more-link-v2">
+                    Explore Story
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                   </Link>
                 </div>
               </div>
