@@ -595,10 +595,34 @@ function MarqueeServices() {
     <div 
       className="marquee-wrapper services-marquee"
       onClick={() => setIsPaused(!isPaused)}
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: 'pointer', position: 'relative' }}
     >
       <div className="marquee-mask left"></div>
       <div className="marquee-mask right"></div>
+      
+      {/* Animated Scroll Indicator for Mobile/Small Screens */}
+      <div className="scroll-indicator-v2">
+        <motion.div 
+          animate={{ x: [-10, 10, -10] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="scroll-arrow"
+        >
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </motion.div>
+        <span className="scroll-text">Explore Our Portfolio</span>
+        <motion.div 
+          animate={{ x: [10, -10, 10] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="scroll-arrow"
+        >
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </motion.div>
+      </div>
+
       <motion.div className="marquee-track" style={{ x: baseX }}>
         {[...SERVICES, ...SERVICES, ...SERVICES].map((service, index) => (
           <ServiceMarqueeItem 
