@@ -5,6 +5,7 @@ import './App.css';
 import Home from './pages/Home';
 import BlogIndex from './pages/BlogIndex';
 import BlogPost from './pages/BlogPost';
+import Careers from './pages/Careers';
 import FloatingActions from './FloatingActions';
 
 function AppContent() {
@@ -57,6 +58,7 @@ function AppContent() {
               <li><a href="/#services">Services</a></li>
               <li><Link to="/blog">Blog</Link></li>
               <li><a href="/#testimonials">Testimonials</a></li>
+              <li><Link to="/careers">Careers</Link></li>
               <li><a href="/#about">About</a></li>
             </ul>
 
@@ -86,6 +88,7 @@ function AppContent() {
                 <li style={{ transitionDelay: '0.2s' }}><a href="/#services" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
                 <li style={{ transitionDelay: '0.3s' }}><Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link></li>
                 <li style={{ transitionDelay: '0.4s' }}><a href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</a></li>
+                <li style={{ transitionDelay: '0.45s' }}><Link to="/careers" onClick={() => setIsMobileMenuOpen(false)}>Careers</Link></li>
                 <li style={{ transitionDelay: '0.5s' }}><a href="/#about" onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
                 <li className="mobile-cta-v2" style={{ transitionDelay: '0.6s' }}>
                   <a href="/#contact" className="btn-primary-v3" onClick={() => setIsMobileMenuOpen(false)}>Get Estimate</a>
@@ -105,6 +108,7 @@ function AppContent() {
         <Route path="/" element={<Home scrollY={scrollY} />} />
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
 
       <FloatingActions />
