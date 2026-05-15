@@ -1403,9 +1403,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .marquee-item-service {
-    flex: 0 0 320px; /* Fixed width for consistent marquee math */
-    margin-right: 30px;
-    height: 400px !important; /* Force height for marquee item */
+    flex: 0 0 300px;
+    width: 300px;
+    height: 400px !important;
+    margin-right: 0; /* Gap handled by marquee-track gap */
 }
 
 .services-marquee .marquee-track {
@@ -2568,6 +2569,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .marquee-item-service {
-        width: 260px !important; /* Smaller cards for mobile */
+        flex: 0 0 260px !important;
+        width: 260px !important;
+        height: 350px !important;
     }
 }

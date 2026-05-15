@@ -577,10 +577,19 @@ const SERVICES = [
 
 function MarqueeServices() {
   const [isPaused, setIsPaused] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const baseVelocity = -1.0; 
   const baseX = useMotionValue(0);
-  const cardWidth = 320; // Width of service card + gap
+
+  // Sync cardWidth with CSS
+  const cardWidth = windowWidth < 768 ? 280 : 340; 
   const totalWidth = SERVICES.length * cardWidth;
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useAnimationFrame((t, delta) => {
     if (!isPaused) {
@@ -623,7 +632,7 @@ function MarqueeServices() {
         </motion.div>
       </div>
 
-      <motion.div className="marquee-track" style={{ x: baseX }}>
+      <motion.div className="marquee-track" style={{ x: baseX, gap: windowWidth < 768 ? '20px' : '40px' }}>
         {[...SERVICES, ...SERVICES, ...SERVICES].map((service, index) => (
           <ServiceMarqueeItem 
             key={index} 
