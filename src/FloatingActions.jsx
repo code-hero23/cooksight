@@ -11,8 +11,8 @@ const FloatingActions = () => {
         </svg>
       ),
       label: 'WhatsApp',
-      color: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
-      shadow: '0 10px 20px rgba(37, 211, 102, 0.3)',
+      color: 'linear-gradient(135deg, #e21d12 0%, #a00000 100%)',
+      shadow: '0 10px 20px rgba(226, 29, 18, 0.2)',
       link: 'https://wa.me/919600005679?text=Hi%20Cookscape%2C%20I%20am%20interested%20in%20designing%20my%20dream%20home%21%20Can%20we%20discuss%20the%20process%3F'
     }
   ];

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { TESTIMONIALS } from '../data/siteData';
 
@@ -67,7 +67,7 @@ const TiltCard = ({ testimonial, onClick }) => {
       viewport={{ once: true }}
     >
       <div className="video-thumb-container">
-        <img src={`https://img.youtube.com/vi/${testimonial.id}/maxresdefault.jpg`} alt={testimonial.name} onError={(e) => e.target.src = `https://img.youtube.com/vi/${testimonial.id}/0.jpg`} />
+        <img src={`https://img.youtube.com/vi/${testimonial.id}/maxresdefault.jpg`} alt={testimonial.name} loading="lazy" onError={(e) => e.target.src = `https://img.youtube.com/vi/${testimonial.id}/0.jpg`} />
         <div className="card-hover-overlay">
           <div className="play-btn-circle" style={{ margin: 'auto' }}>
             <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M8 5v14l11-7z" /></svg>
@@ -97,7 +97,9 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="testimonials-section">
-      <div className="container-wide">
+      <div className="testimonials-focal-wrapper">
+        
+        {/* Balanced 9-Column Grid */}
         <div className="testimonials-cloud-v3">
           {testimonialColumns.map((colItems, colIdx) => (
             <div key={colIdx} className={`testimonial-column col-${colIdx + 1}`}>
@@ -108,23 +110,24 @@ const Testimonials = () => {
                   onClick={() => setSelectedVideo(item.id)} 
                 />
               ))}
-              
-              {/* Center Column Header Integration */}
-              {colIdx === 4 && (
-                <motion.div 
-                  className="section-header-v3"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                >
-                  <span className="testimonial-tag-pill">Testimonials</span>
-                  <h1 className="section-title">Trusted by <span>Families</span></h1>
-                  <p className="section-subtitle">Real home stories from various cities.</p>
-                </motion.div>
-              )}
             </div>
           ))}
         </div>
+
+        {/* ABSOLUTE OVERLAY FOR PERFECT CENTERING */}
+        <div className="section-header-overlay">
+          <motion.div 
+            className="section-header-v3"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <span className="testimonial-tag-pill">Testimonials</span>
+            <h1 className="section-title">Trusted by Families</h1>
+            <p className="section-subtitle">Real home stories from various cities.</p>
+          </motion.div>
+        </div>
+
       </div>
 
       <VideoModal isOpen={!!selectedVideo} videoId={selectedVideo} onClose={() => setSelectedVideo(null)} />

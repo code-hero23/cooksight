@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import BlogIndex from './pages/BlogIndex';
 import BlogPost from './pages/BlogPost';
 import Careers from './pages/Careers';
+import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar';
 import FloatingActions from './FloatingActions';
 
@@ -39,6 +40,7 @@ function AppContent() {
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/portfolio" element={<Gallery />} />
       </Routes>
 
       <FloatingActions />
