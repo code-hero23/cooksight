@@ -209,7 +209,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 100px 0;
+    padding: 180px 0 100px;
     text-align: center;
     background: var(--studio-white);
 }
@@ -249,19 +249,27 @@ body {
 
 .hero-foreground {
     width: 100%;
-    max-width: 1200px;
-    z-index: 10;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 80px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-end; /* Align to the bottom of the content area */
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    min-height: 70vh;
 }
 
 /* Center Visualization */
 .hero-center {
-    width: 50vw;
-    margin-bottom: 60px;
-    opacity: 0.95;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
     z-index: 5;
+    opacity: 0.95;
+    pointer-events: none;
 }
 
 .hero-center::after {
@@ -285,19 +293,20 @@ body {
 
 /* Hero Left Text */
 .hero-left {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 500px;
     z-index: 20;
+    text-align: left;
+    margin-bottom: 0; /* Aligns with card bottom padding */
 }
 
 .hero-title {
     font-family: var(--font-serif);
-    font-size: clamp(4rem, 10vw, 8rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
-    line-height: 0.9;
-    margin-bottom: 30px;
+    line-height: 1.1;
+    margin-bottom: 20px;
     color: var(--text-dark);
-    letter-spacing: -0.05em;
+    letter-spacing: -0.02em;
 }
 
 .hero-title span {
@@ -307,20 +316,18 @@ body {
 }
 
 .hero-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-light);
-    margin-bottom: 50px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 400px;
+    line-height: 1.6;
 }
 
 /* Buttons */
 .hero-actions {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .btn-blue-pill {
@@ -371,13 +378,12 @@ body {
 
 /* Cards Row Aligned to Bottom Right like Bluebird */
 .hero-cards-row {
-    position: absolute;
-    bottom: 30px;
-    right: 60px; /* Moved inwards to 60px */
+    position: relative; /* Remove absolute to flow with flexbox */
     display: flex;
     align-items: flex-end;
-    gap: 15px;
+    gap: 20px;
     z-index: 30;
+    margin-bottom: 0;
 }
 
 /* Active Users Pill */
