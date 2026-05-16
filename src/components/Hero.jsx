@@ -1,0 +1,76 @@
+import React from 'react';
+
+const Hero = ({ scrollY }) => {
+  return (
+    <section id="home" className="hero">
+      {/* Static Background Layer */}
+      <div className="hero-layers">
+        <div className="midground-text">
+          {"COOKSCAPE".split("").map((char, index) => (
+            <span 
+              key={index} 
+              style={{ 
+                display: "inline-block", 
+                transform: `translateY(${scrollY * (0.1 + index * 0.04)}px)`,
+                transition: "transform 0.1s ease-out" 
+              }}
+            >
+              {char}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Foreground Content */}
+      <div className="hero-foreground container">
+        <div className="hero-left">
+          <h1 className="hero-title">Design & Living<br /><span>That Feel Alive</span></h1>
+          <p className="hero-description">We design interiors that feel like home.</p>
+          <div className="hero-actions">
+            <a href="#" className="btn-blue-pill">Our Projects <span className="arrow-circle">→</span></a>
+            <a href="#" className="btn-outline-pill">Contact us</a>
+          </div>
+        </div>
+
+        <div className="hero-center">
+          <div 
+            className="main-image-wrapper"
+            style={{ 
+              transform: `translateY(${scrollY * 0.15}px) rotateX(${scrollY * 0.02}deg)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
+            <img 
+              src="/hero-image.png" 
+              alt="Architectural Visualization" 
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+
+        <div className="hero-cards-row">
+          {/* Active Users Pill */}
+          <div className="active-users-pill reveal">
+            <div className="user-avatars">
+              <img src="https://i.pravatar.cc/150?u=1" alt="U1" />
+              <img src="https://i.pravatar.cc/150?u=2" alt="U2" />
+              <img src="https://i.pravatar.cc/150?u=3" alt="U3" />
+            </div>
+            <span>Happy Clients <strong>+500</strong></span>
+          </div>
+
+          <div className="card glass-card">
+            <div className="card-body">
+              <span className="card-tag gold-tag">PROMOTION</span>
+              <h2 className="card-heading promo-big">75% <span className="small-off">Off</span></h2>
+              <p className="card-paragraph">On Design Charges for a limited time.</p>
+            </div>
+            <span className="card-link-icon">↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

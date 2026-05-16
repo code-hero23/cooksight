@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const JOBS = [
   {
@@ -26,6 +27,11 @@ const JOBS = [
 const Careers = () => {
   return (
     <main className="careers-page">
+      <Helmet>
+        <title>Careers | Join the Cookscape Design Team</title>
+        <meta name="description" content="Explore career opportunities at Cookscape. Join Chennai's leading interior design firm and help us build the future of luxury living." />
+        <link rel="canonical" href="https://cookscape.in/careers" />
+      </Helmet>
       <div className="container">
         {/* Careers Hero */}
         <section className="careers-hero">

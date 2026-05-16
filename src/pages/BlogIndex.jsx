@@ -1,11 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { blogs } from '../data/blogsData';
 
 const BlogIndex = () => {
   return (
     <div className="blog-index-page">
+      <Helmet>
+        <title>Blog | Cookscape Interior Design Insights</title>
+        <meta name="description" content="Stay updated with the latest interior design trends, home renovation tips, and modular kitchen ideas from Cookscape experts." />
+        <link rel="canonical" href="https://cookscape.in/blog" />
+      </Helmet>
       <header className="blog-header">
         <div className="container">
           <motion.h1 
