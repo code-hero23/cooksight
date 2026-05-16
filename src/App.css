@@ -1544,39 +1544,103 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.section-header-v3 .section-title {
+    font-size: clamp(2rem, 9vw, 4.5rem);
+    font-weight: 900;
+    white-space: nowrap;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
 @media (max-width: 1200px) {
     .testimonials-cloud-v3 {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
         min-height: auto;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .testimonial-column {
-        flex: 1 1 200px;
+        flex: 1 1 240px;
         max-width: 280px;
         margin-top: 0 !important;
         align-items: center;
     }
     .testimonial-card-v2 {
+        width: 100%;
         height: auto;
         aspect-ratio: 4/5;
     }
     .testimonial-card-v2::before {
-        display: none; /* Hide tethers on mobile for cleaner look */
+        display: none;
     }
 }
 
 @media (max-width: 768px) {
+    .testimonials-section {
+        padding: 80px 0;
+        overflow: hidden;
+    }
+
     .testimonials-cloud-v3 {
+        display: flex;
+        flex-direction: row; /* Horizontal flow */
+        overflow-x: auto; /* Enable swipe */
+        scroll-snap-type: x mandatory; /* Native snap feel */
         gap: 20px;
+        padding: 40px 20px 80px;
+        scrollbar-width: none; /* Hide scrollbar */
+        -ms-overflow-style: none;
+        align-items: center;
+        justify-content: flex-start;
     }
+
+    .testimonials-cloud-v3::-webkit-scrollbar {
+        display: none;
+    }
+
     .testimonial-column {
-        flex: 1 1 150px;
-        max-width: 180px;
+        display: contents; /* Let cards flow in flex row */
     }
+
+    .testimonial-card-v2 {
+        flex: 0 0 280px; /* Fixed width for swipe-ability */
+        height: 380px;
+        scroll-snap-align: center;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+
+    /* Rhythmic Wave Pattern for Swipe */
+    .testimonial-card-v2:nth-child(3n+1) { transform: translateY(-30px); }
+    .testimonial-card-v2:nth-child(3n+2) { transform: translateY(30px); }
+    .testimonial-card-v2:nth-child(3n+3) { transform: translateY(0); }
+
+    /* Edge Masks for Infinite Feel */
+    .testimonials-cloud-v3::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, var(--bg-light) 0%, transparent 15%, transparent 85%, var(--bg-light) 100%);
+        pointer-events: none;
+        z-index: 5;
+    }
+
     .section-header-v3 {
-        padding-top: 40px;
+        padding: 0 25px;
+        text-align: left;
+    }
+
+    .section-header-v3 .section-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .section-header-v3 .section-subtitle {
+        font-size: 1rem;
+        opacity: 0.7;
     }
 }
 
