@@ -266,7 +266,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 45vw;
+    width: 35vw;
     z-index: 5;
     opacity: 0.95;
     pointer-events: none;
@@ -792,7 +792,7 @@ body {
     .hero-center { 
         position: static; 
         transform: none; 
-        width: 60vw; 
+        width: 50vw; 
         margin: 0 auto 50px; 
         order: 1; /* Move image to TOP */
     }
@@ -827,7 +827,7 @@ body {
     .container { padding: 0 20px; }
     .nav-bar { padding: 10px 0; align-items: center; }
     .hero-title { font-size: 3.5rem; }
-    .hero-center { width: 80vw; }
+    .hero-center { width: 65vw; }
     .active-users-pill { 
         position: static; 
         margin: 0 auto 20px; 
@@ -1521,7 +1521,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 20px;
     width: 100%;
     align-items: flex-start;
-    padding: 60px 0;
+    padding: 120px 0;
 }
 
 .testimonial-column {
@@ -1612,6 +1612,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1200px) {
     .testimonials-cloud-v3 {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
@@ -1634,48 +1635,59 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.mobile-only {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .testimonials-section {
         padding: 80px 0;
         overflow: hidden;
     }
 
-    .testimonials-cloud-v3 {
+    .testimonials-focal-wrapper {
         display: flex;
-        flex-direction: row; /* Horizontal flow */
-        overflow-x: auto; /* Enable swipe */
-        scroll-snap-type: x mandatory; /* Native snap feel */
+        flex-direction: column;
+    }
+
+    .section-header-overlay {
+        position: relative;
+        order: -1;
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-testimonials-track {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         gap: 20px;
+        overflow: hidden; /* Scroll is handled by layout animation shifts */
         padding: 40px 20px 80px;
-        scrollbar-width: none; /* Hide scrollbar */
-        -ms-overflow-style: none;
         align-items: center;
-        justify-content: flex-start;
-    }
-
-    .testimonials-cloud-v3::-webkit-scrollbar {
-        display: none;
-    }
-
-    .testimonial-column {
-        display: contents; /* Let cards flow in flex row */
+        width: 100%;
+        position: relative;
     }
 
     .testimonial-card-v2 {
-        flex: 0 0 280px; /* Fixed width for swipe-ability */
-        height: 380px;
-        scroll-snap-align: center;
+        flex: 0 0 280px;
+        aspect-ratio: 16/9;
+        height: auto;
         border-radius: 20px;
         box-shadow: 0 20px 50px rgba(212, 0, 0, 0.05);
     }
 
-    /* Rhythmic Wave Pattern for Swipe */
-    .testimonial-card-v2:nth-child(3n+1) { transform: translateY(-30px); }
-    .testimonial-card-v2:nth-child(3n+2) { transform: translateY(30px); }
+    /* Rhythmic Wave Pattern */
+    .testimonial-card-v2:nth-child(3n+1) { transform: translateY(-10px); }
+    .testimonial-card-v2:nth-child(3n+2) { transform: translateY(10px); }
     .testimonial-card-v2:nth-child(3n+3) { transform: translateY(0); }
 
     /* Edge Masks for Infinite Feel */
-    .testimonials-cloud-v3::after {
+    .mobile-testimonials-track::after {
         content: '';
         position: absolute;
         inset: 0;
@@ -1770,6 +1782,47 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mobile-nav-buttons {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-buttons {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.nav-btn-v3 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgba(212, 0, 0, 0.1);
+    background: white;
+    color: var(--secondary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(212, 0, 0, 0.05);
+}
+
+.nav-btn-v3:hover {
+    background: var(--secondary-red);
+    color: white;
+    border-color: var(--secondary-red);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 0, 0, 0.15);
 }
 
 .video-thumb-container img {
@@ -2234,7 +2287,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .blob-container-v3 {
-        max-width: 320px;
+        max-width: 95%; /* Increased from 320px for better visibility */
         margin-top: 40px;
     }
 }

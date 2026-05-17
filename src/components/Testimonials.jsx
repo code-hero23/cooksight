@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { TESTIMONIALS } from '../data/siteData';
 
@@ -81,6 +81,34 @@ const TiltCard = ({ testimonial, onClick }) => {
 
 const Testimonials = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  
+  // Mobile Infinite Loop State
+  const [mobileItems, setMobileItems] = useState(TESTIMONIALS);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const scrollLeft = () => {
+    setMobileItems(prev => {
+      const next = [...prev];
+      next.unshift(next.pop());
+      return next;
+    });
+  };
+
+  const scrollRight = () => {
+    setMobileItems(prev => {
+      const next = [...prev];
+      next.push(next.shift());
+      return next;
+    });
+  };
+
+  useEffect(() => {
+    if (isHovered) return;
+    const interval = setInterval(() => {
+      scrollRight();
+    }, 3500); // Auto-scroll every 3.5s
+    return () => clearInterval(interval);
+  }, [isHovered]);
 
   // Define the 9-column pattern: 2, 2, 1, 1, 1(center), 1, 1, 2, 2
   const columnPattern = [2, 2, 1, 1, 1, 1, 1, 2, 2];
@@ -99,8 +127,8 @@ const Testimonials = () => {
     <section id="testimonials" className="testimonials-section">
       <div className="testimonials-focal-wrapper">
         
-        {/* Balanced 9-Column Grid */}
-        <div className="testimonials-cloud-v3">
+        {/* Balanced 9-Column Grid (Desktop & Tablet) */}
+        <div className="testimonials-cloud-v3 desktop-only">
           {testimonialColumns.map((colItems, colIdx) => (
             <div key={colIdx} className={`testimonial-column col-${colIdx + 1}`}>
               {colItems.map((item) => (
@@ -114,6 +142,40 @@ const Testimonials = () => {
           ))}
         </div>
 
+        {/* Infinite Carousel (Mobile Only) */}
+        <div 
+          className="mobile-testimonials-track mobile-only"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onTouchStart={() => setIsHovered(true)}
+          onTouchEnd={() => setIsHovered(false)}
+        >
+          <AnimatePresence mode="popLayout">
+            {mobileItems.map((item) => (
+              <motion.div
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                key={item.id}
+                className="testimonial-card-v2"
+                onClick={() => setSelectedVideo(item.id)}
+              >
+                <div className="video-thumb-container">
+                  <img src={`https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`} alt={item.name} loading="lazy" onError={(e) => e.target.src = `https://img.youtube.com/vi/${item.id}/0.jpg`} />
+                  <div className="card-hover-overlay">
+                    <div className="play-btn-circle" style={{ margin: 'auto' }}>
+                      <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M8 5v14l11-7z" /></svg>
+                    </div>
+                    <p className="hover-name">{item.name}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+
         {/* ABSOLUTE OVERLAY FOR PERFECT CENTERING */}
         <div className="section-header-overlay">
           <motion.div 
@@ -122,7 +184,17 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="testimonial-tag-pill">Testimonials</span>
+            <div className="header-top-row">
+              <span className="testimonial-tag-pill">Testimonials</span>
+              <div className="mobile-nav-buttons">
+                <button onClick={scrollLeft} className="nav-btn-v3" aria-label="Scroll left">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button onClick={scrollRight} className="nav-btn-v3" aria-label="Scroll right">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 5l7 7-7 7" /></svg>
+                </button>
+              </div>
+            </div>
             <h1 className="section-title">Trusted by Families</h1>
             <p className="section-subtitle">Real home stories from various cities.</p>
           </motion.div>
