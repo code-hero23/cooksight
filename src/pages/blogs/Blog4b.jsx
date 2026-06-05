@@ -25,10 +25,10 @@ return (
 <div className="container-fluid services-breadcrumb">
                     <h3 className="cookscape-services-title">Cookscape Blog</h3>
 </div>
-<div className='container-fluid contact'>
+<div className='container-fluid aboutus'>
                   <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>What is Alumix Variant?</h1>
-                      <img src={blog32} alt="cookscape-alumix-variant" class="img-fluid pt-3"/>
+                      <img src={blog32} alt="cookscape-alumix-variant" className="blog-img-size"/>
                       <p className='blog-page-para'>Designed for contemporary look with enhanced durability. Alumix’s metal alloy framework makes it strong and rust resistant. Also, its toughened glass inlay panel gives it a bright appeal. The Internal Carcass of this variant is made of Boiling Water Proof (BWP- Highest Grade) Plywood. Hence this variant comes with a Replacement Guarantee. The Aluminum alloy framework is made up of Aluminum, Chromium and Stainless steel. Zumila Glass is used on the Exterior Shutters so that they last longer.</p>
                       <h2 className='blog-page-title-2 pt-3'>Key Points & Features:</h2>
                       <p className='blog-page-para'>• Highlight – Metal Variant with Inlay artwork, suitable for stylish new designs & renovations.</p>

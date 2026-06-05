@@ -1,5 +1,5 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { TESTIMONIALS } from '../data/siteData';
 
 const VideoModal = ({ isOpen, videoId, onClose }) => {
@@ -39,40 +39,55 @@ const VideoModal = ({ isOpen, videoId, onClose }) => {
   );
 };
 
-const TiltCard = ({ testimonial, onClick }) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const mouseXSpring = useSpring(x);
-  const mouseYSpring = useSpring(y);
-  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["12deg", "-12deg"]);
-  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-12deg", "12deg"]);
-
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const xPct = (e.clientX - rect.left) / rect.width - 0.5;
-    const yPct = (e.clientY - rect.top) / rect.height - 0.5;
-    x.set(xPct);
-    y.set(yPct);
-  };
+const TestimonialCard = ({ testimonial, onClick }) => {
+  // Use a unified, clean layout for all cards to keep UI consistent
+  const cardTypeClass = "card-type-unified";
 
   return (
     <motion.div 
-      className="testimonial-card-v2"
-      style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={() => { x.set(0); y.set(0); }}
+      className={`testimonial-card-premium ${cardTypeClass}`}
       onClick={onClick}
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
     >
       <div className="video-thumb-container">
-        <img src={`https://img.youtube.com/vi/${testimonial.id}/maxresdefault.jpg`} alt={testimonial.name} loading="lazy" onError={(e) => e.target.src = `https://img.youtube.com/vi/${testimonial.id}/0.jpg`} />
-        <div className="card-hover-overlay">
-          <div className="play-btn-circle" style={{ margin: 'auto' }}>
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M8 5v14l11-7z" /></svg>
+        <img 
+          src={`https://img.youtube.com/vi/${testimonial.id}/hqdefault.jpg`} 
+          alt={testimonial.name} 
+          loading="lazy" 
+          onError={(e) => e.target.src = `https://img.youtube.com/vi/${testimonial.id}/0.jpg`} 
+        />
+        <div className="play-btn-overlay">
+          <div className="play-btn-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M8 5v14l11-7z" />
+            </svg>
           </div>
-          <p className="hover-name">{testimonial.name}</p>
+          <span className="watch-story-tag">Watch Story</span>
+        </div>
+      </div>
+      <div className="testimonial-content-block">
+        <div className="testimonial-header-meta">
+          <div className="stars-row">
+            {[...Array(5)].map((_, i) => (
+              <svg key={i} className="star-icon" viewBox="0 0 24 24" width="16" height="16" fill="#FFB800">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+            ))}
+          </div>
+          <span className="verified-badge">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+            Verified Client
+          </span>
+        </div>
+        <p className="testimonial-quote">"{testimonial.desc}"</p>
+        <div className="testimonial-footer-meta">
+          <h3 className="client-name">{testimonial.name}</h3>
         </div>
       </div>
     </motion.div>
@@ -81,123 +96,57 @@ const TiltCard = ({ testimonial, onClick }) => {
 
 const Testimonials = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
-  
-  // Mobile Infinite Loop State
-  const [mobileItems, setMobileItems] = useState(TESTIMONIALS);
-  const [isHovered, setIsHovered] = useState(false);
+  const [displayCount, setDisplayCount] = useState(6);
 
-  const scrollLeft = () => {
-    setMobileItems(prev => {
-      const next = [...prev];
-      next.unshift(next.pop());
-      return next;
-    });
+  const showMore = () => {
+    setDisplayCount(prev => Math.min(prev + 6, TESTIMONIALS.length));
   };
 
-  const scrollRight = () => {
-    setMobileItems(prev => {
-      const next = [...prev];
-      next.push(next.shift());
-      return next;
-    });
+  const showLess = () => {
+    setDisplayCount(6);
   };
-
-  useEffect(() => {
-    if (isHovered) return;
-    const interval = setInterval(() => {
-      scrollRight();
-    }, 3500); // Auto-scroll every 3.5s
-    return () => clearInterval(interval);
-  }, [isHovered]);
-
-  // Define the 9-column pattern: 2, 2, 1, 1, 1(center), 1, 1, 2, 2
-  const columnPattern = [2, 2, 1, 1, 1, 1, 1, 2, 2];
-  
-  // Group testimonials into columns
-  const testimonialColumns = useMemo(() => {
-    let currentIdx = 0;
-    return columnPattern.map(count => {
-      const slice = TESTIMONIALS.slice(currentIdx, currentIdx + count);
-      currentIdx += count;
-      return slice;
-    });
-  }, []);
 
   return (
     <section id="testimonials" className="testimonials-section">
       <div className="testimonials-focal-wrapper">
         
-        {/* Balanced 9-Column Grid (Desktop & Tablet) */}
-        <div className="testimonials-cloud-v3 desktop-only">
-          {testimonialColumns.map((colItems, colIdx) => (
-            <div key={colIdx} className={`testimonial-column col-${colIdx + 1}`}>
-              {colItems.map((item) => (
-                <TiltCard 
-                  key={item.id} 
-                  testimonial={item} 
-                  onClick={() => setSelectedVideo(item.id)} 
-                />
-              ))}
-            </div>
+        {/* Section Header (Cleanly separated at the top) */}
+        <div className="testimonials-section-header">
+          <span className="testimonial-tag-pill">Testimonials</span>
+          <h2 className="section-title">Loved by Families, <span className="highlight-text">Trusted by Homeowners</span></h2>
+          <p className="section-subtitle">Real stories of home transformation from our happy clients across cities.</p>
+        </div>
+
+        {/* Responsive, Balanced Grid Layout */}
+        <div className="testimonials-grid-premium">
+          {TESTIMONIALS.slice(0, displayCount).map((item) => (
+            <TestimonialCard 
+              key={item.id} 
+              testimonial={item} 
+              onClick={() => setSelectedVideo(item.id)} 
+            />
           ))}
         </div>
 
-        {/* Infinite Carousel (Mobile Only) */}
-        <div 
-          className="mobile-testimonials-track mobile-only"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          onTouchStart={() => setIsHovered(true)}
-          onTouchEnd={() => setIsHovered(false)}
-        >
-          <AnimatePresence mode="popLayout">
-            {mobileItems.map((item) => (
-              <motion.div
-                layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                key={item.id}
-                className="testimonial-card-v2"
-                onClick={() => setSelectedVideo(item.id)}
-              >
-                <div className="video-thumb-container">
-                  <img src={`https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`} alt={item.name} loading="lazy" onError={(e) => e.target.src = `https://img.youtube.com/vi/${item.id}/0.jpg`} />
-                  <div className="card-hover-overlay">
-                    <div className="play-btn-circle" style={{ margin: 'auto' }}>
-                      <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M8 5v14l11-7z" /></svg>
-                    </div>
-                    <p className="hover-name">{item.name}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </div>
-
-        {/* ABSOLUTE OVERLAY FOR PERFECT CENTERING */}
-        <div className="section-header-overlay">
-          <motion.div 
-            className="section-header-v3"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="header-top-row">
-              <span className="testimonial-tag-pill">Testimonials</span>
-              <div className="mobile-nav-buttons">
-                <button onClick={scrollLeft} className="nav-btn-v3" aria-label="Scroll left">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 19l-7-7 7-7" /></svg>
-                </button>
-                <button onClick={scrollRight} className="nav-btn-v3" aria-label="Scroll right">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 5l7 7-7 7" /></svg>
-                </button>
-              </div>
-            </div>
-            <h1 className="section-title">Trusted by Families</h1>
-            <p className="section-subtitle">Real home stories from various cities.</p>
-          </motion.div>
+        {/* Dynamic Pagination Controls */}
+        <div className="testimonials-actions">
+          {displayCount < TESTIMONIALS.length ? (
+            <button className="btn-primary-v3 show-more-btn" onClick={showMore}>
+              Load More Stories
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          ) : (
+            TESTIMONIALS.length > 6 && (
+              <button className="btn-secondary-v3 show-less-btn" onClick={showLess}>
+                Show Less
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 15l7-7 7 7" />
+                </svg>
+              </button>
+            )
+          )}
         </div>
 
       </div>

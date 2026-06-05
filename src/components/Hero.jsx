@@ -27,8 +27,8 @@ const Hero = ({ scrollY }) => {
           <h1 className="hero-title">Design & Living<br /><span>That Feel Alive</span></h1>
           <p className="hero-description">We design interiors that feel like home.</p>
           <div className="hero-actions">
-            <a href="#" className="btn-blue-pill">Our Projects <span className="arrow-circle">→</span></a>
-            <a href="#" className="btn-outline-pill">Contact us</a>
+            <a href="/portfolio" className="btn-blue-pill">Our Projects <span className="arrow-circle">→</span></a>
+            <a href="/#contact" className="btn-outline-pill">Contact us</a>
           </div>
         </div>
 

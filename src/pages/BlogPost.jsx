@@ -11,14 +11,16 @@ const BlogPost = () => {
 
   if (!blog) {
     return (
-      <div className="container" style={{ padding: '200px 0', textAlign: 'center' }}>
-        <h2>Blog post not found</h2>
-        <Link to="/blog" className="btn-blue-pill">Back to Blogs</Link>
+      <div className="blogpost-not-found">
+        <div className="container">
+          <h2>Blog post not found</h2>
+          <p>The story you're looking for doesn't exist or has been moved.</p>
+          <Link to="/blog" className="blogpost-back-btn">← Back to Blog</Link>
+        </div>
       </div>
     );
   }
 
-  // Dynamically get the blog component from the glob map
   const componentPath = `./blogs/${blog.file}`;
   const ContentComponent = blogsModules[componentPath] 
     ? lazy(blogsModules[componentPath])
@@ -29,26 +31,36 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="blog-post-page">
-      <Suspense fallback={<div className="loader-container">Loading story...</div>}>
+    <div className="blogpost-premium-page">
+      <Suspense fallback={
+        <div className="blogpost-loader">
+          <div className="loader-pulse"></div>
+          <p>Loading story...</p>
+        </div>
+      }>
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
           <ContentComponent />
         </motion.div>
       </Suspense>
 
-      <div className="container blog-footer-nav">
-        <hr />
-        <div className="footer-actions">
-          <Link to="/blog" className="btn-outline-pill">← Back to All Stories</Link>
-          <div className="share-actions">
-             <span>Share:</span>
-             <a href="#">Fb</a>
-             <a href="#">In</a>
-             <a href="#">Tw</a>
+      <div className="container blogpost-footer-section">
+        <div className="blogpost-divider"></div>
+        <div className="blogpost-footer-actions">
+          <Link to="/blog" className="blogpost-back-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to All Stories
+          </Link>
+          <div className="blogpost-share-group">
+            <span>Share:</span>
+            <a href="#" className="share-btn" aria-label="Facebook">Fb</a>
+            <a href="#" className="share-btn" aria-label="LinkedIn">In</a>
+            <a href="#" className="share-btn" aria-label="Twitter">Tw</a>
           </div>
         </div>
       </div>

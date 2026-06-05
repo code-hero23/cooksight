@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
+import './PremiumUI.css';
 import Home from './pages/Home';
 import BlogIndex from './pages/BlogIndex';
 import BlogPost from './pages/BlogPost';
 import Careers from './pages/Careers';
 import Gallery from './pages/Gallery';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 import Navbar from './components/Navbar';
 import FloatingActions from './FloatingActions';
+import FestiveOfferModal from './components/FestiveOfferModal';
 
 function AppContent() {
   const [scrollY, setScrollY] = useState(0);
@@ -23,9 +27,19 @@ function AppContent() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top on route change
+  // Scroll to top or specific anchor on route change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
 
   return (
@@ -41,8 +55,11 @@ function AppContent() {
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/portfolio" element={<Gallery />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
 
+      <FestiveOfferModal />
       <FloatingActions />
     </div>
   );

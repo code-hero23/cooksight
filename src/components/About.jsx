@@ -18,7 +18,7 @@ const About = () => {
             <p className="about-desc-v3">
               We are the <strong>Largest Home Interiors Store in Chennai with 25 years of Expertise</strong>. 
               With our interior design services, you will be able to create a unique and creative space 
-              for your home or office. No other company offers a guarantee.
+              for your home. No other company offers a guarantee.
             </p>
             <p className="about-cta-text-v3">Let us help you design a luxurious home.</p>
             

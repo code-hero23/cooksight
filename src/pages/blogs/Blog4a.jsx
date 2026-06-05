@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                   <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>What is Traditional Variant Why It Is Economic?</h1>
-                      <img src={blog31} alt="cookscape-traditional-variant" class="img-fluid pt-3"/>
+                      <img src={blog31} alt="cookscape-traditional-variant" className="blog-img-size"/>
                       <p className='blog-page-para'>A variant that is the epitome of minimalist design. Its lacquered finish with a bright and shiny appearance not only gives the kitchen a luxurious look but also makes it an aesthetically pleasing choice. Made from sheet plywood of the highest grade Boiling Water Proof Plywood (BWP) it is of premium quality. It shutters have a Painted Plywood finish. It has a total of 3 coats of Spray Paint on its external shutters and it is also a handle-less variant that comes with a plethora of color options. Any Pastel color from Asian Paints can be applied to this variant. Most suited for wardrobes, TV. Units or Kitchens with more of Western Style cooking like Grilling or Microwaving and less of pots and pans cooking. As spicy cooking can emit more of strong fumes which can over a period of time harm the Kitchen Cabinets.</p>
                       <h2 className='blog-page-title-2 pt-3'>Key Points & Features:</h2>
                       <p className='blog-page-para'>• Highlight – Contemporary Finish and Stellar Looks</p>
