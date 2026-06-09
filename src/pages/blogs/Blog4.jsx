@@ -48,143 +48,143 @@ return (
         <div className="blog-row p-3">
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog31} alt="" class="blog-img"/>
+                <img src={blog31} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'>What is Traditional Variant Why It Is Economic?</h1>
                 <p className='blog-para'> A variant that is the epitome of minimalist design. Its lacquered finish with a bright and shiny appearance not only gives the kitchen a luxurious look but also makes it an aesthetically pleasing choice. </p>
-                <Link to="/what-is-traditional-variant-why-it-is-economic" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-traditional-variant-why-it-is-economic" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={aranu} alt="" class="ar-img"/>
+                <img src={aranu} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Anulekha</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog32} alt="" class="blog-img"/>
+                <img src={blog32} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> What is Alumix Variant?</h1>
                 <p className='blog-para'> Designed for contemporary look with enhanced durability. Alumix’s metal alloy framework makes it strong and rust resistant. Also, its toughened glass inlay panel gives it a bright appeal.  </p>
-                <Link to="/what-is-alumix-variant" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-alumix-variant" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={ardinesh} alt="" class="ar-img"/>
+                <img src={ardinesh} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Dinesh</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog33} alt="" class="blog-img"/>
+                <img src={blog33} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> 
                 What is 4X Tuff Gloss Variant?</h1>
                 <p className='blog-para'> This has it all from beauty to stain resistant finish to a timeless appeal. Its thick and glossy laminate never fades and makes the kitchen look new for ages. 4x tuff gloss as the name suggest has an exterior shutter with 4 layers of glossy finish.</p>
-                <Link to="/what-is-4x-tuff-gloss-variant" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-4x-tuff-gloss-variant" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={ararvindh} alt="" class="ar-img"/>
+                <img src={ararvindh} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Arvindh</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog34} alt="" class="blog-img"/>
+                <img src={blog34} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> What is Premium Vanity?</h1>
                 <p className='blog-para'> This a rich looking yet simplistic kind of variant. It has a lacquered finish with a varnish coating that gives a reflective appearance to the kitchen, it is most suited for kitchens where more of grilling and microwaving activates are performed.</p>
-                <Link to="/what-is-premium-vanity" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-premium-vanity" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={aranu} alt="" class="ar-img"/>
+                <img src={aranu} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Anulekha</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog35} alt="" class="blog-img"/>
+                <img src={blog35} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> What is Vanity Variant?</h1>
                 <p className='blog-para'> A variant that is the epitome of minimalist design. Its lacquered finish with a bright and shiny appearance not only gives the kitchen a luxurious look but also makes it an aesthetically pleasing choice.</p>
-                <Link to="/what-is-vanity-variant" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-vanity-variant" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arranchana} alt="" class="ar-img"/>
+                <img src={arranchana} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Ranchana</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog36} alt="" class="blog-img"/>
+                <img src={blog36} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> Why to choose Surabhi Variant?</h1>
                 <p className='blog-para'> This variant has a Classy appeal with a practical & functional design. Its matte style finish makes it a good choice for heavy duty kitchens and maintenance free home interiors. It comes with a 10 Years Replacement Guarantee.</p>
-                <Link to="/why-to-choose-surabhi-variant" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/why-to-choose-surabhi-variant" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arvarshini} alt="" class="ar-img"/>
+                <img src={arvarshini} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Varshini</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog37} alt="" class="blog-img"/>
+                <img src={blog37} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> What is Capricoast Glossy Variant?</h1>
                 <p className='blog-para'> A special variety of laminate. Its shiny texture creates bright & lovely spaces. Although it has luxurious appeal it is most suitable for modest budgets. It comes with 10 year repair warranty and thus Kitchen Carcass of this material is made up of Boiling Water Proof Material with the necessary treatments applied on it. However all the other woodwork carcass contains Boiling Water Resistant variant and same holds true for the Shutter Material as well. </p>
-                <Link to="/what-is-capricoast-glossy-variant" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-capricoast-glossy-variant" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arsaranya} alt="" class="ar-img"/>
+                <img src={arsaranya} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Saraniya   </h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog38} alt="" class="blog-img"/>
+                <img src={blog38} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> What is Capricoast Matte Variant?</h1>
                 <p className='blog-para'> This rugged & robust finish of this variant with PVC edge banding guarantee durability. It is suitable for rough & tough use. This variant is elegant & apt for small budgets. It is a Matt finish variant hence it is durable and requires very little maintenance.
                 </p>
-                <Link to="/what-is-capricoast-matte-variant" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/what-is-capricoast-matte-variant" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={aranu} alt="" class="ar-img"/>
+                <img src={aranu} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Anulekha</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog39} alt="" class="blog-img"/>
+                <img src={blog39} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> Tips to choose Accessories & Appliances for your Modular Kitchen</h1>
                 <p className='blog-para'> The first thing that comes to our mind with respect to kitchen accessories or appliances is the utility they provide to our modular kitchen. Therefore it is first advised to understand the utilities they provide along with its aesthetics.</p>
-                <Link to="/tips-to-choose-accessories-appliances-for-your-modular-kitchen" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/tips-to-choose-accessories-appliances-for-your-modular-kitchen" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arneshma} alt="" class="ar-img"/>
+                <img src={arneshma} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Neshma</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog40} alt="" class="blog-img"/>
+                <img src={blog40} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> How To Decor Your Home In Phases – With Time Intervals</h1>
                 <p className='blog-para'> Moving into a new home can be one of life’s greatest joys, but it can also be a time of uncertainty, especially when it comes to decorating. How do you make your space look its best while reflecting your personal sense of style? Do it well and you’ll end up with a comfortable, happy home.</p>
-                <Link to="/how-to-decor-your-home-in-phases-with-time-intervals" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/how-to-decor-your-home-in-phases-with-time-intervals" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arragul} alt="" class="ar-img"/>
+                <img src={arragul} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Raghul</h1>
                 </div>
             </div>
@@ -195,53 +195,53 @@ return (
     <div className='row'>
         <div className='col-md-2'></div>
         <div className='col-md-8'>
-        <div class="pagination  align-items-center">
-  <Link to="/blog" > <a>&laquo;</a></Link>
-  <Link to="/blog" >  <a>1</a></Link>
-  <Link to="/blog-2" > <a>2</a></Link>
-  <Link to="/blog-3" > <a>3</a></Link>
-  <Link to="/blog-4" > <a class="active">4</a></Link>
-  <Link to="/blog-5" > <a>5</a></Link>
-  <Link to="/blog-6" > <a>6</a></Link>
-  <Link to="/blog-7" > <a>7</a></Link>
-  <Link to="/blog-8" > <a>8</a></Link>
-  <Link to="/blog-8" ><a>&raquo;</a></Link>
+        <div className="pagination  align-items-center">
+  <Link to="/blog" ><span>&laquo;</span></Link>
+  <Link to="/blog" ><span>1</span></Link>
+  <Link to="/blog-2" ><span>2</span></Link>
+  <Link to="/blog-3" ><span>3</span></Link>
+  <Link to="/blog-4" ><span className="active">4</span></Link>
+  <Link to="/blog-5" ><span>5</span></Link>
+  <Link to="/blog-6" ><span>6</span></Link>
+  <Link to="/blog-7" ><span>7</span></Link>
+  <Link to="/blog-8" ><span>8</span></Link>
+  <Link to="/blog-8" ><span>&raquo;</span></Link>
     </div>
         </div>
         <div className='col-md-2'></div>
     </div>
 </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

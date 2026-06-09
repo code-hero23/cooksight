@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
                   <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>How is interior wall thickness determined?</h1>
-                      <img src={blog24} alt="cookscape-wall-thickness-ideas" class="img-fluid pt-3"/>
+                      <img src={blog24} alt="cookscape-wall-thickness-ideas" className="img-fluid pt-3"/>
                       <h2 className='blog-page-title-2 pt-3'>INTERIOR WALL THICKNESS IS DETERMINED BASED ON VARIOUS ASPECTS:</h2>
                       <p className='blog-page-para'>The Function of The Wall (Partition or Load Bearing)</p>
                       <p className='blog-page-para'>What an Acoustic Proof You Need It to Be</p>
@@ -48,7 +48,7 @@ return (
                       <p className='blog-page-para'>For all the building types the load bearing structure made of brick masonry walls in the internal area can be max 300mm to minimum 200mm according to the width and height of the room.</p>
                       <h2 className='blog-page-title-2 pt-3'>How to calculate the Interior wall thickness.</h2>
                       <p className='blog-page-para'>The Interior wall thickness can be determined by measuring the door jamb thickness in the entry areas and by calculating the difference between interior room dimensions (ID) and exterior dimensions (OD). </p>
-                      <img src={blog24a} alt="cookscape-wall-thickness-ideas" class="img-fluid pt-3"/>
+                      <img src={blog24a} alt="cookscape-wall-thickness-ideas" className="img-fluid pt-3"/>
                       <h2 className='blog-page-title-2 pt-3'>Interior wall thickness suggested for different material in the industry</h2>
                       <p className='blog-page-para'>Rammed Earth – 375 to 450 mm</p>
                       <p className='blog-page-para'>Adobe Brick – 300 mm</p>
@@ -56,40 +56,40 @@ return (
                       <p className='blog-page-para'>Reinforced Concrete – 125 mm</p>
                       <p className='blog-page-para'>Stone – 250 mm</p>
                       <p className='blog-page-para'>Block (Sand-Cement, Stabilised Earth, cement) – 100 to 150 mm</p>
-                      <img src={arsabari} alt="Architect-Sabarinathan" class="blog-page-author-img pt-3"/>
+                      <img src={arsabari} alt="Architect-Sabarinathan" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'> Architect Sabarinathan</h1>
                   </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

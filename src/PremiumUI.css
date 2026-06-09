@@ -736,6 +736,11 @@ body {
     padding-top: var(--nav-height);
 }
 
+/* Hide legacy red breadcrumb banner inside premium blog post view */
+.blogpost-premium-page .services-breadcrumb {
+    display: none;
+}
+
 .blogpost-loader {
     min-height: 70vh;
     display: flex;

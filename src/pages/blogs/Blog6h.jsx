@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>WHAT IS MAGICAL WONDER WILL HAPPEN AFTER COMPLETING YOUR HOME INTERIOR DESIGN?</h1>
-                      <img src={blog58} alt="cookscape-interior-design-ideas" class="img-fluid pt-3"/>
+                      <img src={blog58} alt="cookscape-interior-design-ideas" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>Every person is awestruck when something Magical happens and our Interior design makes you feel that magic.</p>
                       <p className='blog-page-para'>The magic that interior design could bring in your life is real. However if you know the tips and tricks to create beautiful space you would realise anyone can create magic.</p>
                       <h2 className='blog-page-title-2 pt-3'>1. MAGIC WITH CEILING</h2>
@@ -53,40 +53,40 @@ return (
                       <p className='blog-page-para'>One can easily customize any storage units as per their requirements. It can also act as an insulator, noise absorber, etc., if required its surface can be treated, carved, cut into desired shapes and designs.</p>
                       <p className='blog-page-para'>The best thing now is to go with woodwork that you can match with your house elements like doors, windows, cot, Tables, stairs, etc. The laminates of the woodwork can also closely resemble natural wood like oak wood, cedarwood, Teak wood and many more.</p>
                       <p className='blog-page-para'>When you finally know the tricks of the interior, you can live in a place where you dreamt of, with the magic around you, which will awaken your senses.</p>
-                      <img src={armuthulakshmi} alt="Architect-Muthulakshmi" class="blog-page-author-img pt-3"/>
+                      <img src={armuthulakshmi} alt="Architect-Muthulakshmi" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'>Architect Muthulakshmi</h1>
                     </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
         <div className='container p-5'>
           <h1 className='blog-page-title pt-3'>Understanding the Theme and Concept in Interior Design</h1>
-          <img src={blog1} alt="cookscape-theme-concept" class="blog-img-size pt-3"/>
+          <img src={blog1} alt="cookscape-theme-concept" className="blog-img-size pt-3"/>
           <p className='blog-page-para'>Hi everybody, welcome to our Cookscape family community. In this unique circumstance, you can get data about various kinds of ideas, styles, themes, design components, administrations, and numerous things connected with interior design. We trust that our experience will assist you with grasping this immense innovative field. </p>
           <h2 className='blog-page-title-2'>What is the Idea and Theme of Interior design?</h2>
           <p className='blog-page-para'>Interior design is a profoundly proficient and enormous field where every creator follows an alternate example in a specific entryway. Each architect has their own process of designing from origination to the last completing of the venture. The earliest reference point of the design or thoughts begins with the idea and topic which are the primary components of each design. </p>
@@ -54,7 +54,7 @@ return (
           <p className='blog-page-para'>  • Business clients about the brand, their clients, and their objectives for the site.</p>
           <p className='blog-page-para'>  • Business clients about the brand, their clients, and their objectives for the site.</p>
           <p className='blog-page-para'>  • With respect to the private clients, think about asking their desires, prerequisite, need and vision for the site</p>
-          <img src={blog1a} alt="cookscape-theme-concept" class="blog-img-size pt-3"/>
+          <img src={blog1a} alt="cookscape-theme-concept" className="blog-img-size pt-3"/>
           <p className='blog-page-para'> <span className='blog-page-sub-title'>Research Process:</span> It characterizes the noticeable setting of configuration, design, arranging, structure, colors, and so on, they are centered more around the method for passing on the message.</p>
           <p className='blog-page-para'> <span className='blog-page-sub-title'>Applying the Concept:</span> Apply the style or theme, as once you have a completed floor design currently apply the design idea to this design. This is the point at which you currently select furnishings, adornments, colors, floor coverings, window medicines, and wall wraps up fitting the style</p>
           <h2 className='blog-page-title-2'>What is the theme of interior design?</h2>
@@ -65,40 +65,40 @@ return (
           <p className='blog-page-para'>  Every one contrasts from the other. Every one of the two are persuasive for any design cycle since they give significance and story to the design.</p>
           <p className='blog-page-para'>  The contrast between these two ideas and topic is the idea is an underlying system and answer for any design. Indeed, the theme is an overlay to the idea that assists with teeing every one of the different spaces together. It is a sub-part of the idea which is more thorough than the idea. The idea will show you how to make philosophy and the theme will give you the intention to design and style.</p>
           <p className='blog-page-para'>   Our vision is to make the client’s imaginarily and a blessing from heaven idea with our design potential.</p>
-          <img src={armanikandan} alt="Architect-Manikandan" class="blog-page-author-img pt-3"/>
+          <img src={armanikandan} alt="Architect-Manikandan" className="blog-page-author-img pt-3"/>
           <h1 className='blog-title pt-3'> Architect Manikandan</h1>
         </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

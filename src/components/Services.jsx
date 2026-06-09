@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, useMotionValue, useAnimationFrame, useTransform, useSpring } from 'framer-motion';
 import { SERVICES } from '../data/siteData';
+
+const MotionLink = motion(Link);
 
 const ServiceMarqueeItem = ({ service, trackX }) => {
   const ref = useRef(null);
@@ -19,16 +22,16 @@ const ServiceMarqueeItem = ({ service, trackX }) => {
   const smoothScale = useSpring(centerScale, { stiffness: 300, damping: 40 });
 
   return (
-    <motion.a 
+    <MotionLink 
       ref={ref}
-      href="#contact"
+      to={`/portfolio?category=${encodeURIComponent(service.title.toLowerCase())}`}
       className="service-card-premium marquee-item-service"
       style={{ scale: smoothScale }}
       whileHover={{ scale: 1.15, zIndex: 100 }}
       transition={{ type: "spring", stiffness: 400, damping: 25 }}
     >
       <div className="service-card-image-wrap">
-        <img src={service.img} alt={service.title} loading="lazy" onError={(e) => e.target.src = '/hero-image.png'} />
+        <img src={service.img} alt={service.title} loading="lazy" onError={(e) => { e.target.onerror = null; e.target.src = '/hero-image.png'; }} />
         <div className="service-card-overlay-premium"></div>
       </div>
       <div className="service-card-content-premium">
@@ -36,7 +39,7 @@ const ServiceMarqueeItem = ({ service, trackX }) => {
         <div className="service-divider-premium"></div>
         <span className="service-explore-premium">Discover Designs</span>
       </div>
-    </motion.a>
+    </MotionLink>
   );
 };
 

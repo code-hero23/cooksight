@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
                   <div className='container p-5'>
                     <h1 className='blog-page-title pt-3'>Smarter Interior design for the Smart Homes!</h1>
-                    <img src={blog7} alt="cookscape-smart-home-design" class="blog-img-size pt-3"/>
+                    <img src={blog7} alt="cookscape-smart-home-design" className="blog-img-size pt-3"/>
                     <p className='blog-page-para'>Remote systems administration, remote charging… We wouldn’t fault you if you had any desire to hop directly into the universe of remote innovation. It’s cool, it’s tomfoolery and it basically seems like less of underlying speculation. </p>
                     <p className='blog-page-para'>The essential objective of home computerization is to make your life simpler, less difficult, and more agreeable. Regardless of what the framework or gadget is, that objective should drive each choice you make concerning what to purchase and introduce.</p>
                     <p className='blog-page-para'>Equipping your home with the most recent savvy home innovation is critical speculation of time, cash, and energy. Anything in your home that utilizes power can be placed   on   the</p>
@@ -41,7 +41,7 @@ return (
                     <p className='blog-page-para'> • Automatic shutdown of appliance when not in use;</p>
                     <p className='blog-page-para'> • Automatic setting and maintenance of right temperature for each room.</p>
                     <p className='blog-page-para'> • Automatically adjust/regulate light intensity based on room luminosity.</p>
-                    <img src={blog7a} alt="cookscape-smart-home-design" class="blog-img-size pt-3"/>
+                    <img src={blog7a} alt="cookscape-smart-home-design" className="blog-img-size pt-3"/>
                     <h2 className='blog-page-title-2'>Why Smart Home: Security</h2>
                     <h2 className='blog-page-title-2'>Security Camera:</h2>
                     <p className='blog-page-para'> • Controlled motion sensitive cameras which allows for observation of activities</p>
@@ -55,40 +55,40 @@ return (
                     <p className='blog-page-para'> • Automated alarm system directly connected to hospitals in cases of incidents like a fall or collapse</p>
                     <p className='blog-page-para'> • Alert systems for the notification on prescribed mediations</p>
                     <p className='blog-page-para'> Brilliant Home innovation cleverly gives you extreme command over your home via mechanizing the lighting framework, darkening, blinds, electrical apparatuses, sound, and security frameworks. Brilliant homes associate every one of the gadgets and apparatuses in your home so they can speak with one another and with you.</p>
-                    <img src={arvarshini} alt="Architect-Varshini" class="blog-page-author-img pt-3"/>
+                    <img src={arvarshini} alt="Architect-Varshini" className="blog-page-author-img pt-3"/>
                     <h1 className='blog-title pt-3'> Architect Varshini</h1>
                   </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

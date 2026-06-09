@@ -7,8 +7,17 @@ const Terms = () => {
     <main className="terms-premium-page" style={{ backgroundColor: 'var(--premium-cream, #faf9f6)' }}>
       <Helmet>
         <title>Terms & Conditions | Cookscape Interiors</title>
-        <meta name="description" content="Read Cookscape's Terms and Conditions for accessing and using our website, design services, and features." />
-        <link rel="canonical" href="https://cookscape.com/terms" />
+        <meta name="description" content="Read Cookscape's Terms and Conditions governing access to and use of our website, interior design services, and all related features." />
+        <link rel="canonical" href="https://cookscape.in/terms" />
+        <meta name="robots" content="noindex, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Cookscape Interiors" />
+        <meta property="og:url" content="https://cookscape.in/terms" />
+        <meta property="og:title" content="Terms & Conditions | Cookscape Interiors" />
+        <meta property="og:description" content="Read Cookscape's Terms and Conditions for accessing and using our website, design services, and features." />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
 
       {/* Hero Header */}

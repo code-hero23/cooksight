@@ -49,128 +49,128 @@ return (
         <div className="blog-row p-3">
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog61} alt="" class="blog-img"/>
+                <img src={blog61} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'>HOW TO RENOVATE YOUR KITCHEN WITHIN YOUR BUDGET?</h1>
                 <p className='blog-para'> It is a process of repairing or changing something to a new form or giving a new shape and design. We generally do renovation for better aesthetics and convenience. Also kitchen renovation will give a boost to house resale value.... </p>
-                <Link to="/how-to-renovate-your-kitchen-within-your-budget" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/how-to-renovate-your-kitchen-within-your-budget" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arviswa} alt="" class="ar-img"/>
+                <img src={arviswa} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Viswanath</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog62} alt="" class="blog-img"/>
+                <img src={blog62} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> ENHANCE HOME WITH EFFICIENT INTERIORS!</h1>
                 <p className='blog-para'> Home is the space where we live, school, work and dine. The smallest changes can save the spaces and make it refreshing, reviving and relaxing. Upgrade and reclaim your home from a crunched cluttered space to a sweet spot to unwind your long day..... </p>
-                <Link to="/enhance-home-with-efficient-interiors" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/enhance-home-with-efficient-interiors" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={argomathi} alt="" class="ar-img"/>
+                <img src={argomathi} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect A.Gomathi Varshini</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog63} alt="" class="blog-img"/>
+                <img src={blog63} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> STEP BY STEP GUIDE TO PERFECT YOUR INTERIOR DESIGN!</h1>
                 <p className='blog-para'> It is challenging for a layman to be able to express their design ideas and transform them into a tangible reality. Hence, here is a simplified roadmap that could be helpful not only for laymen but also for amateur professionals in the field of interior design to create a methodical way of organizing home interior spaces..... </p>
-                <Link to="/step-by-step-guide-to-perfect-your-interior-design" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/step-by-step-guide-to-perfect-your-interior-design" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={ardarshna} alt="" class="ar-img"/>
+                <img src={ardarshna} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Darshna R</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog64} alt="" class="blog-img"/>
+                <img src={blog64} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> IDEAS TO INCORPORATE A VEG & FRUIT GARDEN IN YOUR HOME INTERIOR DESIGN</h1>
                 <p className='blog-para'> GARDEN is the space for display and cultivation. The main purpose of cultivating the fruits and vegetables in our home is to have Organic foods, as well; It is fun to have these activities in our indoor.....  </p>
-                <Link to="/ideas-to-incorporate-a-veg-fruit-garden-in-your-home-interior-design"><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/ideas-to-incorporate-a-veg-fruit-garden-in-your-home-interior-design"><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arvasuki} alt="" class="ar-img"/>
+                <img src={arvasuki} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'>Architect Vasuki Kathirvel</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog65} alt="" class="blog-img"/>
+                <img src={blog65} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> CRAZY AND INNOVATIVE IDEAS FOR KITCHEN STORAGE ORGANIZATION</h1>
                 <p className='blog-para'> There are a lot of ideas available in the market for the pot and pan lid holder but the main idea is to keep one of the most fought pan lids to keep organized since most of the time these are not required for cooking... </p>
-                <Link to="/crazy-and-innovative-ideas-for-kitchen-storage-organization" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/crazy-and-innovative-ideas-for-kitchen-storage-organization" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arneshma} alt="" class="ar-img"/>
+                <img src={arneshma} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Neshma</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog66} alt="" class="blog-img"/>
+                <img src={blog66} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'>IDEAS TO SEPARATE LIVING AND DINING</h1>
                 <p className='blog-para'> Living and dining are two spaces mostly combined together but serve different functions. Separating them both without an enclosed barrier has the challenge to who designs it. Here comes the Home Interior architect plays a vital role with immense design ideas....</p>
-                <Link to="/ideas-to-separate-living-and-dining" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/ideas-to-separate-living-and-dining" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arbagya} alt="" class="ar-img"/>
+                <img src={arbagya} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Bagya Lakshmi  </h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog67} alt="" class="blog-img"/>
+                <img src={blog67} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> ESSENTIAL INTERIOR DESIGN TIPS FOR RENTAL PROPERTY</h1>
                 <p className='blog-para'> Most people do the interior for the house where they are going to live, but it is a generosity that a human should have for another human, where when we are allowing another person to stay in our house under a rental agreement we create a space for....
                 </p>
-                <Link to="/essential-interior-design-tips-for-rental-property" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/essential-interior-design-tips-for-rental-property" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arsaranya} alt="" class="ar-img"/>
+                <img src={arsaranya} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Saraniya</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog68} alt="" class="blog-img"/>
+                <img src={blog68} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> HOW TO CHOOSE COMFORTABLE FURNITURE FOR “FAMILY ROOM”</h1>
                 <p className='blog-para'>The Larger Sofa occupies a wider space and don’t feel to be alone and also in guest visits they occupy a huge while gathering. We can place additional chairs also and they also provide pleasing visual contact.....</p>
-                <Link to="/how-to-choose-comfortable-furniture-for-family-room" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/how-to-choose-comfortable-furniture-for-family-room" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={arapsana} alt="" class="ar-img"/>
+                <img src={arapsana} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'> Architect Apsana</h1>
                 </div>
             </div>
             <div className="row p-3">
                 <div className="col-md-3">
-                <img src={blog69} alt="" class="blog-img"/>
+                <img src={blog69} alt="" className="blog-img"/>
                 </div>
                 <div className="col-md-6">
                 <h1 className='blog-title pt-3'> TECHNOLOGY AND THE FUTURE OF INTERIOR DESIGN INDUSTRY</h1>
                 <p className='blog-para'> Technology is playing a huge role in updating homes. New residential solutions known as “Smarthomes” are becoming a very common phenomena especially in metro cities around the world and in India. Today the best interior design companies in Chennai are…....</p>
-                <Link to="/technology-and-the-future-of-interior-design-industry" ><button class="aboutus-button-2">View more</button></Link>
+                <Link to="/technology-and-the-future-of-interior-design-industry" ><button className="aboutus-button-2">View more</button></Link>
                 </div>
                 <div className="col-md-3">
-                <img src={aranu} alt="" class="ar-img"/>
+                <img src={aranu} alt="" className="ar-img"/>
                 <h1 className='blog-title pt-3'>Architect Anulekha</h1>
                 </div>
             </div>
@@ -180,17 +180,17 @@ return (
     <div className='row'>
         <div className='col-md-2'></div>
         <div className='col-md-8'>
-        <div class="pagination  align-items-center">
-  <Link to="/blog" > <a>&laquo;</a></Link>
-  <Link to="/blog" >  <a>1</a></Link>
-  <Link to="/blog-2" > <a>2</a></Link>
-  <Link to="/blog-3" > <a>3</a></Link>
-  <Link to="/blog-4" > <a>4</a></Link>
-  <Link to="/blog-5" > <a>5</a></Link>
-  <Link to="/blog-6" > <a>6</a></Link>
-  <Link to="/blog-7" > <a class="active">7</a></Link>
-  <Link to="/blog-8" > <a>8</a></Link>
-  <Link to="/blog-8" ><a>&raquo;</a></Link>
+        <div className="pagination  align-items-center">
+  <Link to="/blog" ><span>&laquo;</span></Link>
+  <Link to="/blog" ><span>1</span></Link>
+  <Link to="/blog-2" ><span>2</span></Link>
+  <Link to="/blog-3" ><span>3</span></Link>
+  <Link to="/blog-4" ><span>4</span></Link>
+  <Link to="/blog-5" ><span>5</span></Link>
+  <Link to="/blog-6" ><span>6</span></Link>
+  <Link to="/blog-7" ><span className="active">7</span></Link>
+  <Link to="/blog-8" ><span>8</span></Link>
+  <Link to="/blog-8" ><span>&raquo;</span></Link>
     </div>
         </div>
         <div className='col-md-2'></div>
@@ -199,36 +199,36 @@ return (
 
 </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

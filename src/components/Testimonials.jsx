@@ -58,7 +58,7 @@ const TestimonialCard = ({ testimonial, onClick }) => {
           src={`https://img.youtube.com/vi/${testimonial.id}/hqdefault.jpg`} 
           alt={testimonial.name} 
           loading="lazy" 
-          onError={(e) => e.target.src = `https://img.youtube.com/vi/${testimonial.id}/0.jpg`} 
+          onError={(e) => { e.target.onerror = null; e.target.src = `https://img.youtube.com/vi/${testimonial.id}/0.jpg`; }}
         />
         <div className="play-btn-overlay">
           <div className="play-btn-circle">

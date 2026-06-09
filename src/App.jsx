@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
@@ -15,17 +15,7 @@ import FloatingActions from './FloatingActions';
 import FestiveOfferModal from './components/FestiveOfferModal';
 
 function AppContent() {
-  const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Scroll to top or specific anchor on route change
   useEffect(() => {
@@ -38,6 +28,10 @@ function AppContent() {
         }
       }, 150);
     } else {
+      const queryParams = new URLSearchParams(location.search);
+      if (location.pathname === '/portfolio' && queryParams.has('category')) {
+        return;
+      }
       window.scrollTo(0, 0);
     }
   }, [location]);
@@ -50,7 +44,7 @@ function AppContent() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home scrollY={scrollY} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/careers" element={<Careers />} />
@@ -68,7 +62,7 @@ function AppContent() {
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <AppContent />
       </Router>
     </HelmetProvider>

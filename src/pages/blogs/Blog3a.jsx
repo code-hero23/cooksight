@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
                   <div className='container p-5'>
                     <h1 className='blog-page-title pt-3'>How can I design the interior of my home with a low budget?</h1>
-                    <img src={blog21} alt="cookscape-interior-design-low-budget-ideas" class="img-fluid pt-3"/>
+                    <img src={blog21} alt="cookscape-interior-design-low-budget-ideas" className="img-fluid pt-3"/>
                     <p className='blog-page-para'>If you are a person who spends the entire week at work, it will take many weekends to successfully execute an interior design project. This is a very long term commitment if the scope of work is large. If your work is not up to par and you have to redo an aspect of your interiors it adds to the cost.</p>
                     <p className='blog-page-para'>The biggest fear that most people have about using the services of an interior designer is the apprehension that they are very expensive. Contrary to the common perception of interior designers as people who spend lavish amounts of money on big brands, interior decorators are cost-conscious The truth is that interior designers are very accessible to clients with different budgets.  Designers have different  ways  of  charging fees.  Still, </p>
                     <p className='blog-page-para'>that’s not always the case, If you suppose that contrivers generally take a lump sum quantum for a design. The interior design price list is reckoned in different ways. </p>
@@ -42,7 +42,7 @@ return (
                     <h2 className='blog-page-title-2 pt-3'>Flat Fee or Lump Sum</h2>
                     <p className='blog-page-para'>Some designers are known to charge a fixed lump sum as their design fee. Most do not necessarily give a break up of what the fee entails. This may not be the best choice unless the designer is someone you trust and has high standing.</p>
                     <p className='blog-page-para'>Getting the financial aspect right is an important factor in how to find an interior decorator that’s right for you. It is important for the interior designer and the client to specify and agree upon the type of fee calculation, the available budget, the estimated cost of the project, the fee amount charged and the payment schedule before starting the project to avoid conflicts later on. When the scope and budget of a project are agreed upon and specified in the beginning the decorator works within the budget. </p>
-                    <img src={blog21a} alt="cookscape-interior-design-low-budget-ideas" class="img-fluid pt-3"/>
+                    <img src={blog21a} alt="cookscape-interior-design-low-budget-ideas" className="img-fluid pt-3"/>
                     <h2 className='blog-page-title-2 pt-3'>What is the theme in interior design?</h2>
                     <p className='blog-page-para'>1. An interior designer can actually save you money.</p>
                     <p className='blog-page-para'>2. At the planning stage, they can prevent you from making costly mistakes. They know which products work and which ones do not live up to their advertising in the long term.</p>
@@ -50,40 +50,40 @@ return (
                     <p className='blog-page-para'>4. Interior designers are experienced project managers and they can better plan the work to be done to save you both time and money. Since they have multiple projects running parallel, they would use the services of a workman for only as much time as is required.</p>
                     <p className='blog-page-para'>5. The coordination of material supply and different workmen by one person keeps the project on track within the specified time. When you organise your interior work yourself you are at the mercy of the whims and fancies of the local workman and suppliers who might delay the process.</p>
                     <p className='blog-page-para'>If you are on a tight schedule such as finishing the interiors before a wedding or some other such event, choosing to hire interior designer is the best way to go. The time that you save is definitely worth the investment.</p>
-                    <img src={arangaiyar} alt="Architect-Angaiyarkanni" class="blog-page-author-img pt-3"/>
+                    <img src={arangaiyar} alt="Architect-Angaiyarkanni" className="blog-page-author-img pt-3"/>
                     <h1 className='blog-title pt-3'> Architect Angaiyarkanni</h1>
                   </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

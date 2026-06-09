@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>12 Reasons to love Chalk Paint!</h1>
-                        <img src={blog8} alt="cookscape-chalk-paint" class="blog-img-size pt-3"/>
+                        <img src={blog8} alt="cookscape-chalk-paint" className="blog-img-size pt-3"/>
                         <p className='blog-page-para'>Have you ever wondered about chalk paint?? No no not the chalkboard paint… It’s something beyond that! Here you’ll find 12 reasons love chalk paint which is a hit with designers and DIYers so you can make an informed choice for your Home Interiors! </p>
                         <p className='blog-page-para'>So, what is chalk paint technically?</p>
                         <p className='blog-page-para'>Let’s keep it short and simple, chalk paint is a versatile color treatment used by designers on furniture, fabric, and more, easily recognizable by its soft, ultra-matte finish.</p>
@@ -68,40 +68,40 @@ return (
                         <p className='blog-page-para'> Furnitures looking old, No worries. Give them a Chic look with chalk paint and voila, furniture with fresh look is ready!</p>
                         <p className='blog-page-para'> Hassle-free renovation to home interiors.</p>
                         <p className='blog-page-para'> So, do you need any more reasons to wait, come let’s do some chalk painting together…</p>
-                        <img src={argopal} alt="Architect-Madhana-Gopal" class="blog-page-author-img pt-3"/>
+                        <img src={argopal} alt="Architect-Madhana-Gopal" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'> Architect Madhana Gopal</h1>
                       </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

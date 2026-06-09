@@ -28,7 +28,7 @@ const Blog8f = () => {
                 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>WHY HIRE AN INTERIOR DESIGNER INSTEAD OF A CARPENTER???</h1>
-                        <img src={blog76} alt="" class="img-fluid pt-3"/>
+                        <img src={blog76} alt="" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>Basically, if you are a person who owns a new house and thinks about furnishing your interiors, the first question would be about the possibilities of doing the same. Or probably you are going to set out a searching spree, looking for, “List of interior designers in Chennai” or maybe when looking at the cost perspective, you might start with, “Interior design cost”.</p>
                         <p className='blog-page-para'>It’s not really acceptable to start looking for factory – finished woodwork for interiors and fancy displays of models when we have always preferred carpenters who come home and work for days and months together cutting and pasting the materials. But to be honest, you have started looking for the comparison because the finish of the factory- processed woodwork seemed better and you wanted an idea about the pros and cons of the same. So, this article would give you a clarity on why should you hire an interior designer when we have been conventionally working with carpenters who have specifically been carrying out wood works for our homes over the years and generations.</p>
                         <h2 className='blog-page-title-2 pt-3'>PRE-PLANNED DESIGN IDEAS</h2>
@@ -40,40 +40,40 @@ const Blog8f = () => {
                         <p className='blog-page-para'>The first thought about fancy designs and classy interiors would also make us think about the amount we have to shed from our pockets. Quality and cost are two completely different entities, but unfortunately, in this materialistic world, they both are proportional. As we reduce the amount we could spend on the woodwork, we might have to compromise on the quality. Interiors aren’t a small affair; it’s something that we are going to invest for a life-time for our dream home. So it’s okay to do the interiors in parts. We don’t have try fitting the whole of the full home requirements in the small budget that we have parted. It’s okay to spend the money on quality and reduced volume. The latter could be added again when we are ready to pool in an extra budget for the next time. If you have a low budget framed down, it’s better to do the home interiors in 2 parts with a decent budget, than spending the first part on low quality and increased volume while using the second part to repair the same.</p>
                         <p className='blog-page-para'>I really hope that the above has given you an idea about the carpenter-made vs factory- made interior works. It’s okay to always compare, have a look at the finishes that have been carried out by both the carpenters and the professional designer firms. Because, if you are going to settle for either of the two just with the passing comments that people give around you, you are never going to be satisfied. Because anything that’s done without careful assessment will never give you the satisfaction even if it turns out well!! Walk down to a couple of interior showrooms, have a look for yourself about the finishes and also make sure to visit the previously finished sites that have lasted over years. Carefully assess the pros and cons and take a decision. And again to make the point clear, quality always comes with a price. So compare the cost while never forgetting to compare the material specifications and the factory processes. So it’s up to you now, taking the right choice.</p>
                         <p className='blog-page-para'>Happy designing!!</p>
-                        <img src={arsowmi} alt="Architect-Sowmithra" class="blog-page-author-img pt-3"/>
+                        <img src={arsowmi} alt="Architect-Sowmithra" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'> Architect Sowmithra</h1>
                       </div>
                     </div> 
-  <div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

@@ -28,7 +28,7 @@ const Blog8c = () => {
       <div className='container-fluid aboutus'>
         <div className='container p-5'>
             <h1 className='blog-page-title pt-3'>INTERIOR DESIGN IDEAS FOR YOUR DREAM HOME</h1>
-            <img src={blog73} alt="cookscape-design-ideas" class="img-fluid pt-3"/>
+            <img src={blog73} alt="cookscape-design-ideas" className="img-fluid pt-3"/>
             <p className='blog-page-para'>Some people have an inherent knack of designing but decorating and designing Interior spaces could be overwhelming for many. This is especially true for non-designers. However, even professional designers can benefit from guidance or inspiration in the form of tips to design better. So here are some interesting ideas made for all those who are interested in designing their dream house with elegance and panache.</p>
             <h2 className='blog-page-title-2 pt-3'>Creating dynamic spaces with color patterns</h2>
             <p className='blog-page-para'>The first and foremost thing to do before remodeling any type of Home Interiors is to choose the right type of color palette. Many famous designers come up with a color combination for the entire house and then detail them out in different areas and rooms. Also, it is important to keep in mind that each combination for every interior space must be well thought out. For instance in bedrooms, bright colors might not be good idea, as such vivid schemes might be a visual stimulant that can disturb sleep, rather combining neutral colors with natural light from openings can have a soothing and relaxing effect and therefore a good choice for private resting spaces like bedrooms.</p>
@@ -41,40 +41,40 @@ const Blog8c = () => {
             <h2 className='blog-page-title-2 pt-3'>High Furniture; Higher Ceilings</h2>
             <p className='blog-page-para'>It is wise to use tall furniture in low-height area as it will enhance the appearance of the room by making the ceiling appear taller than it actually is whereas stout furnishing will make the ceiling appear closer to the ground.</p>
             <p className='blog-page-para'>These are some of the tips and tricks which anyone can use to make their interior living space not only look more appealing but also to create dynamic spaces with unique character that blend together to form an interesting home.</p>
-            <img src={aranu} alt="Architect-Meena" class="blog-page-author-img pt-3"/>
+            <img src={aranu} alt="Architect-Meena" className="blog-page-author-img pt-3"/>
             <h1 className='blog-title pt-3'> Architect Anulekha</h1>
           </div>
       </div> 
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

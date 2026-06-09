@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>FACTORS TO CONSIDER WHILE CHOOSING AN INTERIOR DESIGN COMPANY</h1>
-                        <img src={blog60} alt="cookscape-design-ideas" class="img-fluid pt-3"/>
+                        <img src={blog60} alt="cookscape-design-ideas" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>Designing a Home is one of the greatest accomplishments of a common man.</p>
                         <p className='blog-page-para'>But, while it is the case, making decisions with regards to the interiors of your home is probably even more important and a tiresome process. The reason being that the outcome rarely matches your expectations.</p>
                         <p className='blog-page-para'> Getting a well-designed interior is never difficult if you really hire the right person to do the job. Hence to get a good outcome you would need to carefully choose a good designer who understands your taste and style and will be able to give you your sweet home of your dreams.</p>
@@ -47,40 +47,40 @@ return (
                         <p className='blog-page-para'> Reasonable time frame is what u should look for and plan accordingly, the point you need to analyses is “Short Timeline may give no good outcome, and Long Time line may have reason”!!! </p>
                         <h2 className='blog-page-title-2 pt-3'>7. Aesthetics</h2>
                         <p className='blog-page-para'>Usually, the aesthetic factors gives you appealing outcome, which is also important to have lovely surrounding you live in, but at the same time concentrate more on the decors which gives both beauty and life for Interior design you do using material.</p>
-                        <img src={arfathima} alt="Architect-Moizu-Fathima" class="blog-page-author-img pt-3"/>
+                        <img src={arfathima} alt="Architect-Moizu-Fathima" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'>Architect Moizu Fathima</h1>
                       </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

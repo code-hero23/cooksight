@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>10 Questions, You must ask your Interior Designer</h1>
-                        <img src={blog44} alt="cookscape-interior-design-ideas" class="img-fluid pt-3"/>
+                        <img src={blog44} alt="cookscape-interior-design-ideas" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>Humans started to settle in small groups’ right from the stone ages but our evolution started when new began to invent and adopt.</p>
                         <p className='blog-page-para'>When basic requirements are met then a house can become a functional dwelling however, to make it a home one would have to exclusively customize it according to their needs. </p>
                         <p className='blog-page-para'>Only when a dwelling complies with a person’s taste, cultural affinity and standard of living can it truly become his or her residence. So an Interior Designer is a one who can develop a House into your Home.</p>
@@ -90,40 +90,40 @@ return (
                         <p className='blog-page-para'>For example, electrical points and needs, Plumbing line extraction and Ventilation suggestion, lighting design, Recommending Contractors for Civil works if needed, Reliable Source for Appliances, Helping in the fixing of appliances.</p>
                         <p className='blog-page-para'>Your vendor should not hesitate to provide these things to you.</p>
                         <p className='blog-page-para'>Hoping that you choose the right path.</p>
-                        <img src={arvignesh} alt="Architect-Vignesh-Kumar" class="blog-page-author-img pt-3"/>
+                        <img src={arvignesh} alt="Architect-Vignesh-Kumar" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'>Architect Vignesh Kumar</h1>
                       </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

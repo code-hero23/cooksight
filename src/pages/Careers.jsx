@@ -107,9 +107,87 @@ const Careers = () => {
   return (
     <main className="careers-premium-page">
       <Helmet>
-        <title>Careers | Join the Cookscape Design Team</title>
-        <meta name="description" content="Explore career opportunities at Cookscape. Join Chennai's leading interior design firm and help us build the future of luxury living." />
+        <title>Interior Design Careers in Chennai | Join Cookscape Team</title>
+        <meta name="description" content="Build your career in interior design with Cookscape — Chennai's leading interior firm. Open positions for Interior Designers, CRE & Application Engineers. Apply now." />
+        <meta name="keywords" content="interior design jobs chennai, interior designer vacancy, cookscape careers, design jobs chennai" />
         <link rel="canonical" href="https://cookscape.in/careers" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Cookscape Interiors" />
+        <meta property="og:url" content="https://cookscape.in/careers" />
+        <meta property="og:title" content="Interior Design Careers in Chennai | Join Cookscape Team" />
+        <meta property="og:description" content="Build your career in interior design with Cookscape — Chennai's leading interior firm. Open positions for Interior Designers, CRE & Application Engineers." />
+        <meta property="og:image" content="https://cookscape.in/og-image.jpg" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Interior Design Careers in Chennai | Join Cookscape Team" />
+        <meta name="twitter:description" content="Build your career in interior design with Cookscape — Chennai's leading interior firm. Open positions for Interior Designers, CRE & Application Engineers." />
+        <meta name="twitter:image" content="https://cookscape.in/og-image.jpg" />
+
+        {/* JobPosting JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Open Positions at Cookscape Interiors",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "JobPosting",
+                  "title": "Interior Designer",
+                  "description": "Create stunning, functional spaces that inspire. We're looking for creative visionaries with a passion for luxury home interiors.",
+                  "datePosted": "2026-01-08",
+                  "employmentType": "FULL_TIME",
+                  "hiringOrganization": {
+                    "@type": "Organization",
+                    "name": "Cookscape Interiors",
+                    "sameAs": "https://cookscape.in",
+                    "logo": "https://cookscape.in/logo.jpeg"
+                  },
+                  "jobLocation": {
+                    "@type": "Place",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Chennai",
+                      "addressRegion": "Tamil Nadu",
+                      "addressCountry": "IN"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "JobPosting",
+                  "title": "Customer Relationship Executive",
+                  "description": "Be the bridge between our brand and cherished clients — ensuring a seamless, delightful journey from consultation to handover.",
+                  "datePosted": "2026-01-08",
+                  "employmentType": "FULL_TIME",
+                  "hiringOrganization": {
+                    "@type": "Organization",
+                    "name": "Cookscape Interiors",
+                    "sameAs": "https://cookscape.in"
+                  },
+                  "jobLocation": {
+                    "@type": "Place",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressLocality": "Chennai",
+                      "addressRegion": "Tamil Nadu",
+                      "addressCountry": "IN"
+                    }
+                  }
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Premium Hero */}

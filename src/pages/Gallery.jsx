@@ -12,8 +12,43 @@ const Gallery = () => {
   return (
     <div className="gallery-page-v2">
       <Helmet>
-        <title>Portfolio Collection | Cookscape - Luxury Interior Gallery</title>
-        <meta name="description" content="Explore Cookscape's architectural portfolio. A curated collection of luxury kitchens, bedrooms, and living spaces designed for modern families." />
+        <title>Interior Design Portfolio | Cookscape — Modular Kitchens, Bedrooms & Living Spaces</title>
+        <meta name="description" content="Browse Cookscape's interior design portfolio — a curated gallery of luxury modular kitchens, wardrobes, living rooms, and full home transformations across Chennai." />
+        <meta name="keywords" content="interior design portfolio Chennai, modular kitchen gallery, wardrobe designs, bedroom interior photos, cookscape portfolio" />
+        <link rel="canonical" href="https://cookscape.in/portfolio" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Cookscape Interiors" />
+        <meta property="og:url" content="https://cookscape.in/portfolio" />
+        <meta property="og:title" content="Interior Design Portfolio | Cookscape" />
+        <meta property="og:description" content="A curated gallery of luxury kitchens, bedrooms, and living spaces designed for modern families across Chennai." />
+        <meta property="og:image" content="https://cookscape.in/og-image.jpg" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Interior Design Portfolio | Cookscape" />
+        <meta name="twitter:description" content="A curated gallery of luxury kitchens, bedrooms, and living spaces designed for modern families across Chennai." />
+        <meta name="twitter:image" content="https://cookscape.in/og-image.jpg" />
+
+        {/* CollectionPage JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Cookscape Interior Design Portfolio",
+            "description": "A curated collection of luxury interior design projects by Cookscape across Chennai and Bangalore.",
+            "url": "https://cookscape.in/portfolio",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cookscape.in/"},
+                {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://cookscape.in/portfolio"}
+              ]
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Cinematic Hero Section */}

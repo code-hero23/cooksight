@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                   <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>Interior Design Ideas for Latest Pooja Room Design</h1>
-                      <img src={blog48} alt="cookscape-pooja-room-ideas" class="img-fluidpt-3"/>
+                      <img src={blog48} alt="cookscape-pooja-room-ideas" className="img-fluidpt-3"/>
                       <p className='blog-page-para'>Pooja is the adobe of God present in our homes. The Pooja room/Mandir should always be placed in the North, East or the Northeast side of the home. Pooja space is the most important part of our house, as it keeps our house filled with positive energies. Regardless of one’s religious identity a space for Pooja or worship can be found in each and every household.</p>
                       <p className='blog-page-para'>For perfectly designed Pooja rooms it’s essential that all the elements are arranged correctly, whether it’s the Mandir Unit, Idols, Accessories or the furniture. Additionally, the colors of the walls and the materials used should blend perfectly in order to create a tranquil ambiance that is ideal for meditation.</p>
                       <p className='blog-page-para'>Below mentioned are some ideas on how to design a trendy and sophisticated Pooja room in a hassle free manner:</p>
@@ -40,40 +40,40 @@ return (
                       <h2 className='blog-page-title-2 pt-3'>3. Add some color with Rangoli</h2>
                       <p className='blog-page-para'>You can also decorate your Pooja room or Mandir with a beautiful Rangoli design with colorful flowers. And for this simply put some water in a vessel, include colorful flowers and floating pretty candles in it. And put it on the entrance of your Mandir or Pooja room.</p>
                       <p className='blog-page-para'>These are some of the ideas that can be incorporated by anyone to create a vibrant Pooja Space. This will not only increase the beauty of the house but will also help fill the home with Positive energy.</p>
-                      <img src={arvarshini} alt="Architect-Varshini" class="blog-page-author-img pt-3"/>
+                      <img src={arvarshini} alt="Architect-Varshini" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'>Architect Varshini</h1>
                     </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

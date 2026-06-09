@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
                   <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>10 Brilliant Ways to Brighten Your Dark Kitchen & Living room!</h1>
-                      <img src={blog14} alt="cookscape-dark=kitchen-ideas" class="img-fluid pt-3"/>
+                      <img src={blog14} alt="cookscape-dark=kitchen-ideas" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>In order to brighten a dark living room certain small interventions can go a long way. If the Living room is large in area with small windows or widely spaced windows, or a small living with small windows or no windows at all, then there will be a problem of ventilation. </p>
                       <p className='blog-page-para'>So here are some tips to make a Dark Living Room bright: </p>
                       <h2 className='blog-page-title-2 pt-3'>1. Strategic Placement of Windows:</h2>
@@ -41,7 +41,7 @@ return (
                       <p className='blog-page-para'>Sometimes we don’t pay attention to the kind of furniture we put in our living. We only focus on whether they complement each other or now but when we need to make a dark living bright we must also consider using light colors on the wall and transparent or light colored furniture. Hence, in order to brighten the room colors like walnut wood instead go with White or beige shades. </p>
                       <h2 className='blog-page-title-2 pt-3'>4. Floor should be covered with Light Colors:</h2>
                       <p className='blog-page-para'> Your living can be made brighter by applying light color carpets on the bare floors. This will soften the floor and also make it glow. This will especially hold true for dull spaces with dark floor boards.</p>
-                      <img src={blog14a} alt="cookscape-dark=kitchen-ideas" class="img-fluid pt-3"/>
+                      <img src={blog14a} alt="cookscape-dark=kitchen-ideas" className="img-fluid pt-3"/>
                       <h2 className='blog-page-title-2 pt-3'>5. Use White for Walls:</h2>
                       <p className='blog-page-para'>White is the only shade which reflects light to a great extent. Therefore if your dark living room walls are painted white it will reflect more light than absorbing it. Ornamentation can be done on the walls if white walls seem to be too monotonous. </p>
                       <h2 className='blog-page-title-2 pt-3'>6. Deep Clean of Windows:</h2>
@@ -54,40 +54,40 @@ return (
                       <p className='blog-page-para'> “Less is more” holds true when it comes to making a space look brighter so as less ornamentation on walls the more light can enter it. Therefore we must avoid putting up a lot of art work on the walls.</p>
                       <h2 className='blog-page-title-2 pt-3'>10. Light to be aimed at wall or ceiling:</h2>
                       <p className='blog-page-para'> Instead of letting the light scatter around the room aim lights towards walls or ceilings. This will throw light on these architectural features and make the room look larger than its actual size.</p>
-                      <img src={arvarshini} alt="Architect-Varshini" class="blog-page-author-img pt-3"/>
+                      <img src={arvarshini} alt="Architect-Varshini" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'> Architect Varshini</h1>
                     </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

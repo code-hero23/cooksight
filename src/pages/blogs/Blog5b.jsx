@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>Exclusive Tips to Maximize Space in Your Wardrobe</h1>
-                        <img src={blog42} alt="cookscape-wardrobe-design" class="img-fluid pt-3"/>
+                        <img src={blog42} alt="cookscape-wardrobe-design" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>Wardrobe plays a major role in our daily life, which can also be considered as a treasure of our lifestyle. There are different types of wardrobes that can be classified depending on our type of functionality and our lifestyle. It is important that we should keep our wardrobe in a very organized manner, that’s helps us to reach out to our needs in wardrobe in easy way. This also helps us in saving time rather than searching for the things inside. It should be designed in such a manner that clothes and other things are accompanied inside. Though the closet seems to be large or small in size it can be organized in such a manner that it looks spacious and the space can be used in effective manner. This requires a bit of decorating tricks and also some patience to organize in a proper manner.</p>
                         <h2 className='blog-page-title-2 pt-3'>Ten easy ways to optimize usage of wardrobe:</h2>
                         <h2 className='blog-page-title-2 pt-3'>1.REMOVE THE CLOTHES THAT DON’T FIT NOW:</h2>
@@ -45,40 +45,40 @@ return (
                         <h2 className='blog-page-title-2 pt-3'>PAINT</h2>
                         <p className='blog-page-para'>A Coat of paint can add up the illusion of space. Choose on the durable paint such as with a matt, satin or gloss finish texture as the walls will subject to wear and tear from things inside. A choosing of colour plays a role in aesthetic look of the wardrobe. A light colour will be preferably good like pale pink, light yellow or white can add a pleasant look, cleaner and brighter.</p>
                         <p className='blog-page-para'>Can also go with some textured wall papers rather than paint too. But a textured floral wall papers cause the space smaller than usual whereas the paint of light colours shows up the space larger, airy and maximised.</p>
-                        <img src={ardarshna} alt="Architect-Darshna" class="blog-page-author-img pt-3"/>
+                        <img src={ardarshna} alt="Architect-Darshna" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'>Architect Darshna</h1>
                       </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

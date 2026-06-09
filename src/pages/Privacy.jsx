@@ -7,8 +7,17 @@ const Privacy = () => {
     <main className="privacy-premium-page" style={{ backgroundColor: 'var(--premium-cream, #faf9f6)' }}>
       <Helmet>
         <title>Privacy Policy | Cookscape Interiors</title>
-        <meta name="description" content="Read Cookscape's Privacy Policy to understand how we collect, use, and protect your personal information." />
-        <link rel="canonical" href="https://cookscape.com/privacy" />
+        <meta name="description" content="Read Cookscape's Privacy Policy to understand how we collect, use, and protect your personal information when you use our website and interior design services." />
+        <link rel="canonical" href="https://cookscape.in/privacy" />
+        <meta name="robots" content="noindex, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Cookscape Interiors" />
+        <meta property="og:url" content="https://cookscape.in/privacy" />
+        <meta property="og:title" content="Privacy Policy | Cookscape Interiors" />
+        <meta property="og:description" content="Read Cookscape's Privacy Policy to understand how we collect, use, and protect your personal information." />
+        <meta property="og:locale" content="en_IN" />
       </Helmet>
 
       {/* Hero Header */}

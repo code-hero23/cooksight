@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Hero = ({ scrollY }) => {
+const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section id="home" className="hero">
       {/* Static Background Layer */}
@@ -74,3 +84,4 @@ const Hero = ({ scrollY }) => {
 };
 
 export default Hero;
+

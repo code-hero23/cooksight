@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>Transform your Bathroom into “Home Spa”</h1>
-                        <img src={blog45} alt="cookscape-home-spa" class="img-fluid pt-3"/>
+                        <img src={blog45} alt="cookscape-home-spa" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>It’s easier than you think to turn your bathroom into your Home Spa. Equipped with a relaxing shower or warm bath, it can be the ideal sanctuary for you to unwind and relax, with a few extra elements thrown in. There are few points to list out below</p>
                         <h2 className='blog-page-title-2 pt-3'>1. Relax and Rejuvenate at Home</h2>
                         <p className='blog-page-para'>From astronomical housing prices to the ever-growing popularity of tiny home living, there is a wide range of reasons to ensure that you are working with a small bathroom. But just because it’s small doesn’t mean it also can’t be a relaxing and rejuvenating oasis. </p>
@@ -47,40 +47,40 @@ return (
                         <p className='blog-page-para'>Just as artwork makes a living room or bedroom design more dynamic, it also make the same for a bathroom. Integrating a large print or a gallery wall will add a dimensional layer of intrigue to your design while making it appear more complete and good appealing.</p>
                         <h2 className='blog-page-title-2 pt-3'>7. Transform with Towel Storage</h2>
                         <p className='blog-page-para'>A wooden ladder in lieu of a traditional towel bar (or in addition to one) will immediately warm up your look while providing a proper place for you to showcase the fancy towels we’re about to discuss.</p>
-                        <img src={arapsana} alt="Architect-Apsana" class="blog-page-author-img pt-3"/>
+                        <img src={arapsana} alt="Architect-Apsana" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'>Architect Apsana</h1>
                       </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

@@ -28,7 +28,7 @@ const Blog7i = () => {
                 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>HOW TO CHOOSE COMFORTABLE FURNITURE FOR “FAMILY ROOM”</h1>
-                      <img src={blog68} alt="cookscape-furniture" class="img-fluid pt-3"/>
+                      <img src={blog68} alt="cookscape-furniture" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>Playing Furniture in a house is a Functional Aesthetic, But furniture can be installed if there are no space constraints. When it is about barely making ends meet having luxury furniture is not feasible. However we can help anyone to design and install classy furniture which will be very easy in your wallet.</p>
                       <h2 className='blog-page-title-2 pt-3'>1. Large Sectional + Compact Chairs</h2>
                       <p className='blog-page-para'> The Larger Sofa occupies a wider space and don’t feel to be alone and also in guest visits they occupy a huge while gathering. We can place additional chairs also and they also provide pleasing visual contact.</p>
@@ -42,40 +42,40 @@ const Blog7i = () => {
                       <p className='blog-page-para'> When you go for deeper tv unit will give you more functional storage. Which may be more important for tight living space. A slim side table at either end of sofa will be more comfortable to sit down and drink or you can have a floating table in front of sofa that can tick away when not needed.</p>
                       <h2 className='blog-page-title-2 pt-3'>6. Open coffee table</h2>
                       <p className='blog-page-para'> The furniture arrangement you choose, the more space you leave your feet to move in. The coffee table role is to access more easily to sofa and once you are in will be more spacious to stretch your legs. So you won’t feel trapped and fidgety.</p>
-                      <img src={arapsana} alt="Architect-Apsana" class="blog-page-author-img pt-3"/>
+                      <img src={arapsana} alt="Architect-Apsana" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'> Architect Apsana</h1>
                     </div>
                 </div>      
-  <div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

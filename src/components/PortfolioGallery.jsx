@@ -1,4 +1,5 @@
 import React, { useState, useRef, useMemo, useEffect, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GALLERY_COLLECTION } from '../data/siteData';
 
@@ -19,17 +20,121 @@ const CATEGORY_ICONS = {
   'Wardrobe': '👗',
 };
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.97 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] } },
+};
+
+const PortfolioCard = ({ item, index, sizeClass, isHovered, onHoverStart, onHoverEnd, onClick }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <motion.article
+      className={`pf-card ${sizeClass}`}
+      variants={cardVariants}
+      onHoverStart={onHoverStart}
+      onHoverEnd={onHoverEnd}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      aria-label={`View ${item.title}`}
+      onKeyDown={(e) => e.key === 'Enter' && onClick()}
+    >
+      {/* Image */}
+      <div className="pf-card-media">
+        {!isLoaded && <div className="pf-shimmer-loader" />}
+        <motion.img
+          src={item.url}
+          alt={item.title}
+          loading="lazy"
+          onLoad={() => setIsLoaded(true)}
+          style={{ opacity: isLoaded ? 1 : 0 }}
+          animate={{ 
+            scale: isHovered && isLoaded ? 1.08 : 1,
+            opacity: isLoaded ? 1 : 0 
+          }}
+          transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
+        />
+        {/* Gradient overlay */}
+        <div className="pf-card-gradient" />
+      </div>
+
+      {/* Category badge */}
+      <div className="pf-card-badge">
+        {CATEGORY_ICONS[item.category] || '◈'} {item.category}
+      </div>
+
+      {/* Hover reveal content */}
+      <motion.div
+        className="pf-card-reveal"
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 15 }}
+        transition={{ duration: 0.35 }}
+      >
+        <h3 className="pf-card-title">{item.title}</h3>
+        <div className="pf-card-cta">
+          <span>Explore Design</span>
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
+      </motion.div>
+
+      {/* Expand icon on hover */}
+      <motion.div
+        className="pf-expand-icon"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: isHovered ? 1 : 0, scale: isHovered ? 1 : 0.8 }}
+        transition={{ duration: 0.25 }}
+      >
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+        </svg>
+      </motion.div>
+    </motion.article>
+  );
+};
+
 const PortfolioGallery = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [hoveredId, setHoveredId] = useState(null);
   const filterRef = useRef(null);
+  const location = useLocation();
+  const [visibleCount, setVisibleCount] = useState(12);
 
   // Get unique categories with counts
   const categories = useMemo(() => {
     return ['All', ...new Set(GALLERY_COLLECTION.map(item => item.category))];
   }, []);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const categoryParam = queryParams.get('category');
+    if (categoryParam) {
+      const decodedParam = decodeURIComponent(categoryParam).toLowerCase();
+      const matched = categories.find(
+        (cat) => cat.toLowerCase() === decodedParam
+      );
+      if (matched) {
+        setActiveCategory(matched);
+        
+        // Smooth scroll to the portfolio container
+        setTimeout(() => {
+          const galleryElement = document.querySelector('.portfolio-v2-root');
+          if (galleryElement) {
+            galleryElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 40);
+      }
+    }
+  }, [location.search, categories]);
+
+  // Reset pagination count on category change
+  useEffect(() => {
+    setVisibleCount(12);
+  }, [activeCategory]);
 
   const categoryCounts = useMemo(() => {
     const counts = { All: GALLERY_COLLECTION.length };
@@ -45,6 +150,11 @@ const PortfolioGallery = () => {
       ? GALLERY_COLLECTION
       : GALLERY_COLLECTION.filter(item => item.category === activeCategory);
   }, [activeCategory]);
+
+  // Paginated/displayed items
+  const displayedItems = useMemo(() => {
+    return filteredItems.slice(0, visibleCount);
+  }, [filteredItems, visibleCount]);
 
   // Lightbox navigation
   const openLightbox = useCallback((item, index) => {
@@ -82,11 +192,6 @@ const PortfolioGallery = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.04 } },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.97 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] } },
   };
 
   return (
@@ -131,72 +236,36 @@ const PortfolioGallery = () => {
             animate="visible"
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
           >
-            {filteredItems.map((item, index) => {
+            {displayedItems.map((item, index) => {
               const sizeClass = getCardSize(index);
               const isHovered = hoveredId === `${item.category}-${index}`;
               return (
-                <motion.article
+                <PortfolioCard
                   key={`${item.category}-${index}`}
-                  className={`pf-card ${sizeClass}`}
-                  variants={cardVariants}
+                  item={item}
+                  index={index}
+                  sizeClass={sizeClass}
+                  isHovered={isHovered}
                   onHoverStart={() => setHoveredId(`${item.category}-${index}`)}
                   onHoverEnd={() => setHoveredId(null)}
                   onClick={() => openLightbox(item, index)}
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`View ${item.title}`}
-                  onKeyDown={(e) => e.key === 'Enter' && openLightbox(item, index)}
-                >
-                  {/* Image */}
-                  <div className="pf-card-media">
-                    <motion.img
-                      src={item.url}
-                      alt={item.title}
-                      loading="lazy"
-                      animate={{ scale: isHovered ? 1.08 : 1 }}
-                      transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
-                    />
-                    {/* Gradient overlay */}
-                    <div className="pf-card-gradient" />
-                  </div>
-
-                  {/* Category badge */}
-                  <div className="pf-card-badge">
-                    {CATEGORY_ICONS[item.category] || '◈'} {item.category}
-                  </div>
-
-                  {/* Hover reveal content */}
-                  <motion.div
-                    className="pf-card-reveal"
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 15 }}
-                    transition={{ duration: 0.35 }}
-                  >
-                    <h3 className="pf-card-title">{item.title}</h3>
-                    <div className="pf-card-cta">
-                      <span>Explore Design</span>
-                      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </div>
-                  </motion.div>
-
-                  {/* Expand icon on hover */}
-                  <motion.div
-                    className="pf-expand-icon"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: isHovered ? 1 : 0, scale: isHovered ? 1 : 0.8 }}
-                    transition={{ duration: 0.25 }}
-                  >
-                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                    </svg>
-                  </motion.div>
-                </motion.article>
+                />
               );
             })}
           </motion.div>
         </AnimatePresence>
+
+        {/* Load More Button */}
+        {visibleCount < filteredItems.length && (
+          <div className="pf-load-more-wrap">
+            <button className="btn-load-more-v2" onClick={() => setVisibleCount(prev => prev + 12)}>
+              <span>Load More Designs</span>
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-6l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* ── Cinematic Lightbox ── */}

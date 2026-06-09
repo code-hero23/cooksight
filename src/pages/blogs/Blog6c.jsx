@@ -30,7 +30,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                         <h1 className='blog-page-title pt-3'>HOW THE MODULAR KITCHEN HELP US? & TIPS TO MAINTENANCE!</h1>
-                        <img src={blog53} alt="cookscape-modular-kitchen-tips" class="img-fluid pt-3"/>
+                        <img src={blog53} alt="cookscape-modular-kitchen-tips" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>Modular Kitchen is now a norm rather than an exception, having changed the age old concepts to beyond style. The Modular Kitchen, Undoubtedly brings convenience & it is the core of any home. Modular word is a very commonly used term these days, which means the space layout can be easily remodelled elsewhere. With the introduction of Modular Kitchen, the Kitchen space becomes the centre of attraction & maximises the storage area with minimalistic footprints, it has many Styles, Themes, and Finishes. Modular Kitchen refers to Hassle free installation & cabinets should be made in a factory.</p>
                         <h2 className='blog-page-title-2 pt-3'>What are the materials to be used in Modular Kitchen? </h2>
                         <h2 className='blog-page-title-2 pt-3'>1. BWP (Boiling Water Proof) Plywood. </h2>
@@ -42,7 +42,7 @@ return (
                         <p className='blog-page-para'> Can be assembled easily & has the flexibility to move anywhere.</p>
                         <h2 className='blog-page-title-2 pt-3'>Customization </h2>
                         <p className='blog-page-para'> Can be customized depending on your taste, personal preference & space available in the Kitchen.</p>
-                        <img src={blog53a} alt="cookscape-modular-kitchen-tips" class="img-fluid pt-3"/>
+                        <img src={blog53a} alt="cookscape-modular-kitchen-tips" className="img-fluid pt-3"/>
                         <p className='blog-page-para'> Modular Kitchen has many Accessories like Cutlery Baskets, Plain Baskets, Plate Baskets, Oil Pullout Trays, Bottle Pullouts, Dustbin holder, Detergent holder, Magic- corners, Tall pantry units, Rolling shutters, Under sink storages, Wicker Baskets, etc…</p>
                         <h2 className='blog-page-title-2 pt-3'>Elegant Appearance </h2>
                         <p className='blog-page-para'>Traditional Style:- Meets traditional feel with modern & balanced design</p>
@@ -53,7 +53,7 @@ return (
                         <h2 className='blog-page-title-2 pt-3'>Durability </h2>
                         <p className='blog-page-para'>Will be more durable if you use BWP (Boiling Water Proof) Plywood & HDHMR (High Density High Moisture Resistance) for your Kitchen.</p>
                         <h2 className='blog-page-title-2 pt-3'>TIPS TO MAINTAIN MODULAR KITCHEN! </h2>
-                        <img src={blog53b} alt="cookscape-modular-kitchen-tips" class="img-fluid pt-3"/>
+                        <img src={blog53b} alt="cookscape-modular-kitchen-tips" className="img-fluid pt-3"/>
                         <p className='blog-page-para'>Call your Interior Designer for servicing & tightening the Kitchen hardware like Hinges, Runners, Channels, Screws, Handles, etc… yearly once.</p>
                         <p className='blog-page-para'>Cleaning your Kitchen regularly using a wet cloth for appliances like Oven, Stove, Coffee maker, etc…</p>
                         <p className='blog-page-para'>Can be easily cleaned in every nook & corner with Mere cloth & wipe it off.</p>
@@ -65,40 +65,40 @@ return (
                         <p className='blog-page-para'>Ensure to clean your Dustbin & remove the food scraps every night before sleeping.</p>
                         <p className='blog-page-para'>Don’t overuse the scrubs, cloth, sponges & replace it regularly to prevent harmful bacteria.</p>
                         <p className='blog-page-para'>Wipe the Kitchen floor every day using a disinfectant.</p>
-                        <img src={arragul} alt="Architect-Raghul" class="blog-page-author-img pt-3"/>
+                        <img src={arragul} alt="Architect-Raghul" className="blog-page-author-img pt-3"/>
                         <h1 className='blog-title pt-3'>Architect Raghul</h1>
                       </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get free design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

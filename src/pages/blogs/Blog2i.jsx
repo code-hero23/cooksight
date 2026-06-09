@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>Ideas to Design a Multipurpose Living Room!</h1>
-                      <img src={blog19} alt="cookscape-living-room" class="img-fluid pt-3"/>
+                      <img src={blog19} alt="cookscape-living-room" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>Multipurpose living room: Some people might ask a question why a living room has to be a multipurpose room, but many people know that now a day the apartments have smaller living spaces which need to be customized to fulfill needs of the owner.</p>
                       <p className='blog-page-para'>For Indian families where we are big family with more than 5 people which makes it almost 3 generation , use of every small space available is very ,much required , in that time if we have option of using a same room for different purposes , it will be very helpful.</p>
                       <p className='blog-page-para'>Most of the people wants their living space to act as an inviting space, at the same time should be a dining area, at the same time have lot of storage space for either showcase or books, and </p>
@@ -42,42 +42,42 @@ return (
                       <p className='blog-page-para'>2. Side tables of the sofa can be choosed like something that can even be used as a seater when there is a function or party been hosted at house. </p>
                       <p className='blog-page-para'>3. Coffee table which is very sleek and simple but have some storage space can definitely help, it can turn into a laptop desk during some unplanned official discussion or meeting at home. </p>
                       <p className='blog-page-para'>4. Expandable dining table , according to required it can withstand 4 -8 peoples at same time can be used for some official discussions during more no of members , at the same time can be helpful for Indian parents to help their small children’s with their study while doing their own works side by side. </p>
-                      <img src={blog19a} alt="cookscape-living-room" class="img-fluid pt-3"/>
+                      <img src={blog19a} alt="cookscape-living-room" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>Depending upon the requirement of the client, the interior designer can suggest the theme, help in colors that will not only suit for regular staying but also supports party plans and functional environment.</p>
-                      <img src={arsaranya} alt="Architect-Saranya" class="blog-page-author-img pt-3"/>
+                      <img src={arsaranya} alt="Architect-Saranya" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'> Architect Saranya</h1>
                     </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

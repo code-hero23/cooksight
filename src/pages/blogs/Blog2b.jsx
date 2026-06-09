@@ -29,7 +29,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>Why Less Is More When It Comes To Home Interiors?</h1>
-                      <img src={blog12} alt="cookscape-home-interior" class="img-fluid pt-3"/>
+                      <img src={blog12} alt="cookscape-home-interior" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>In inside planning the idea of “toning it down would be ideal” is tied in with making straightforward and effective insides. Straightforwardness is the way to accomplishing this. </p>
                       <p className='blog-page-para'>Perhaps the best thing about enlivening a house is the capacity to fit it to your own taste and fashion awareness. There’s no set-in-stone approach to your inside plan with patterns changing constantly, and recent fads address an entire host of potential outcomes as opposed to having the entire inside plan process directed by spending plan and space restrictions. </p>
                       <h2 className='blog-page-title-2 pt-3'>What is Minimalism?</h2>
@@ -43,7 +43,7 @@ return (
                       <h2 className='blog-page-title-2 pt-3'>Less Is More</h2>
                       <p className='blog-page-para'> A room that is roomy and offers a peaceful air is continuously quieting the psyche. Moderate utilization of furniture and different articles in home stylistic theme makes insides breathable and offers great wellbeing and bliss to its occupants.</p>
                       <p className='blog-page-para'> You name it, let’s paint them…</p>
-                      <img src={blog12a} alt="cookscape-home-interior" class="img-fluid pt-3"/>
+                      <img src={blog12a} alt="cookscape-home-interior" className="img-fluid pt-3"/>
                       <p className='blog-page-para'> Following are not many tips on accomplishing the “toning it down would be best” idea.</p>
                       <h2 className='blog-page-title-2 pt-3'>Add another tone</h2>
                       <p className='blog-page-para'>  Divider paint assumes a critical part in changing the vibe of a room. Dim tones give a minimal shift focus over to the room while light tones have a contrary response making the room look splendid and extensive. Go with nonpartisan tones, for example, ivory, dim, ecru, and beige to give an extensive impact to the room.</p>
@@ -62,40 +62,40 @@ return (
                       <h2 className='blog-page-title-2 pt-3'>Off the cuff your goods</h2>
                       <p className='blog-page-para'> Monstrous furniture is the essential wrongdoer in adding to space wreck. The chance of improvement is immensely restricted because of them. Ceaselessly check the size and part of the room and thereafter select the decorations. Various explanations of furniture can help you with lessening the mass and space required.</p>
                       <p className='blog-page-para'> “Balance permits a substitute decision from the space to be the concentration. For example, people in the space or the view from the window might be a higher need than the room’s advancement”.</p>
-                      <img src={arsunitha} alt="Architect-Sunitha" class="blog-page-author-img pt-3"/>
+                      <img src={arsunitha} alt="Architect-Sunitha" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'> Architect Sunitha</h1>
                     </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>

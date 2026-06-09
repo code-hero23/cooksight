@@ -28,7 +28,7 @@ return (
 <div className='container-fluid aboutus'>
                     <div className='container p-5'>
                       <h1 className='blog-page-title pt-3'>Is Using An Interior Designer Expensive?</h1>
-                      <img src={blog16} alt="cookscape-designer-expensive-ideas" class="img-fluid pt-3"/>
+                      <img src={blog16} alt="cookscape-designer-expensive-ideas" className="img-fluid pt-3"/>
                       <p className='blog-page-para'>In the event that you are an individual who spends the whole week at work, it will require many ends of the week to effectively execute an Interior plan project. This is an extremely long haul responsibility assuming that the extent of work is enormous. On the off chance that your work isn’t adequate and you need to re-try a part of your Interiors it adds to the expense.</p>
                       <h2 className='blog-page-title-2 pt-3'>Plywood Definition</h2>
                       <p className='blog-page-para'>The greatest dread that the vast majority have about utilizing the administrations of an Interior planner is the trepidation that they are extravagant. In opposition to the normal impression of Interior designers as individuals who burn through luxurious measures of  </p>
@@ -47,40 +47,40 @@ return (
                       <p className='blog-page-para'>3. An Interior architect doesn’t source materials from the retail market as a layman would. They approach quality merchants at discount costs. Interior planners know the best hotspots for material and furniture at great limits. Since they work on a foreordained financial plan, you don’t need to stress over spending more than you are ready to.</p>
                       <p className='blog-page-para'>4. Interior designers are capable venture directors and they can all the more likely arrangement the work to be done to save you both time and cash. Since they have various tasks running parallelly, they would involve the administrations of a laborer for just as much time as is required.</p>
                       <p className='blog-page-para'>5. The coordination of material stock and various laborers by one individual keeps the task on target Interior the predefined time. At the point when you put together your Interior work yourself you are helpless before the impulses and likes of the nearby laborer and providers who may postpone the cycle. Assuming you are on a tight timetable like completing the Interiors before a wedding or another such occasion, deciding to employ an Interior originator is the most ideal way to go. The time that you save is certainly worth the venture.</p>
-                      <img src={arangaiyar} alt="Architect-Angaiyarkanni" class="blog-page-author-img pt-3"/>
+                      <img src={arangaiyar} alt="Architect-Angaiyarkanni" className="blog-page-author-img pt-3"/>
                       <h1 className='blog-title pt-3'> Architect Angaiyarkanni</h1>
                     </div>
 </div>
-<div class="modal fade" id="verticalModal" tabindex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <img src={interior} alt="cookscape-interior-designs" class="img-fluid rounded pb-1"/>
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="verticalModal" tabIndex="-1" aria-labelledby="verticalModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+          <img src={interior} alt="cookscape-interior-designs" className="img-fluid rounded pb-1"/>
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Get Free Design Catalogue</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
             <div className="contact-form-container">
                     <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
-                    <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
+                    <div className="row">
+                                    <div className="col-12">
+                                        <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required/>
+                                <div className="row">
+                                    <div className="col-md-12 form-group">
+                                        <input name="name" type="text" className="form-control" placeholder="Name" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="email" type="email" className="form-control" placeholder="Email" required/>
                                     </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required/>
+                                    <div className="col-md-12 form-group">
+                                        <input name="phone" type="text" className="form-control" placeholder="Phone" required/>
                                     </div>
-                                    <div class="col-12">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message"/>
+                                    <div className="col-12">
+                                        <input name="submit" type="submit" className="btn btn-success" value="Send Message"/>
                                     </div>
                                 </div>
                     </form>
