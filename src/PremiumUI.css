@@ -154,11 +154,13 @@ body {
     position: fixed;
     inset: 0;
     background: var(--premium-cream);
-    z-index: 999;
+    z-index: 1002; /* Above nav-header (1000) */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    padding-top: 100px; /* space for fixed hamburger / logo */
+    overflow-y: auto;
 }
 
 .mobile-menu-inner {
@@ -230,7 +232,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 58px; /* leave room for the fixed hamburger (30px wide + ~28px gap) */
     z-index: 1000;
 }
 
@@ -279,9 +281,26 @@ body {
 @media (max-width: 1024px) {
     .desktop-only { display: none !important; }
     .nav-desktop-menu { display: none; }
-    .mobile-menu-btn { display: flex; }
-    .nav-container-premium { padding: 0 25px; }
+    .nav-container-premium { padding: 0 20px; }
     .nav-mobile-cta { display: flex; }
+
+    /* Detach hamburger from nav flow so it sits above fullscreen menu */
+    .mobile-menu-btn {
+        display: flex;
+        position: fixed;
+        top: 22px;
+        right: 20px;
+        z-index: 1003; /* Above fullscreen menu (1002) and nav (1000) */
+        background: transparent;
+        padding: 6px;
+        border-radius: 6px;
+        transition: background 0.2s ease;
+    }
+
+    /* When menu is open, give the hamburger a subtle backdrop for contrast */
+    .mobile-menu-btn.active {
+        background: rgba(0, 0, 0, 0.05);
+    }
 }
 
 /* ==========================================================================

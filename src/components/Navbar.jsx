@@ -16,12 +16,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close menu and restore scroll on route change
   useEffect(() => {
-    setIsMobileMenuOpen(false); 
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'auto';
-    }
+    setIsMobileMenuOpen(false);
+    document.body.style.overflow = 'auto';
   }, [location.pathname]);
+
+  // Restore scroll on unmount (safety cleanup)
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
