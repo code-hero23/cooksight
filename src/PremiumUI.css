@@ -355,6 +355,30 @@ body {
     }
 }
 
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .nav-container-premium { padding: 0 15px; }
+    
+    .nav-logo {
+        height: 28px; /* Scale down logo to prevent pushing items */
+    }
+    
+    .nav-cta-btn-mobile {
+        display: none; /* Hide Book Now text on tiny screens, phone icon is enough */
+    }
+    
+    .nav-mobile-cta {
+        margin-right: 40px; /* Space for absolute hamburger */
+        gap: 8px;
+    }
+    
+    .mobile-menu-btn {
+        right: 15px; /* Match container padding */
+        padding: 4px; /* Slightly smaller touch target */
+    }
+}
+
+
 /* ==========================================================================
    2. CONTACT PREMIUM
    ========================================================================== */
