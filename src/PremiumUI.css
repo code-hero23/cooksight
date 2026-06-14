@@ -50,7 +50,7 @@ body {
 
 .nav-header-premium.menu-open {
     z-index: 1005;
-    background: transparent !important;
+    background: var(--premium-cream) !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     box-shadow: none !important;
@@ -207,7 +207,7 @@ body {
     background: var(--premium-cream);
     z-index: 1002; /* Above nav-header (1000) */
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* changed from center to allow scrolling */
     justify-content: center;
     padding: 40px;
     padding-top: 100px; /* space for fixed hamburger / logo */
@@ -219,8 +219,8 @@ body {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    justify-content: flex-start; /* changed from center */
+    min-height: 100%;
 }
 
 .mobile-nav-list {
@@ -375,6 +375,14 @@ body {
     .mobile-menu-btn {
         right: 15px; /* Match container padding */
         padding: 4px; /* Slightly smaller touch target */
+    }
+    
+    .mobile-nav-list a {
+        font-size: 2.2rem; /* Scale down massive fonts on tiny screens */
+    }
+    
+    .mobile-nav-list {
+        gap: 20px; /* Reduce gap on tiny screens */
     }
 }
 
