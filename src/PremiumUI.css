@@ -117,6 +117,43 @@ body {
     color: var(--premium-dark);
 }
 
+/* Transparent Navbar styles on pages with dark hero backgrounds */
+.nav-header-premium.on-dark-hero .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-header-premium.on-dark-hero .nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-header-premium.on-dark-hero .nav-cta-btn {
+    background: var(--premium-light);
+    color: var(--premium-dark);
+    border-color: var(--premium-light);
+}
+
+.nav-header-premium.on-dark-hero .nav-cta-btn:hover {
+    background: transparent;
+    color: var(--premium-light);
+    border-color: var(--premium-light);
+}
+
+.nav-header-premium.on-dark-hero .mobile-menu-btn span {
+    background: var(--premium-light);
+}
+
+.nav-header-premium.on-dark-hero .nav-cta-btn-mobile {
+    background: var(--premium-light);
+    color: var(--premium-dark);
+    border-color: var(--premium-light);
+}
+
+.nav-header-premium.on-dark-hero .nav-cta-btn-mobile:hover {
+    background: transparent;
+    color: var(--premium-light);
+    border-color: var(--premium-light);
+}
+
 /* Mobile Menu Button */
 .mobile-menu-btn {
     display: none;
@@ -758,6 +795,60 @@ body {
 /* Hide legacy red breadcrumb banner inside premium blog post view */
 .blogpost-premium-page .services-breadcrumb {
     display: none;
+}
+
+/* Hide legacy inline Bootstrap modals since they lack Bootstrap stylesheet */
+.blogpost-premium-page .modal {
+    display: none !important;
+}
+
+/* Optimized blog page image layout for low-quality images */
+@media (min-width: 768px) {
+    .blogpost-premium-page .blog-img-size,
+    .blogpost-premium-page .aboutus img:not(.blog-page-author-img) {
+        max-width: 280px;
+        width: 30%;
+        float: right;
+        margin: 8px 0 20px 30px;
+        height: auto;
+        max-height: 210px;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Alternate floated direction for every second image within a blog section */
+    .blogpost-premium-page p + img.blog-img-size,
+    .blogpost-premium-page h2 + img.blog-img-size,
+    .blogpost-premium-page .aboutus p + img:not(.blog-page-author-img),
+    .blogpost-premium-page .aboutus h2 + img:not(.blog-page-author-img) {
+        float: left;
+        margin: 8px 30px 20px 0;
+    }
+
+    /* Clear floats on structural headings and footer sections */
+    .blogpost-premium-page .blog-page-title-2,
+    .blogpost-premium-page .blog-title,
+    .blogpost-premium-page .blog-page-author-img,
+    .blogpost-premium-page .blogpost-footer-section,
+    .blogpost-premium-page .modal {
+        clear: both;
+    }
+}
+
+@media (max-width: 767px) {
+    .blogpost-premium-page .blog-img-size,
+    .blogpost-premium-page .aboutus img:not(.blog-page-author-img) {
+        display: block;
+        max-width: 300px;
+        width: 90%;
+        margin: 15px auto;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
 }
 
 .blogpost-loader {
@@ -1870,6 +1961,35 @@ body {
     color: var(--premium-accent);
     text-decoration: underline;
     font-weight: 600;
+}
+
+.festive-checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0 20px 0;
+    text-align: left;
+}
+
+.festive-checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--premium-accent);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.festive-checkbox-group label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.festive-submit-btn:disabled {
+    background: #cccccc;
+    color: #888888;
+    cursor: not-allowed;
+    box-shadow: none;
 }
 
 .festive-submit-btn {

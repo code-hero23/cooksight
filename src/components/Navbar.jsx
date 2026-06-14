@@ -34,7 +34,7 @@ const Navbar = () => {
     document.body.style.overflow = !isMobileMenuOpen ? 'hidden' : 'auto';
   };
 
-  const isBlog = location.pathname.startsWith('/blog');
+  const isDarkHeroPage = location.pathname === '/portfolio' || location.pathname === '/careers';
 
   const menuVariants = {
     closed: { opacity: 0, y: "-100%", transition: { staggerChildren: 0.05, staggerDirection: -1 } },
@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`nav-header-premium ${scrolled ? 'scrolled' : ''}`}>
+      <header className={`nav-header-premium ${scrolled ? 'scrolled' : ''} ${isDarkHeroPage && !scrolled ? 'on-dark-hero' : ''}`}>
         <nav className="container nav-container-premium">
           <Link to="/" className="logo-link">
             <img src="/logo.jpeg" alt="Cookscape" className="nav-logo" />

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, useMotionValue, useAnimationFrame, useTransform, useSpring } from 'framer-motion';
 import { SERVICES } from '../data/siteData';
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 const ServiceMarqueeItem = ({ service, trackX }) => {
   const ref = useRef(null);

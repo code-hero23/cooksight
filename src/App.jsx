@@ -10,6 +10,7 @@ import Careers from './pages/Careers';
 import Gallery from './pages/Gallery';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import ImageNamer from './pages/ImageNamer';
 import Navbar from './components/Navbar';
 import FloatingActions from './FloatingActions';
 import FestiveOfferModal from './components/FestiveOfferModal';
@@ -17,16 +18,22 @@ import FestiveOfferModal from './components/FestiveOfferModal';
 function AppContent() {
   const location = useLocation();
 
-  // Scroll to top or specific anchor on route change
+  // Scroll to top or specific anchor on route change (robust to lazy loaded components)
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace('#', '');
-      setTimeout(() => {
+      let attempts = 0;
+      const scrollToElement = () => {
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
+        } else if (attempts < 30) { // Poll for up to 3 seconds (30 * 100ms)
+          attempts++;
+          setTimeout(scrollToElement, 100);
         }
-      }, 150);
+      };
+      // Short delay for the initial page load/transition
+      setTimeout(scrollToElement, 100);
     } else {
       const queryParams = new URLSearchParams(location.search);
       if (location.pathname === '/portfolio' && queryParams.has('category')) {
@@ -51,6 +58,7 @@ function AppContent() {
         <Route path="/portfolio" element={<Gallery />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/rename-gallery" element={<ImageNamer />} />
       </Routes>
 
       <FestiveOfferModal />

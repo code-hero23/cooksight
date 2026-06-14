@@ -7,6 +7,7 @@ const FestiveOfferModal = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [isAgreed, setIsAgreed] = useState(false);
 
   // Open modal after 5 seconds initially, then every 30 seconds if not submitted
   useEffect(() => {
@@ -54,51 +55,93 @@ const FestiveOfferModal = () => {
       setErrorMessage('Please fill in all details.');
       return;
     }
+
+    // Form input validation for real vs dummy/invalid data
+    const nameTrimmed = formData.name.trim();
+    const phoneTrimmed = formData.phone.trim();
+    const emailTrimmed = formData.email.trim().toLowerCase();
+
+    // 1. Name checks (length, alphabet only, common dummies)
+    if (nameTrimmed.length < 2) {
+      setErrorMessage('Name must be at least 2 characters long.');
+      return;
+    }
+    const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+    if (!nameRegex.test(nameTrimmed)) {
+      setErrorMessage('Name should contain only letters and spaces.');
+      return;
+    }
+    const dummyNames = ['test', 'asdf', 'admin', 'user', 'dummy', 'abc', 'xyz', 'qwer'];
+    if (dummyNames.includes(nameTrimmed.toLowerCase())) {
+      setErrorMessage('Please enter a valid, real name.');
+      return;
+    }
+
+    // 2. Mobile Number checks (normalize, validate 10-digit Indian pattern, common dummies)
+    let rawPhone = phoneTrimmed.replace(/[\s\-\(\)]/g, '');
+    if (rawPhone.startsWith('+91')) {
+      rawPhone = rawPhone.substring(3);
+    } else if (rawPhone.startsWith('91') && rawPhone.length === 12) {
+      rawPhone = rawPhone.substring(2);
+    } else if (rawPhone.startsWith('0') && rawPhone.length === 11) {
+      rawPhone = rawPhone.substring(1);
+    }
     
-    // Simulate submission to the backend endpoint
+    const phoneRegex = /^[6-9]\d{9}$/;
+    if (!phoneRegex.test(rawPhone)) {
+      setErrorMessage('Please enter a valid 10-digit mobile number.');
+      return;
+    }
+    const repeatingPatterns = [
+      '0000000000', '1111111111', '2222222222', '3333333333', '4444444444',
+      '5555555555', '6666666666', '7777777777', '8888888888', '9999999999',
+      '1234567890', '0987654321', '9876543210'
+    ];
+    if (repeatingPatterns.includes(rawPhone)) {
+      setErrorMessage('Please enter a valid mobile number (avoid sequential/repeated digits).');
+      return;
+    }
+
+    // 3. Email checks (RFC format compliance, block dummy domains)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailTrimmed)) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
+    const dummyEmails = ['test@test.com', 'test@gmail.com', 'dummy@gmail.com', 'abc@gmail.com', 'asdf@asdf.com', 'admin@gmail.com'];
+    const dummyDomains = ['example.com', 'test.com', 'dummy.com', 'tempmail.com', 'mailinator.com'];
+    const domain = emailTrimmed.split('@')[1];
+    if (dummyEmails.includes(emailTrimmed) || dummyDomains.includes(domain)) {
+      setErrorMessage('Please use a valid non-dummy email address.');
+      return;
+    }
+    
     setIsSubmitted(true);
     setErrorMessage('');
     localStorage.setItem('hasSubmittedFestiveModal', 'true');
     
-    // Form submission action - POST request mimicking the index.html action
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = 'https://www.cookscape.com/static/mail.php';
+    // Send lead info to local Express SMTP server on port 6000
+    const backendUrl = window.location.hostname === 'localhost' ? 'http://localhost:6000' : '';
     
-    const nameInput = document.createElement('input');
-    nameInput.name = 'name';
-    nameInput.value = formData.name;
-    form.appendChild(nameInput);
-
-    const phoneInput = document.createElement('input');
-    phoneInput.name = 'phone';
-    phoneInput.value = formData.phone;
-    form.appendChild(phoneInput);
-
-    const emailInput = document.createElement('input');
-    emailInput.name = 'email';
-    emailInput.value = formData.email;
-    form.appendChild(emailInput);
-
-    document.body.appendChild(form);
-    
-    // In a real app we might fetch in background, here we submit to backend via form post 
-    // or just let it show the success screen inside the react app.
-    // Let's do a background fetch to not disrupt the SPA experience:
-    const params = new URLSearchParams();
-    params.append('name', formData.name);
-    params.append('phone', formData.phone);
-    params.append('email', formData.email);
-    params.append('submit', 'Send Message');
-
-    fetch('https://www.cookscape.com/static/mail.php', {
+    fetch(`${backendUrl}/api/send-email`, {
       method: 'POST',
-      body: params,
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
-      mode: 'no-cors'
-    }).catch(err => console.log('Form submission finished.'));
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to send email via backend.');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Lead email sent successfully:', data);
+    })
+    .catch(err => {
+      console.error('SMTP backend submission error:', err);
+    });
   };
 
   return (
@@ -173,18 +216,27 @@ const FestiveOfferModal = () => {
                     />
                   </div>
 
-                  <p className="festive-policy-text">
-                    By continuing, I agree to Cookscape’s{' '}
-                    <Link to="/terms" onClick={handleClose}>
-                      Terms of Use
-                    </Link>{' '}
-                    &{' '}
-                    <Link to="/privacy" onClick={handleClose}>
-                      Privacy Policy
-                    </Link>
-                  </p>
+                  <div className="festive-checkbox-group">
+                    <input
+                      type="checkbox"
+                      id="festive-agree-checkbox"
+                      checked={isAgreed}
+                      onChange={(e) => setIsAgreed(e.target.checked)}
+                      required
+                    />
+                    <label htmlFor="festive-agree-checkbox" className="festive-policy-text">
+                      I agree to Cookscape’s{' '}
+                      <Link to="/terms" onClick={handleClose}>
+                        Terms of Use
+                      </Link>{' '}
+                      &{' '}
+                      <Link to="/privacy" onClick={handleClose}>
+                        Privacy Policy
+                      </Link>
+                    </label>
+                  </div>
 
-                  <button type="submit" className="festive-submit-btn">
+                  <button type="submit" className="festive-submit-btn" disabled={!isAgreed}>
                     CONTINUE
                   </button>
                 </form>

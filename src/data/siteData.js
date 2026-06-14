@@ -162,173 +162,173 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-02-07-17-51-56.png",
-    "title": "Bedroom Design 22"
+    "url": "/Website-Gallery/Bedroom/modern-scandinavian-bedroom-with-fluted-wood-paneled-headboard.png",
+    "title": "Modern Scandinavian Bedroom With Fluted Wood Paneled Headboard"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-02-18-16-54-26.png",
-    "title": "Bedroom Design 23"
+    "url": "/Website-Gallery/Bedroom/luxury-master-bedroom-with-glass-wardrobe-and-velvet-seating.png",
+    "title": "Luxury Master Bedroom With Glass Wardrobe And Velvet Seating"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-02-18-17-15-47.png",
-    "title": "Bedroom Design 24"
+    "url": "/Website-Gallery/Bedroom/chic-minimalist-bedroom-featuring-neutral-tones-and-draped-curtains.png",
+    "title": "Chic Minimalist Bedroom Featuring Neutral Tones And Draped Curtains"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-02-28-17-24-45.png",
-    "title": "Bedroom Design 25"
+    "url": "/Website-Gallery/Bedroom/elegant-blue-accent-wall-bedroom-with-backlit-fluted-wardrobe.png",
+    "title": "Elegant Blue Accent Wall Bedroom With Backlit Fluted Wardrobe"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-02-28-17-30-30.png",
-    "title": "Bedroom Design 26"
+    "url": "/Website-Gallery/Bedroom/contemporary-warm-oak-bedroom-suite-with-floating-bedside-tables.png",
+    "title": "Contemporary Warm Oak Bedroom Suite With Floating Bedside Tables"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-03-02-12-37-48.png",
-    "title": "Bedroom Design 27"
+    "url": "/Website-Gallery/Bedroom/sophisticated-matte-black-sliding-door-wardrobe-bedroom-setup.png",
+    "title": "Sophisticated Matte Black Sliding Door Wardrobe Bedroom Setup"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-03-02-12-52-59.png",
-    "title": "Bedroom Design 28"
+    "url": "/Website-Gallery/Bedroom/playful-mint-green-kids-bedroom-bed-with-space-wallpaper.png",
+    "title": "Playful Mint Green Kids Bedroom Bed With Space Wallpaper"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-03-05-11-45-23.png",
-    "title": "Bedroom Design 29"
+    "url": "/Website-Gallery/Bedroom/cozy-window-seat-bedroom-setup-with-mint-wardrobes-and-toy-shelves.png",
+    "title": "Cozy Window Seat Bedroom Setup With Mint Wardrobes And Toy Shelves"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-03-06-16-28-34.png",
-    "title": "Bedroom Design 30"
+    "url": "/Website-Gallery/Bedroom/creative-chess-mural-kids-bedroom-with-mint-study-desk.png",
+    "title": "Creative Chess Mural Kids Bedroom With Mint Study Desk"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-07-16-37-03.png",
-    "title": "Bedroom Design 31"
+    "url": "/Website-Gallery/Bedroom/chic-dual-tone-kids-room-with-built-in-rabbit-space-wallpaper.png",
+    "title": "Chic Dual Tone Kids Room With Built In Rabbit Space Wallpaper"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-07-17-39-15.png",
-    "title": "Bedroom Design 32"
+    "url": "/Website-Gallery/Bedroom/minimalist-matte-mint-kids-wardrobe-and-study-nook-layout.png",
+    "title": "Minimalist Matte Mint Kids Wardrobe And Study Nook Layout"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-07-18-35-19.png",
-    "title": "Bedroom Design 33"
+    "url": "/Website-Gallery/Bedroom/elegant-neutral-abstract-art-bedroom-with-pendant-lighting.png",
+    "title": "Elegant Neutral Abstract Art Bedroom With Pendant Lighting"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-07-18-39-00.png",
-    "title": "Bedroom Design 34"
+    "url": "/Website-Gallery/Bedroom/modern-master-bed-setup-with-dark-wood-overhead-cabinets.png",
+    "title": "Modern Master Bed Setup With Dark Wood Overhead Cabinets"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-30-17-19-38.png",
-    "title": "Bedroom Design 35"
+    "url": "/Website-Gallery/Bedroom/luxury-bedroom-design-with-backlit-arch-headboard-detail.png",
+    "title": "Luxury Bedroom Design With Backlit Arch Headboard Detail"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-30-17-27-37.png",
-    "title": "Bedroom Design 36"
+    "url": "/Website-Gallery/Bedroom/contemporary-sliding-closet-bedroom-setup-with-geometric-wallpaper.png",
+    "title": "Contemporary Sliding Closet Bedroom Setup With Geometric Wallpaper"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-04-30-17-34-33.png",
-    "title": "Bedroom Design 37"
+    "url": "/Website-Gallery/Bedroom/premium-laminate-finish-wardrobe-master-bedroom-layout.png",
+    "title": "Premium Laminate Finish Wardrobe Master Bedroom Layout"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-19-12-23-11.png",
-    "title": "Bedroom Design 38"
+    "url": "/Website-Gallery/Bedroom/sleek-compact-wardrobe-bedroom-setup-with-integrated-dresser.png",
+    "title": "Sleek Compact Wardrobe Bedroom Setup With Integrated Dresser"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-19-12-41-50.png",
-    "title": "Bedroom Design 39"
+    "url": "/Website-Gallery/Bedroom/master-bedroom-lounge-corner-with-tufted-armchair.png",
+    "title": "Master Bedroom Lounge Corner With Tufted Armchair"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-19-12-52-57.png",
-    "title": "Bedroom Design 40"
+    "url": "/Website-Gallery/Bedroom/chic-teen-bedroom-with-study-desk-and-mountain-silhouette-wall.png",
+    "title": "Chic Teen Bedroom With Study Desk And Mountain Silhouette Wall"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-19-12-58-43.png",
-    "title": "Bedroom Design 41"
+    "url": "/Website-Gallery/Bedroom/elegant-glass-front-wardrobe-bedroom-layout-with-spotlights.png",
+    "title": "Elegant Glass Front Wardrobe Bedroom Layout With Spotlights"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-19-13-07-12.png",
-    "title": "Bedroom Design 42"
+    "url": "/Website-Gallery/Bedroom/modern-bedroom-suite-featuring-fluted-wooden-headboard-panel.png",
+    "title": "Modern Bedroom Suite Featuring Fluted Wooden Headboard Panel"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-22-18-42-42.png",
-    "title": "Bedroom Design 43"
+    "url": "/Website-Gallery/Bedroom/luxury-suite-bed-setup-with-integrated-leather-bench.png",
+    "title": "Luxury Suite Bed Setup With Integrated Leather Bench"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-24-17-04-02.png",
-    "title": "Bedroom Design 44"
+    "url": "/Website-Gallery/Bedroom/contemporary-wardrobe-system-bedroom-layout-with-gold-profiles.png",
+    "title": "Contemporary Wardrobe System Bedroom Layout With Gold Profiles"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-24-17-13-14.png",
-    "title": "Bedroom Design 45"
+    "url": "/Website-Gallery/Bedroom/sleek-mirror-accent-sliding-wardrobe-bedroom-setup.png",
+    "title": "Sleek Mirror Accent Sliding Wardrobe Bedroom Setup"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-24-17-41-43.png",
-    "title": "Bedroom Design 46"
+    "url": "/Website-Gallery/Bedroom/bespoke-walk-in-closet-dressing-area-bedroom-layout.png",
+    "title": "Bespoke Walk In Closet Dressing Area Bedroom Layout"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-24-17-59-30.png",
-    "title": "Bedroom Design 47"
+    "url": "/Website-Gallery/Bedroom/chic-bedroom-with-chevron-headboard-and-metallic-accents.png",
+    "title": "Chic Bedroom With Chevron Headboard And Metallic Accents"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-30-19-04-14.png",
-    "title": "Bedroom Design 48"
+    "url": "/Website-Gallery/Bedroom/modern-minimalist-bed-frame-setup-with-concrete-texture-wall.png",
+    "title": "Modern Minimalist Bed Frame Setup With Concrete Texture Wall"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-31-12-00-51.png",
-    "title": "Bedroom Design 49"
+    "url": "/Website-Gallery/Bedroom/warm-maple-finish-bedroom-wardrobe-and-tv-panel-setup.png",
+    "title": "Warm Maple Finish Bedroom Wardrobe And TV Panel Setup"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-31-12-13-20.png",
-    "title": "Bedroom Design 50"
+    "url": "/Website-Gallery/Bedroom/contemporary-accent-wall-bedroom-with-hanging-edison-bulbs.png",
+    "title": "Contemporary Accent Wall Bedroom With Hanging Edison Bulbs"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-31-14-13-20.png",
-    "title": "Bedroom Design 51"
+    "url": "/Website-Gallery/Bedroom/luxury-bedroom-suite-with-floating-bed-and-led-cove-lighting.png",
+    "title": "Luxury Bedroom Suite With Floating Bed And LED Cove Lighting"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-31-14-17-45.png",
-    "title": "Bedroom Design 52"
+    "url": "/Website-Gallery/Bedroom/sleek-champagne-gold-profile-wardrobe-bedroom-setup.png",
+    "title": "Sleek Champagne Gold Profile Wardrobe Bedroom Setup"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-31-15-38-11.png",
-    "title": "Bedroom Design 53"
+    "url": "/Website-Gallery/Bedroom/chic-compact-bedroom-layout-with-built-in-storage-bench.png",
+    "title": "Chic Compact Bedroom Layout With Built In Storage Bench"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/Enscape_2026-05-31-15-45-48.png",
-    "title": "Bedroom Design 54"
+    "url": "/Website-Gallery/Bedroom/modern-minimalist-bedroom-with-fluted-oak-backing.png",
+    "title": "Modern Minimalist Bedroom With Fluted Oak Backing"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/fd866c2b-dafb-497d-be83-3070d1a3768c.jpg",
-    "title": "Bedroom Design 55"
+    "url": "/Website-Gallery/Bedroom/premium-sliding-shutter-wardrobe-bedroom-layout.jpg",
+    "title": "Premium Sliding Shutter Wardrobe Bedroom Layout"
   },
   {
     "category": "Bedroom",
@@ -342,128 +342,128 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/MASTER BEDROOM 1.png",
-    "title": "Master Bedroom 1"
+    "url": "/Website-Gallery/Bedroom/contemporary-master-bed-setup-with-integrated-reading-lights.png",
+    "title": "Contemporary Master Bed Setup With Integrated Reading Lights"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/MBR V1.png",
-    "title": "Mbr V1"
+    "url": "/Website-Gallery/Bedroom/master-bedroom-wardrobe-with-fluted-details.png",
+    "title": "Master Bedroom Wardrobe with Fluted Details"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/mbr wr 2.png",
-    "title": "Mbr Wr 2"
+    "url": "/Website-Gallery/Bedroom/master-bedroom-walk-in-wardrobe-with-glass-drawers.png",
+    "title": "Master Bedroom Walk In Wardrobe with Glass Drawers"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/mbr wr 3.png",
-    "title": "Mbr Wr 3"
+    "url": "/Website-Gallery/Bedroom/premium-laminated-master-bedroom-wardrobe-system.png",
+    "title": "Premium Laminated Master Bedroom Wardrobe System"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/MBR.png",
-    "title": "Mbr"
+    "url": "/Website-Gallery/Bedroom/elegant-matte-finish-master-bedroom-wardrobe.png",
+    "title": "Elegant Matte Finish Master Bedroom Wardrobe"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/son br study unit.png",
-    "title": "Son Br Study Unit"
+    "url": "/Website-Gallery/Bedroom/integrated-kids-study-desk-and-wardrobe-cabinets.png",
+    "title": "Integrated Kids Study Desk and Wardrobe Cabinets"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/wardrobe (2).png",
-    "title": "Wardrobe 2"
+    "url": "/Website-Gallery/Bedroom/modern-sliding-bedroom-wardrobe-with-mirror-panel.png",
+    "title": "Modern Sliding Bedroom Wardrobe with Mirror Panel"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/wardrobe (3).png",
-    "title": "Wardrobe 3"
+    "url": "/Website-Gallery/Bedroom/bespoke-white-hinged-door-bedroom-wardrobe.png",
+    "title": "Bespoke White Hinged Door Bedroom Wardrobe"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/wardrobe (4).png",
-    "title": "Wardrobe 4"
+    "url": "/Website-Gallery/Bedroom/sleek-wardrobe-and-dressing-vanity-layout.png",
+    "title": "Sleek Wardrobe and Dressing Vanity Layout"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/wardrobe (5).png",
-    "title": "Wardrobe 5"
+    "url": "/Website-Gallery/Bedroom/contemporary-warm-oak-finish-bedroom-wardrobe.png",
+    "title": "Contemporary Warm Oak Finish Bedroom Wardrobe"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/wardrobe (6).png",
-    "title": "Wardrobe 6"
+    "url": "/Website-Gallery/Bedroom/minimalist-built-in-sliding-bedroom-wardrobe.png",
+    "title": "Minimalist Built In Sliding Bedroom Wardrobe"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/WARDROBE (7).png",
-    "title": "Wardrobe 7"
+    "url": "/Website-Gallery/Bedroom/premium-dual-tone-hinged-bedroom-wardrobe.png",
+    "title": "Premium Dual Tone Hinged Bedroom Wardrobe"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/WARDROBE (8).png",
-    "title": "Wardrobe 8"
+    "url": "/Website-Gallery/Bedroom/bespoke-walnut-bedroom-closet-and-storage-shelves.png",
+    "title": "Bespoke Walnut Bedroom Closet and Storage Shelves"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/wardrobe.png",
-    "title": "Wardrobe"
+    "url": "/Website-Gallery/Bedroom/modern-sleek-sliding-bedroom-closet-console.png",
+    "title": "Modern Sleek Sliding Bedroom Closet Console"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/WhatsApp Image 2026-03-07 at 10.42.17 AM (1).jpeg",
-    "title": "Whatsapp Image 2026 03 07 At 10.42.17 Am 1"
+    "url": "/Website-Gallery/Bedroom/cozy-kids-bedroom-study-corner-with-toy-cabinets.jpeg",
+    "title": "Cozy Kids Bedroom Study Corner with Toy Cabinets"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/WhatsApp Image 2026-03-07 at 10.42.17 AM (2).jpeg",
-    "title": "Whatsapp Image 2026 03 07 At 10.42.17 Am 2"
+    "url": "/Website-Gallery/Bedroom/chic-mint-green-theme-kids-bedroom-storage-cabinets.jpeg",
+    "title": "Chic Mint Green Theme Kids Bedroom Storage Cabinets"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/WhatsApp Image 2026-03-07 at 10.42.17 AM (4).jpeg",
-    "title": "Whatsapp Image 2026 03 07 At 10.42.17 Am 4"
+    "url": "/Website-Gallery/Bedroom/creative-playful-kids-room-study-desk-station.jpeg",
+    "title": "Creative Playful Kids Room Study Desk Station"
   },
   {
     "category": "Bedroom",
-    "url": "/Website-Gallery/Bedroom/WhatsApp Image 2026-03-07 at 10.42.18 AM (2).jpeg",
-    "title": "Whatsapp Image 2026 03 07 At 10.42.18 Am 2"
+    "url": "/Website-Gallery/Bedroom/ergonomic-dual-kids-bedroom-study-desk-layout.jpeg",
+    "title": "Ergonomic Dual Kids Bedroom Study Desk Layout"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/1.png",
-    "title": "1"
+    "url": "/Website-Gallery/Crockery unit/modern-glass-front-crockery-console.png",
+    "title": "Modern Glass Front Crockery Console"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/1ced5bd1-34dc-44f5-9424-927c39a6ba1d.jpg",
-    "title": "Crockery unit Design 1"
+    "url": "/Website-Gallery/Crockery unit/classic-wooden-buffet-crockery-unit.jpg",
+    "title": "Classic Wooden Buffet Crockery Unit"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/c9e037a8-b7ea-42c4-9af9-edb4b67a0084.jpg",
-    "title": "Crockery unit Design 2"
+    "url": "/Website-Gallery/Crockery unit/contemporary-wall-mounted-crockery-cabinet.jpg",
+    "title": "Contemporary Wall Mounted Crockery Cabinet"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/corckery.png",
-    "title": "Corckery"
+    "url": "/Website-Gallery/Crockery unit/sleek-high-gloss-acrylic-crockery-unit.png",
+    "title": "Sleek High Gloss Acrylic Crockery Unit"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/CROCKERY (2).png",
-    "title": "Crockery 2"
+    "url": "/Website-Gallery/Crockery unit/luxury-built-in-crockery-unit-with-warm-led-shelves.png",
+    "title": "Luxury Built In Crockery Unit With Warm LED Shelves"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/CROCKERY (3).png",
-    "title": "Crockery 3"
+    "url": "/Website-Gallery/Crockery unit/minimalist-charcoal-and-wood-dining-sideboard.png",
+    "title": "Minimalist Charcoal And Wood Dining Sideboard"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/crockery 1.png",
-    "title": "Crockery 1"
+    "url": "/Website-Gallery/Crockery unit/contemporary-wall-hung-kitchen-crockery-cabinet.png",
+    "title": "Contemporary Wall Hung Kitchen Crockery Cabinet"
   },
   {
     "category": "Crockery unit",
@@ -472,38 +472,38 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/crockery.jpg",
-    "title": "Crockery"
+    "url": "/Website-Gallery/Crockery unit/minimalist-kitchen-breakfast-counter-with-crockery.jpg",
+    "title": "Minimalist Kitchen Breakfast Counter With Crockery"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/CROCKERY.png",
-    "title": "Crockery"
+    "url": "/Website-Gallery/Crockery unit/premium-painted-finish-crockery-showcase.png",
+    "title": "Premium Painted Finish Crockery Showcase"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/ec519413-6882-4086-b860-cbce34ef9c8f.jpg",
-    "title": "Crockery unit Design 3"
+    "url": "/Website-Gallery/Crockery unit/luxury-floating-glass-crockery-cabinet.jpg",
+    "title": "Luxury Floating Glass Crockery Cabinet"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/Enscape_2025-12-05-13-15-58.png",
-    "title": "Crockery unit Design 4"
+    "url": "/Website-Gallery/Crockery unit/rustic-oak-dining-room-crockery-console.png",
+    "title": "Rustic Oak Dining Room Crockery Console"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/Enscape_2026-04-08-17-36-22.png",
-    "title": "Crockery unit Design 5"
+    "url": "/Website-Gallery/Crockery unit/scandinavian-style-built-in-crockery-unit.png",
+    "title": "Scandinavian Style Built In Crockery Unit"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/Enscape_2026-04-13-11-57-27.png",
-    "title": "Crockery unit Design 6"
+    "url": "/Website-Gallery/Crockery unit/sophisticated-dark-wood-crockery-bar.png",
+    "title": "Sophisticated Dark Wood Crockery Bar"
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/Enscape_2026-05-10-15-03-19.png",
-    "title": "Crockery unit Design 7"
+    "url": "/Website-Gallery/Crockery unit/elegant-white-lacquered-crockery-unit.png",
+    "title": "Elegant White Lacquered Crockery Unit"
   },
   {
     "category": "Crockery unit",
@@ -517,8 +517,8 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Crockery unit",
-    "url": "/Website-Gallery/Crockery unit/PAINT FINISH CROCKERY (2).png",
-    "title": "Paint Finish Crockery 2"
+    "url": "/Website-Gallery/Crockery unit/bespoke-high-gloss-white-dining-credenza.png",
+    "title": "Bespoke High Gloss White Dining Credenza"
   },
   {
     "category": "Crockery unit",
@@ -532,333 +532,333 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Foyer",
-    "url": "/Website-Gallery/Foyer/FOYER.png",
-    "title": "Foyer"
+    "url": "/Website-Gallery/Foyer/contemporary-floating-foyer-console.png",
+    "title": "Contemporary Floating Foyer Console"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/1fbc2189-632f-4082-abe2-d0df418b4514.jpg",
-    "title": "Kids Furniture Design 1"
+    "url": "/Website-Gallery/Kids Furniture/vibrant-pastel-themed-study-desk.jpg",
+    "title": "Vibrant Pastel Themed Study Desk"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/4f64fcb4-abc1-48cd-aa54-77acca6b4e9c.jpg",
-    "title": "Kids Furniture Design 2"
+    "url": "/Website-Gallery/Kids Furniture/modern-modular-bunk-bed-with-storage.jpg",
+    "title": "Modern Modular Bunk Bed With Storage"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/d89cd4a7-ba08-4cd4-835a-0355fb763012.jpg",
-    "title": "Kids Furniture Design 3"
+    "url": "/Website-Gallery/Kids Furniture/playful-activity-area-storage-cabinet.jpg",
+    "title": "Playful Activity Area Storage Cabinet"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/df535160-5261-4e8d-b0b7-ea6d899fa34c.jpg",
-    "title": "Kids Furniture Design 4"
+    "url": "/Website-Gallery/Kids Furniture/ergonomic-height-adjustable-kids-study-station.jpg",
+    "title": "Ergonomic Height Adjustable Kids Study Station"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/e05124dc-f523-4dde-8200-eb4e76755d57.jpg",
-    "title": "Kids Furniture Design 5"
+    "url": "/Website-Gallery/Kids Furniture/chic-pastel-mint-kids-wardrobe-unit.jpg",
+    "title": "Chic Pastel Mint Kids Wardrobe Unit"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/Enscape_2026-02-15-16-31-23.png",
-    "title": "Kids Furniture Design 6"
+    "url": "/Website-Gallery/Kids Furniture/space-themed-kids-room-bedside-drawer.png",
+    "title": "Space Themed Kids Room Bedside Drawer"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/Enscape_2026-04-07-18-35-19.png",
-    "title": "Kids Furniture Design 7"
+    "url": "/Website-Gallery/Kids Furniture/creative-modular-toy-storage-organizer.png",
+    "title": "Creative Modular Toy Storage Organizer"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/Enscape_2026-04-07-18-39-00.png",
-    "title": "Kids Furniture Design 8"
+    "url": "/Website-Gallery/Kids Furniture/compact-dual-share-study-table.png",
+    "title": "Compact Dual Share Study Table"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/Enscape_2026-05-05-16-04-49.png",
-    "title": "Kids Furniture Design 9"
+    "url": "/Website-Gallery/Kids Furniture/cozy-window-seat-toy-cabinet-system.png",
+    "title": "Cozy Window Seat Toy Cabinet System"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/Enscape_2026-05-05-16-06-43.png",
-    "title": "Kids Furniture Design 10"
+    "url": "/Website-Gallery/Kids Furniture/modular-twin-bedroom-wardrobe-with-study-table.png",
+    "title": "Modular Twin Bedroom Wardrobe With Study Table"
   },
   {
     "category": "Kids Furniture",
-    "url": "/Website-Gallery/Kids Furniture/Enscape_2026-05-26-14-15-51.png",
-    "title": "Kids Furniture Design 11"
+    "url": "/Website-Gallery/Kids Furniture/delightful-pastel-pink-kids-vanity-table.png",
+    "title": "Delightful Pastel Pink Kids Vanity Table"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/272e6e4f-d812-488a-bbd8-375347fe4a21.jpg",
-    "title": "Living Room Design 1"
+    "url": "/Website-Gallery/Living Room/luxury-fluted-wooden-living-room-panel.jpg",
+    "title": "Luxury Fluted Wooden Living Room Panel"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/965d704e-dd54-4e91-a69f-f1e959e54a28.jpg",
-    "title": "Living Room Design 2"
+    "url": "/Website-Gallery/Living Room/contemporary-fluted-wood-living-partition-wall.jpg",
+    "title": "Contemporary Fluted Wood Living Partition Wall"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2025-11-12-11-56-21.png",
-    "title": "Living Room Design 3"
+    "url": "/Website-Gallery/Living Room/minimalist-marble-finish-coffee-table-console.png",
+    "title": "Minimalist Marble Finish Coffee Table Console"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-01-19-18-20-22.png",
-    "title": "Living Room Design 4"
+    "url": "/Website-Gallery/Living Room/elegant-floating-living-room-shelving.png",
+    "title": "Elegant Floating Living Room Shelving"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-04-13-12-06-41.png",
-    "title": "Living Room Design 5"
+    "url": "/Website-Gallery/Living Room/bespoke-fluted-partition-screen-wall.png",
+    "title": "Bespoke Fluted Partition Screen Wall"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-04-18-11-45-31.png",
-    "title": "Living Room Design 6"
+    "url": "/Website-Gallery/Living Room/modern-accent-armchair-cozy-seating-corner.png",
+    "title": "Modern Accent Armchair Cozy Seating Corner"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-04-25-18-04-23.png",
-    "title": "Living Room Design 7"
+    "url": "/Website-Gallery/Living Room/premium-textured-wall-panel-living-setup.png",
+    "title": "Premium Textured Wall Panel Living Setup"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-05-16-10-50-12.png",
-    "title": "Living Room Design 8"
+    "url": "/Website-Gallery/Living Room/modern-accent-lounge-sofa-set-layout.png",
+    "title": "Modern Accent Lounge Sofa Set Layout"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-05-19-19-02-47.jpg",
-    "title": "Living Room Design 9"
+    "url": "/Website-Gallery/Living Room/chic-open-concept-living-dining-partition.jpg",
+    "title": "Chic Open Concept Living Dining Partition"
   },
   {
     "category": "Living Room",
-    "url": "/Website-Gallery/Living Room/Enscape_2026-05-19-19-05-47.jpg",
-    "title": "Living Room Design 10"
+    "url": "/Website-Gallery/Living Room/luxury-velvet-upholstered-sofa-entertainment-unit.jpg",
+    "title": "Luxury Velvet Upholstered Sofa Entertainment Unit"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/0.1.png",
-    "title": "0.1"
+    "url": "/Website-Gallery/Modular kitchen/premium-dual-tone-modular-kitchen-with-laminate-finish.png",
+    "title": "Premium Dual Tone Modular Kitchen with Laminate Finish"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/03.png",
-    "title": "03"
+    "url": "/Website-Gallery/Modular kitchen/premium-u-shaped-acrylic-modular-kitchen.png",
+    "title": "Premium U Shaped Acrylic Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/04.png",
-    "title": "04"
+    "url": "/Website-Gallery/Modular kitchen/elegant-parallel-granite-top-modular-kitchen.png",
+    "title": "Elegant Parallel Granite Top Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/05.png",
-    "title": "05"
+    "url": "/Website-Gallery/Modular kitchen/modern-l-shaped-high-gloss-kitchen-cabinetry.png",
+    "title": "Modern L Shaped High Gloss Kitchen Cabinetry"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/09.png",
-    "title": "09"
+    "url": "/Website-Gallery/Modular kitchen/sophisticated-island-kitchen-with-breakfast-counter.png",
+    "title": "Sophisticated Island Kitchen With Breakfast Counter"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/1.png",
-    "title": "1"
+    "url": "/Website-Gallery/Modular kitchen/chic-matte-finish-modular-kitchen-cabinets.png",
+    "title": "Chic Matte Finish Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/3.png",
-    "title": "3"
+    "url": "/Website-Gallery/Modular kitchen/luxury-handleless-soft-close-kitchen-setup.png",
+    "title": "Luxury Handleless Soft Close Kitchen Setup"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/62187343-5431-4d52-9d7b-a97968c78ae0.jpg",
-    "title": "Modular kitchen Design 1"
+    "url": "/Website-Gallery/Modular kitchen/contemporary-seamless-kitchen-drawers-and-pantry.jpg",
+    "title": "Contemporary Seamless Kitchen Drawers And Pantry"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/74a6af7e-4110-4d83-acc6-3e700bc761bb.jpg",
-    "title": "Modular kitchen Design 2"
+    "url": "/Website-Gallery/Modular kitchen/modern-industrial-plywood-finish-kitchen-setup.jpg",
+    "title": "Modern Industrial Plywood Finish Kitchen Setup"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/90ad5ded-6b26-4d0b-aaaf-9a602d653baf.jpg",
-    "title": "Modular kitchen Design 3"
+    "url": "/Website-Gallery/Modular kitchen/classic-white-country-style-modular-kitchen.jpg",
+    "title": "Classic White Country Style Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-25-10-29-32 - Copy.png",
-    "title": "Modular kitchen Design 4"
+    "url": "/Website-Gallery/Modular kitchen/bespoke-dual-tone-modular-kitchen-cabinets.png",
+    "title": "Bespoke Dual Tone Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-27-13-06-23.png",
-    "title": "Modular kitchen Design 5"
+    "url": "/Website-Gallery/Modular kitchen/urban-compact-apartment-kitchen-with-hob.png",
+    "title": "Urban Compact Apartment Kitchen With Hob"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-27-13-14-05.png",
-    "title": "Modular kitchen Design 6"
+    "url": "/Website-Gallery/Modular kitchen/sleek-metallic-finish-modular-kitchen-cabinetry.png",
+    "title": "Sleek Metallic Finish Modular Kitchen Cabinetry"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-27-14-04-16.png",
-    "title": "Modular kitchen Design 7"
+    "url": "/Website-Gallery/Modular kitchen/elegant-quartz-countertop-parallel-kitchen-layout.png",
+    "title": "Elegant Quartz Countertop Parallel Kitchen Layout"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-27-14-11-26.png",
-    "title": "Modular kitchen Design 8"
+    "url": "/Website-Gallery/Modular kitchen/high-end-glass-shutter-modular-kitchen-cabinets.png",
+    "title": "High End Glass Shutter Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-27-14-43-13.png",
-    "title": "Modular kitchen Design 9"
+    "url": "/Website-Gallery/Modular kitchen/contemporary-charcoal-gray-high-gloss-kitchen-setup.png",
+    "title": "Contemporary Charcoal Gray High Gloss Kitchen Setup"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2025-10-27-16-24-10.png",
-    "title": "Modular kitchen Design 10"
+    "url": "/Website-Gallery/Modular kitchen/bright-pastel-blue-acrylic-modular-kitchen.png",
+    "title": "Bright Pastel Blue Acrylic Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-01-27-11-54-49.png",
-    "title": "Modular kitchen Design 11"
+    "url": "/Website-Gallery/Modular kitchen/premium-built-in-appliance-oven-tall-pantry-cabinet.png",
+    "title": "Premium Built In Appliance Oven Tall Pantry Cabinet"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-02-06-16-57-36.png",
-    "title": "Modular kitchen Design 12"
+    "url": "/Website-Gallery/Modular kitchen/minimalist-concrete-finish-modular-kitchen.png",
+    "title": "Minimalist Concrete Finish Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-02-06-17-01-24.png",
-    "title": "Modular kitchen Design 13"
+    "url": "/Website-Gallery/Modular kitchen/warm-walnut-and-white-dual-tone-kitchen-system.png",
+    "title": "Warm Walnut And White Dual Tone Kitchen System"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-04-13-11-18-12.png",
-    "title": "Modular kitchen Design 14"
+    "url": "/Website-Gallery/Modular kitchen/chic-olive-green-modular-kitchen-cabinets.png",
+    "title": "Chic Olive Green Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-04-30-14-07-23.png",
-    "title": "Modular kitchen Design 15"
+    "url": "/Website-Gallery/Modular kitchen/premium-u-shaped-dual-tone-acrylic-kitchen-layout.png",
+    "title": "Premium U Shaped Dual Tone Acrylic Kitchen Layout"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-05-11-40-05.png",
-    "title": "Modular kitchen Design 16"
+    "url": "/Website-Gallery/Modular kitchen/modern-parallel-kitchen-layout-with-tall-units.png",
+    "title": "Modern Parallel Kitchen Layout With Tall Units"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-05-18-37-05.png",
-    "title": "Modular kitchen Design 17"
+    "url": "/Website-Gallery/Modular kitchen/classic-wooden-texture-shaker-style-kitchen-cabinets.png",
+    "title": "Classic Wooden Texture Shaker Style Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-05-18-42-18.png",
-    "title": "Modular kitchen Design 18"
+    "url": "/Website-Gallery/Modular kitchen/compact-studio-apartment-modular-kitchen-cabinetry.png",
+    "title": "Compact Studio Apartment Modular Kitchen Cabinetry"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-05-18-47-14.png",
-    "title": "Modular kitchen Design 19"
+    "url": "/Website-Gallery/Modular kitchen/sophisticated-matte-black-modular-kitchen-setup.png",
+    "title": "Sophisticated Matte Black Modular Kitchen Setup"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-05-18-57-14.png",
-    "title": "Modular kitchen Design 20"
+    "url": "/Website-Gallery/Modular kitchen/ergonomic-modular-kitchen-drawers-with-peg-organizers.png",
+    "title": "Ergonomic Modular Kitchen Drawers With Peg Organizers"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-17-14-46-00.png",
-    "title": "Modular kitchen Design 21"
+    "url": "/Website-Gallery/Modular kitchen/premium-under-cabinet-led-lit-modular-kitchen.png",
+    "title": "Premium Under Cabinet LED Lit Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-17-14-48-47.png",
-    "title": "Modular kitchen Design 22"
+    "url": "/Website-Gallery/Modular kitchen/contemporary-modular-kitchen-with-stainless-steel-top.png",
+    "title": "Contemporary Modular Kitchen With Stainless Steel Top"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-17-15-45-20.png",
-    "title": "Modular kitchen Design 23"
+    "url": "/Website-Gallery/Modular kitchen/sleek-champagne-gold-profile-handle-kitchen-system.png",
+    "title": "Sleek Champagne Gold Profile Handle Kitchen System"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-17-15-47-07.png",
-    "title": "Modular kitchen Design 24"
+    "url": "/Website-Gallery/Modular kitchen/modern-oak-finish-laminate-modular-kitchen-cabinets.png",
+    "title": "Modern Oak Finish Laminate Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-17-15-49-04.png",
-    "title": "Modular kitchen Design 25"
+    "url": "/Website-Gallery/Modular kitchen/chic-emerald-green-high-gloss-modular-kitchen.png",
+    "title": "Chic Emerald Green High Gloss Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/Enscape_2026-05-17-15-51-59.png",
-    "title": "Modular kitchen Design 26"
+    "url": "/Website-Gallery/Modular kitchen/elegant-beige-acrylic-finish-modular-kitchen-cabinets.png",
+    "title": "Elegant Beige Acrylic Finish Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KIT 1.jpg",
-    "title": "Kit 1"
+    "url": "/Website-Gallery/Modular kitchen/modern-parallel-kitchen-setup-with-built-in-hob.jpg",
+    "title": "Modern Parallel Kitchen Setup With Built In Hob"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/kit 3.png",
-    "title": "Kit 3"
+    "url": "/Website-Gallery/Modular kitchen/classic-white-country-shaker-style-kitchen-cabinets.png",
+    "title": "Classic White Country Shaker Style Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KIT V1.png",
-    "title": "Kit V1"
+    "url": "/Website-Gallery/Modular kitchen/sleek-handleless-matte-finish-modular-kitchen.png",
+    "title": "Sleek Handleless Matte Finish Modular Kitchen"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KIT V2.png",
-    "title": "Kit V2"
+    "url": "/Website-Gallery/Modular kitchen/elegant-parallel-granite-top-kitchen-system.png",
+    "title": "Elegant Parallel Granite Top Kitchen System"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KIT V3.png",
-    "title": "Kit V3"
+    "url": "/Website-Gallery/Modular kitchen/contemporary-charcoal-modular-kitchen-with-tall-units.png",
+    "title": "Contemporary Charcoal Modular Kitchen With Tall Units"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN (2).png",
-    "title": "Kitchen 2"
+    "url": "/Website-Gallery/Modular kitchen/compact-apartment-kitchen-with-high-gloss-cabinets.png",
+    "title": "Compact Apartment Kitchen With High Gloss Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN (3).jpg",
-    "title": "Kitchen 3"
+    "url": "/Website-Gallery/Modular kitchen/premium-l-shaped-kitchen-layout-with-quartz-counter.jpg",
+    "title": "Premium L Shaped Kitchen Layout With Quartz Counter"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN (3).png",
-    "title": "Kitchen 3"
+    "url": "/Website-Gallery/Modular kitchen/sleek-champagne-gold-profile-handle-kitchen-layout.png",
+    "title": "Sleek Champagne Gold Profile Handle Kitchen Layout"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN (4).jpg",
-    "title": "Kitchen 4"
+    "url": "/Website-Gallery/Modular kitchen/modern-breakfast-island-and-parallel-kitchen-layout.jpg",
+    "title": "Modern Breakfast Island And Parallel Kitchen Layout"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN (5).jpg",
-    "title": "Kitchen 5"
+    "url": "/Website-Gallery/Modular kitchen/bespoke-high-capacity-pull-out-pantry-drawer-system.jpg",
+    "title": "Bespoke High Capacity Pull Out Pantry Drawer System"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN (6).jpg",
-    "title": "Kitchen 6"
+    "url": "/Website-Gallery/Modular kitchen/luxury-marble-wall-backsplash-modular-kitchen-setup.jpg",
+    "title": "Luxury Marble Wall Backsplash Modular Kitchen Setup"
   },
   {
     "category": "Modular kitchen",
@@ -872,28 +872,28 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN.jpg",
-    "title": "Kitchen"
+    "url": "/Website-Gallery/Modular kitchen/minimalist-seamless-modular-kitchen-layout.jpg",
+    "title": "Minimalist Seamless Modular Kitchen Layout"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KITCHEN.png",
-    "title": "Kitchen"
+    "url": "/Website-Gallery/Modular kitchen/high-capacity-pull-out-basket-kitchen-cabinets.png",
+    "title": "High Capacity Pull Out Basket Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KS1 - Copy.png",
-    "title": "Ks1 Copy"
+    "url": "/Website-Gallery/Modular kitchen/contemporary-matte-charcoal-modular-kitchen-setup.png",
+    "title": "Contemporary Matte Charcoal Modular Kitchen Setup"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/KS2 - Copy.png",
-    "title": "Ks2 Copy"
+    "url": "/Website-Gallery/Modular kitchen/premium-parallel-modular-kitchen-with-led-lighting.png",
+    "title": "Premium Parallel Modular Kitchen with LED Lighting"
   },
   {
     "category": "Modular kitchen",
-    "url": "/Website-Gallery/Modular kitchen/opt2.png",
-    "title": "Opt2"
+    "url": "/Website-Gallery/Modular kitchen/bespoke-white-and-oak-modular-kitchen-cabinets.png",
+    "title": "Bespoke White and Oak Modular Kitchen Cabinets"
   },
   {
     "category": "Modular kitchen",
@@ -902,68 +902,68 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/a0c7bd9a-ae63-4000-9936-3b4a22ebc39e.jpg",
-    "title": "Pooja Unit Design 1"
+    "url": "/Website-Gallery/Pooja Unit/traditional-teak-wood-carved-pooja-mandir.jpg",
+    "title": "Traditional Teak Wood Carved Pooja Mandir"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-03-06-17-24-43.png",
-    "title": "Pooja Unit Design 2"
+    "url": "/Website-Gallery/Pooja Unit/elegant-backlit-cnc-lattice-pooja-mandir-cabinet.png",
+    "title": "Elegant Backlit CNC Lattice Pooja Mandir Cabinet"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-03-06-17-49-17.png",
-    "title": "Pooja Unit Design 3"
+    "url": "/Website-Gallery/Pooja Unit/elegant-wall-mounted-compact-pooja-shelf.png",
+    "title": "Elegant Wall Mounted Compact Pooja Shelf"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-03-06-17-55-43.png",
-    "title": "Pooja Unit Design 4"
+    "url": "/Website-Gallery/Pooja Unit/contemporary-marble-finish-pooja-cabinet.png",
+    "title": "Contemporary Marble Finish Pooja Cabinet"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-04-07-15-47-07.png",
-    "title": "Pooja Unit Design 5"
+    "url": "/Website-Gallery/Pooja Unit/sleek-high-gloss-white-pooja-unit-cabinetry.png",
+    "title": "Sleek High Gloss White Pooja Unit Cabinetry"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-04-17-11-57-09.jpg",
-    "title": "Pooja Unit Design 6"
+    "url": "/Website-Gallery/Pooja Unit/bespoke-jaali-door-pooja-mandir-cabinet.jpg",
+    "title": "Bespoke Jaali Door Pooja Mandir Cabinet"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-05-05-13-02-01.png",
-    "title": "Pooja Unit Design 7"
+    "url": "/Website-Gallery/Pooja Unit/luxury-backlit-onyx-stone-pooja-mandir-setup.png",
+    "title": "Luxury Backlit Onyx Stone Pooja Mandir Setup"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-05-05-13-07-17.png",
-    "title": "Pooja Unit Design 8"
+    "url": "/Website-Gallery/Pooja Unit/traditional-sacred-space-pooja-cabinet-with-drawers.png",
+    "title": "Traditional Sacred Space Pooja Cabinet With Drawers"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-05-10-11-28-31.png",
-    "title": "Pooja Unit Design 9"
+    "url": "/Website-Gallery/Pooja Unit/minimalist-floating-wooden-pooja-shelf-layout.png",
+    "title": "Minimalist Floating Wooden Pooja Shelf Layout"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-05-15-14-50-59.png",
-    "title": "Pooja Unit Design 10"
+    "url": "/Website-Gallery/Pooja Unit/contemporary-lattice-door-wooden-pooja-cabinet-setup.png",
+    "title": "Contemporary Lattice Door Wooden Pooja Cabinet Setup"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-05-21-14-22-32.png",
-    "title": "Pooja Unit Design 11"
+    "url": "/Website-Gallery/Pooja Unit/sophisticated-led-lit-marble-pooja-mandir-unit.png",
+    "title": "Sophisticated LED Lit Marble Pooja Mandir Unit"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Enscape_2026-05-26-15-31-40.png",
-    "title": "Pooja Unit Design 12"
+    "url": "/Website-Gallery/Pooja Unit/chic-compact-corner-pooja-unit-cabinetry.png",
+    "title": "Chic Compact Corner Pooja Unit Cabinetry"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/POOJA 8230 SF.png",
-    "title": "Pooja 8230 Sf"
+    "url": "/Website-Gallery/Pooja Unit/traditional-teak-wood-pooja-mandir-unit.png",
+    "title": "Traditional Teak Wood Pooja Mandir Unit"
   },
   {
     "category": "Pooja Unit",
@@ -977,113 +977,113 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/pooja.jpg",
-    "title": "Pooja"
+    "url": "/Website-Gallery/Pooja Unit/elegant-walnut-texture-tall-pooja-mandir-cabinet.jpg",
+    "title": "Elegant Walnut Texture Tall Pooja Mandir Cabinet"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/pooja.png",
-    "title": "Pooja"
+    "url": "/Website-Gallery/Pooja Unit/premium-painted-finish-jaali-door-pooja-cabinet.png",
+    "title": "Premium Painted Finish Jaali Door Pooja Cabinet"
   },
   {
     "category": "Pooja Unit",
-    "url": "/Website-Gallery/Pooja Unit/Screenshot 2025-07-05 154532.png",
-    "title": "Screenshot 2025 07 05 154532"
+    "url": "/Website-Gallery/Pooja Unit/modern-wall-mounted-floating-pooja-shelf-panel.png",
+    "title": "Modern Wall Mounted Floating Pooja Shelf Panel"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2025-10-27-16-53-53.png",
-    "title": "TV unit Design 1"
+    "url": "/Website-Gallery/TV unit/luxury-fluted-wall-mounted-tv-cabinet-unit.png",
+    "title": "Luxury Fluted Wall Mounted TV Cabinet Unit"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-01-07-19-11-37.png",
-    "title": "TV unit Design 2"
+    "url": "/Website-Gallery/TV unit/contemporary-floating-wood-texture-tv-console.png",
+    "title": "Contemporary Floating Wood Texture TV Console"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-03-02-11-39-01.png",
-    "title": "TV unit Design 3"
+    "url": "/Website-Gallery/TV unit/modern-marble-paneled-media-center-tv-stand.png",
+    "title": "Modern Marble Paneled Media Center TV Stand"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-03-04-16-21-26.png",
-    "title": "TV unit Design 4"
+    "url": "/Website-Gallery/TV unit/sleek-high-gloss-low-profile-tv-unit-console.png",
+    "title": "Sleek High Gloss Low Profile TV Unit Console"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-03-10-17-13-50.png",
-    "title": "TV unit Design 5"
+    "url": "/Website-Gallery/TV unit/minimalist-tv-wall-panel-with-backlit-led.png",
+    "title": "Minimalist TV Wall Panel With Backlit LED"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-03-10-17-37-31.png",
-    "title": "TV unit Design 6"
+    "url": "/Website-Gallery/TV unit/bespoke-walnut-veneer-tv-cabinet-panel.png",
+    "title": "Bespoke Walnut Veneer TV Cabinet Panel"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-05-12-17-07.png",
-    "title": "TV unit Design 7"
+    "url": "/Website-Gallery/TV unit/sophisticated-dark-charcoal-floating-tv-console.png",
+    "title": "Sophisticated Dark Charcoal Floating TV Console"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-15-13-46-45.png",
-    "title": "TV unit Design 8"
+    "url": "/Website-Gallery/TV unit/chic-dual-level-living-room-tv-stand-layout.png",
+    "title": "Chic Dual Level Living Room TV Stand Layout"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-17-15-07-55.png",
-    "title": "TV unit Design 9"
+    "url": "/Website-Gallery/TV unit/elegant-false-panel-tv-console-storage-unit.png",
+    "title": "Elegant False Panel TV Console Storage Unit"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-17-15-21-08.png",
-    "title": "TV unit Design 10"
+    "url": "/Website-Gallery/TV unit/contemporary-white-gloss-tv-entertainment-center.png",
+    "title": "Contemporary White Gloss TV Entertainment Center"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-21-14-14-58.png",
-    "title": "TV unit Design 11"
+    "url": "/Website-Gallery/TV unit/modern-compact-tv-console-bedside-media-unit.png",
+    "title": "Modern Compact TV Console Bedside Media Unit"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-24-17-00-02.png",
-    "title": "TV unit Design 12"
+    "url": "/Website-Gallery/TV unit/premium-matte-finish-living-room-tv-cabinet-setup.png",
+    "title": "Premium Matte Finish Living Room TV Cabinet Setup"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/Enscape_2026-05-26-15-58-37.png",
-    "title": "TV unit Design 13"
+    "url": "/Website-Gallery/TV unit/luxury-gold-trim-accent-tv-wall-panel-unit.png",
+    "title": "Luxury Gold Trim Accent TV Wall Panel Unit"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/FF LOUNGE 2.png",
-    "title": "Ff Lounge 2"
+    "url": "/Website-Gallery/TV unit/luxury-wall-hung-fluted-panel-tv-cabinet-console.png",
+    "title": "Luxury Wall Hung Fluted Panel TV Cabinet Console"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/FF LOUNGE.png",
-    "title": "Ff Lounge"
+    "url": "/Website-Gallery/TV unit/modern-marble-panel-backdrop-tv-unit-setup.png",
+    "title": "Modern Marble Panel Backdrop TV Unit Setup"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/LIVING.png",
-    "title": "Living"
+    "url": "/Website-Gallery/TV unit/sleek-modular-floating-shelves-tv-cabinet-setup.png",
+    "title": "Sleek Modular Floating Shelves TV Cabinet Setup"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/TV UNIT (2).png",
-    "title": "Tv Unit 2"
+    "url": "/Website-Gallery/TV unit/contemporary-floating-wooden-tv-console-stand.png",
+    "title": "Contemporary Floating Wooden TV Console Stand"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/TV UNIT (3).png",
-    "title": "Tv Unit 3"
+    "url": "/Website-Gallery/TV unit/sleek-low-profile-high-gloss-tv-unit-drawer-console.png",
+    "title": "Sleek Low Profile High Gloss TV Unit Drawer Console"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/tv unit 1.jpg",
-    "title": "Tv Unit 1"
+    "url": "/Website-Gallery/TV unit/minimalist-backlit-led-wall-panel-tv-unit-setup.jpg",
+    "title": "Minimalist Backlit LED Wall Panel TV Unit Setup"
   },
   {
     "category": "TV unit",
@@ -1097,113 +1097,113 @@ export const GALLERY_COLLECTION = [
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/TV UNIT.png",
-    "title": "Tv Unit"
+    "url": "/Website-Gallery/TV unit/bespoke-walnut-veneer-living-room-tv-cabinet.png",
+    "title": "Bespoke Walnut Veneer Living Room TV Cabinet"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/tv.png",
-    "title": "Tv"
+    "url": "/Website-Gallery/TV unit/contemporary-laminated-tv-console-drawer-unit.png",
+    "title": "Contemporary Laminated TV Console Drawer Unit"
   },
   {
     "category": "TV unit",
-    "url": "/Website-Gallery/TV unit/WhatsApp Image 2026-02-22 at 1.08.30 PM.jpeg",
-    "title": "Whatsapp Image 2026 02 22 At 1.08.30 Pm"
+    "url": "/Website-Gallery/TV unit/bespoke-tall-media-wardrobe-and-tv-panel-unit.jpeg",
+    "title": "Bespoke Tall Media Wardrobe And TV Panel Unit"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/4940d24d-067d-48ef-ae3b-0c9c2a8d102d.jpg",
-    "title": "Wardrobe Design 1"
+    "url": "/Website-Gallery/Wardrobe/modern-glass-sliding-door-wardrobe-console.jpg",
+    "title": "Modern Glass Sliding Door Wardrobe Console"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2025-11-28-12-34-09.png",
-    "title": "Wardrobe Design 2"
+    "url": "/Website-Gallery/Wardrobe/sleek-matte-finish-hinged-wardrobe-closet.png",
+    "title": "Sleek Matte Finish Hinged Wardrobe Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-02-07-17-33-38.png",
-    "title": "Wardrobe Design 3"
+    "url": "/Website-Gallery/Wardrobe/luxury-walk-in-wardrobe-glass-cabinet-system.png",
+    "title": "Luxury Walk In Wardrobe Glass Cabinet System"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-02-11-18-17-11.png",
-    "title": "Wardrobe Design 4"
+    "url": "/Website-Gallery/Wardrobe/contemporary-fluted-front-hinged-door-wardrobe-closet.png",
+    "title": "Contemporary Fluted Front Hinged Door Wardrobe Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-03-07-10-39-08.png",
-    "title": "Wardrobe Design 5"
+    "url": "/Website-Gallery/Wardrobe/chic-champagne-gold-handle-bedroom-wardrobe-cabinets.png",
+    "title": "Chic Champagne Gold Handle Bedroom Wardrobe Cabinets"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-03-07-10-40-30.png",
-    "title": "Wardrobe Design 6"
+    "url": "/Website-Gallery/Wardrobe/minimalist-built-in-sliding-door-wardrobe-wardrobe.png",
+    "title": "Minimalist Built In Sliding Door Wardrobe Wardrobe"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-06-11-34-17.png",
-    "title": "Wardrobe Design 7"
+    "url": "/Website-Gallery/Wardrobe/bespoke-walnut-texture-master-bedroom-wardrobe-closet.png",
+    "title": "Bespoke Walnut Texture Master Bedroom Wardrobe Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-16-14-52-34.jpg",
-    "title": "Wardrobe Design 8"
+    "url": "/Website-Gallery/Wardrobe/modern-dual-tone-hinged-door-wardrobe-storage.jpg",
+    "title": "Modern Dual Tone Hinged Door Wardrobe Storage"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-16-18-31-14.jpg",
-    "title": "Wardrobe Design 9"
+    "url": "/Website-Gallery/Wardrobe/sleek-integrated-mirror-sliding-door-wardrobe-unit.jpg",
+    "title": "Sleek Integrated Mirror Sliding Door Wardrobe Unit"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-17-12-53-00.jpg",
-    "title": "Wardrobe Design 10"
+    "url": "/Website-Gallery/Wardrobe/premium-high-gloss-acrylic-bedroom-wardrobe-closet.jpg",
+    "title": "Premium High Gloss Acrylic Bedroom Wardrobe Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-17-12-55-30.jpg",
-    "title": "Wardrobe Design 11"
+    "url": "/Website-Gallery/Wardrobe/contemporary-walk-in-wardrobe-cabinetry-layout.jpg",
+    "title": "Contemporary Walk In Wardrobe Cabinetry Layout"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-21-11-53-22.png",
-    "title": "Wardrobe Design 12"
+    "url": "/Website-Gallery/Wardrobe/luxury-walk-in-dressing-closet-wardrobe-system.png",
+    "title": "Luxury Walk In Dressing Closet Wardrobe System"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-21-12-01-57.png",
-    "title": "Wardrobe Design 13"
+    "url": "/Website-Gallery/Wardrobe/chic-compact-bedroom-wardrobe-drawer-unit-layout.png",
+    "title": "Chic Compact Bedroom Wardrobe Drawer Unit Layout"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-21-12-06-43.png",
-    "title": "Wardrobe Design 14"
+    "url": "/Website-Gallery/Wardrobe/elegant-warm-oak-finish-bedroom-wardrobe-closet.png",
+    "title": "Elegant Warm Oak Finish Bedroom Wardrobe Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-04-21-12-09-16.png",
-    "title": "Wardrobe Design 15"
+    "url": "/Website-Gallery/Wardrobe/minimalist-matte-charcoal-wardrobe-cabinet-closet.png",
+    "title": "Minimalist Matte Charcoal Wardrobe Cabinet Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/Enscape_2026-05-10-13-31-35.png",
-    "title": "Wardrobe Design 16"
+    "url": "/Website-Gallery/Wardrobe/bespoke-multi-tier-sliding-wardrobe-closet-system.png",
+    "title": "Bespoke Multi Tier Sliding Wardrobe Closet System"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/mbr walkin 1.jpg",
-    "title": "Mbr Walkin 1"
+    "url": "/Website-Gallery/Wardrobe/sleek-built-in-sliding-glass-wardrobe-closets.jpg",
+    "title": "Sleek Built In Sliding Glass Wardrobe Closets"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/MBR.png",
-    "title": "Mbr"
+    "url": "/Website-Gallery/Wardrobe/contemporary-champagne-high-gloss-bedroom-wardrobe-closet.png",
+    "title": "Contemporary Champagne High Gloss Bedroom Wardrobe Closet"
   },
   {
     "category": "Wardrobe",
-    "url": "/Website-Gallery/Wardrobe/SON BEDROOM.png",
-    "title": "Son Bedroom"
+    "url": "/Website-Gallery/Wardrobe/bespoke-dual-tone-kids-wardrobe-with-built-in-study-desk.png",
+    "title": "Bespoke Dual Tone Kids Wardrobe With Built In Study Desk"
   }
 ];
 
