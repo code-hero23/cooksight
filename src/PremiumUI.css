@@ -48,6 +48,19 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
+.nav-header-premium.menu-open {
+    z-index: 1005;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+
+.nav-header-premium.menu-open .mobile-menu-btn span {
+    background: var(--text-primary-dark) !important;
+}
+
 .nav-container-premium {
     display: flex;
     justify-content: space-between;
@@ -55,6 +68,7 @@ body {
     padding: 0 50px;
     max-width: 1600px;
     margin: 0 auto;
+    position: relative;
 }
 
 .nav-logo {
@@ -269,7 +283,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-left: auto;
-    margin-right: 58px; /* leave room for the fixed hamburger (30px wide + ~28px gap) */
+    margin-right: 58px; /* Room for the absolute hamburger */
     z-index: 1000;
 }
 
@@ -321,13 +335,14 @@ body {
     .nav-container-premium { padding: 0 20px; }
     .nav-mobile-cta { display: flex; }
 
-    /* Detach hamburger from nav flow so it sits above fullscreen menu */
+    /* Detach hamburger from nav flow to prevent flex overflow */
     .mobile-menu-btn {
         display: flex;
-        position: fixed;
-        top: 22px;
+        position: absolute;
+        top: 50%;
         right: 20px;
-        z-index: 1003; /* Above fullscreen menu (1002) and nav (1000) */
+        transform: translateY(-50%);
+        z-index: 1003; 
         background: transparent;
         padding: 6px;
         border-radius: 6px;

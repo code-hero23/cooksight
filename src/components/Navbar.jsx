@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`nav-header-premium ${scrolled ? 'scrolled' : ''} ${isDarkHeroPage && !scrolled ? 'on-dark-hero' : ''}`}>
+      <header className={`nav-header-premium ${scrolled ? 'scrolled' : ''} ${isDarkHeroPage && !scrolled ? 'on-dark-hero' : ''} ${isMobileMenuOpen ? 'menu-open' : ''}`}>
         <nav className="container nav-container-premium">
           <Link to="/" className="logo-link">
             <img src="/logo.jpeg" alt="Cookscape" className="nav-logo" />
