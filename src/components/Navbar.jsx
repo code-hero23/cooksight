@@ -2,7 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS } from '../data/siteData';
+ const menuVariants = {
+    closed: { opacity: 0, y: "-100%", transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+    open: { opacity: 1, y: 0, transition: { staggerChildren: 0.1, delayChildren: 0.2 } }
+  };
 
+  const itemVariants = {
+    closed: { opacity: 0, y: 20 },
+    open: { opacity: 1, y: 0 }
+  };
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -36,15 +44,7 @@ const Navbar = () => {
 
   const isDarkHeroPage = location.pathname === '/portfolio' || location.pathname === '/careers';
 
-  const menuVariants = {
-    closed: { opacity: 0, y: "-100%", transition: { staggerChildren: 0.05, staggerDirection: -1 } },
-    open: { opacity: 1, y: 0, transition: { staggerChildren: 0.1, delayChildren: 0.2 } }
-  };
-
-  const itemVariants = {
-    closed: { opacity: 0, y: 20 },
-    open: { opacity: 1, y: 0 }
-  };
+ 
 
   return (
     <>
