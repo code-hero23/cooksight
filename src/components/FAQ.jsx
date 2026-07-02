@@ -1,40 +1,60 @@
 import React, { Component } from "react";
-import {FAQs} from "../data/FAQs"; // Importing FAQs from a JSON file for better maintainability
+import { FAQs } from "../data/FAQs"; // Importing FAQs from a JSON file for better maintainability
+
+const totalFaqs = FAQs.length;
+const Arrow = ({ up = false }) => (
+  <svg
+    viewBox="0 0 24 24"
+    width="18"
+    height="18"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+  >
+    <path d={up ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+  </svg>
+);
+
+const FAQ_BATCH_SIZE = 5;
 
 export class FAQ extends Component {
+  faqSectionRef = React.createRef();
   state = {
-    activeIndex: 0,
-    visibleCount: 5,
+    activeIndex: null,
+    visibleCount: FAQ_BATCH_SIZE,
   };
-
- toggleFAQ = (id) => {
-  this.setState((prevState) => ({
-    activeIndex: prevState.activeIndex === id ? null : id,
-  }));
-};
-
- loadMore = () => {
-  this.setState((prevState) => ({
-    visibleCount: Math.min(prevState.visibleCount + 5, FAQs.length),
-  }));
-};
+  toggleFAQ = (id) => {
+    this.setState((prevState) => ({
+      activeIndex: prevState.isActive ? null : id,
+    }));
+  };
+  
+  loadMore = () => {
+    this.setState((prevState) => ({
+      visibleCount: Math.min(
+        prevState.visibleCount + FAQ_BATCH_SIZE,
+        FAQs.length,
+      ),
+    }));
+  };
   showLess = () => {
     this.setState({
-      visibleCount: 5,
+      visibleCount: FAQ_BATCH_SIZE,
       activeIndex: null,
     });
-
+    
     // Optional: Smooth scroll back to FAQ
-    document.querySelector(".faq-section")?.scrollIntoView({
+    this.faqSectionRef.current?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
   render() {
     const { activeIndex, visibleCount } = this.state;
-
+    const visibleFaqs = FAQs.slice(0, visibleCount);
+    
     return (
-      <section className="faq-section">
+      <section className="faq-section" ref={this.faqSectionRef}>
         <div className="faq-container">
           {/* Heading */}
           <div className="faq-heading">
@@ -51,79 +71,53 @@ export class FAQ extends Component {
           </div>
 
           {/* FAQ List */}
-        <div className="faq-list">
+          <div className="faq-list">
+            {visibleFaqs.map(({ id, question, answer }) => {
+              const isActive = activeIndex === id;
+              return (
+                <div
+                  key={id}
+                  className={`faq-card ${isActive ? "active" : ""}`}
+                >
+                  <button
+                    className="faq-question"
+                    onClick={() => this.toggleFAQ(id)}
+                    aria-expanded={isActive}
+                    aria-controls={`faq-${id}`}
+                  >
+                    <span>
+                      {id}. {question}
+                    </span>
 
-  {FAQs
-    .slice(0, visibleCount)
-    .map((faq) => (
+                    <span className={`faq-icon ${isActive ? "rotate" : ""}`}>
+                      +
+                    </span>
+                  </button>
 
-      <div
-        key={faq.id}
-        className={`faq-card ${
-          activeIndex === faq.id ? "active" : ""
-        }`}
-      >
-
-        <button
-          className="faq-question"
-          onClick={() => this.toggleFAQ(faq.id)}
-        >
-
-          <span>{faq.id}. {faq.question}</span>
-
-          <span
-            className={`faq-icon ${
-              activeIndex === faq.id ? "rotate" : ""
-            }`}
-          >
-            +
-          </span>
-
-        </button>
-
-        <div
-          className={`faq-answer ${
-            activeIndex === faq.id ? "show" : ""
-          }`}
-        >
-          <p>{faq.answer}</p>
-        </div>
-
-      </div>
-
-    ))}
-
-</div>
+                  <div className={`faq-answer ${isActive ? "show" : ""}`}>
+                    <p>{answer}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
 
           {/* Load More Button */}
           <div className="faq-load-more">
-            {visibleCount < FAQs.length ? (
-              <button className="btn-primary-v3 show-more-btn" onClick={this.loadMore}>
-                View More FAQs
-                <svg
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M19 9l-7 7-7-7" />
-                </svg>
+            {visibleCount < totalFaqs ? (
+              <button
+                className="btn-primary-v3 show-more-btn"
+                onClick={this.loadMore}
+              >
+                View More FAQs <Arrow />
               </button>
             ) : (
-              <button className="btn-primary-v3 show-less-btn" onClick={this.showLess}>
+              <button
+                className="btn-primary-v3 show-less-btn"
+                onClick={this.showLess}
+              >
                 Show Less
-                <svg
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M5 15l7-7 7 7" />
-                </svg>
+                <Arrow up />
               </button>
             )}
           </div>
