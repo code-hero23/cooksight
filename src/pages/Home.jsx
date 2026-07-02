@@ -9,6 +9,7 @@ const Testimonials = lazy(() => import('../components/Testimonials'));
 const Contact = lazy(() => import('../components/Contact'));
 const Studios = lazy(() => import('../components/Studios'));
 const Footer = lazy(() => import('../components/Footer'));
+const FAQ = lazy(() => import("../components/FAQ"));
 
 // Simple loading placeholder
 const SectionLoader = () => (
@@ -117,6 +118,7 @@ const Home = () => {
         <About />
         <Services />
         <Testimonials />
+        <FAQ />
         <Contact />
         <Studios />
         <Footer />
