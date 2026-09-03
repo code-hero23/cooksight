@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -37,10 +38,27 @@ const Hero = () => {
           <h1 className="hero-title">Design & Living<br /><span>That Feel Alive</span></h1>
           <p className="hero-description">We design interiors that feel like home.</p>
           <div className="hero-actions">
-            <a href="/portfolio" className="btn-blue-pill">Our Projects <span className="arrow-circle">→</span></a>
-            <a href="/#contact" className="btn-outline-pill">Contact us</a>
+          <Link to="/portfolio" className="btn-blue-pill">Our Projects  <svg
+        className="btn-arrow"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M5 12h14"/>
+        <path d="M13 5l7 7-7 7"/>
+    </svg></Link>
+          <Link to="/#contact" className="btn-outline-pill">Contact us</Link>
           </div>
         </div>
+            {/* <a href="/portfolio" className="btn-blue-pill">Our Projects <span className="arrow-circle">→</span></a>
+            <a href="/#contact" className="btn-outline-pill">Contact us</a>
+          </div>
+        </div> */}
 
         <div className="hero-center">
           <div 
@@ -50,11 +68,16 @@ const Hero = () => {
               transition: 'transform 0.1s ease-out'
             }}
           >
-            <img 
-              src="/hero-image.png" 
-              alt="Architectural Visualization" 
-              fetchpriority="high"
-            />
+            <picture>
+              <source srcSet="/hero-image.webp" type="image/webp" />
+              <img 
+                src="/hero-image.png" 
+                alt="Cookscape Luxury Modular Kitchen and Home Interior Design in Chennai" 
+                fetchpriority="high"
+                width="1200"
+                height="800"
+              />
+            </picture>
           </div>
         </div>
 

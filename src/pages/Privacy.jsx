@@ -91,7 +91,7 @@ const Privacy = () => {
           </p>
           
           <p className="blog-page-para" style={{ marginTop: '2rem' }}>
-            For any questions regarding this privacy policy, please contact us at <a href="mailto:support@cookscape.com" style={{ color: 'var(--premium-accent, #b81c22)', textDecoration: 'underline' }}>support@cookscape.com</a>.
+            For any questions regarding this privacy policy, please contact us at <a href="mailto:contact@cookscape.in" style={{ color: 'var(--premium-accent, #b81c22)', textDecoration: 'underline' }}>contact@cookscape.in</a>.
           </p>
           <p className="blog-page-para" style={{ fontWeight: 'bold' }}>
             Thank you for choosing Cookscape Interiors.

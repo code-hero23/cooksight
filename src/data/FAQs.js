@@ -99,5 +99,20 @@ export  const FAQs =
     "id": 20,
     "question": "What does the final handover process include?",
     "answer": "The final handover includes project completion inspection, client walkthrough, snag rectification (if applicable), final documentation, warranty information, and project sign-off."
+  },
+  {
+    "id": 21,
+    "question": "Which locations and cities do Cookscape serve for interior design?",
+    "answer": "Cookscape offers complete home interior and modular kitchen design and execution services across all prime localities in Chennai (including Nandanam, Anna Nagar, OMR, ECR, Adyar, Velachery) and Bangalore."
+  },
+  {
+    "id": 22,
+    "question": "Does Cookscape provide 3D design visualizations before execution?",
+    "answer": "Yes! Cookscape provides photorealistic 3D design visualizations and walkthroughs so you can experience your kitchen, living room, and bedroom layouts in detail before manufacturing begins."
+  },
+  {
+    "id": 23,
+    "question": "How do I get a free interior design consultation with Cookscape?",
+    "answer": "You can schedule a free interior design consultation by submitting your details on our website or calling our design team at +91 96000 05679. Our architects will discuss your floor plan and provide customized estimates."
   }
 ]

@@ -35,7 +35,7 @@ const Terms = () => {
         <div className="container p-5" style={{ color: 'var(--text-secondary-dark, #555555)', lineHeight: '1.8' }}>
           <h4 className="blog-page-title-2" style={{ color: 'var(--text-primary-dark, #111111)', marginTop: '2rem' }}>Terms and Conditions for Cookscape Interiors Design</h4>
           <p className="blog-page-para">
-            Welcome to https://www.cookscape.com/ (“Cookscape”, “we”, “us”, “our”). These Terms and Conditions (“Terms”) govern your access to and use of our website, services, content, and features (collectively, the “Services”).
+            Welcome to https://cookscape.in/ (“Cookscape”, “we”, “us”, “our”). These Terms and Conditions (“Terms”) govern your access to and use of our website, services, content, and features (collectively, the “Services”).
             By accessing, browsing, or using this website in any manner, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use the Services.
           </p>
 
@@ -142,8 +142,8 @@ const Terms = () => {
             If you have any questions regarding these Terms, please contact us:
           </p>
           <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
-            <li>Email: <a href="mailto:support@cookscape.com" style={{ color: 'var(--premium-accent, #b81c22)', textDecoration: 'underline' }}>support@cookscape.com</a></li>
-            <li>Website: <a href="https://www.cookscape.com/" style={{ color: 'var(--premium-accent, #b81c22)', textDecoration: 'underline' }}>https://www.cookscape.com/</a></li>
+            <li>Email: <a href="mailto:contact@cookscape.in" style={{ color: 'var(--premium-accent, #b81c22)', textDecoration: 'underline' }}>contact@cookscape.in</a></li>
+            <li>Website: <a href="https://cookscape.in/" style={{ color: 'var(--premium-accent, #b81c22)', textDecoration: 'underline' }}>https://cookscape.in/</a></li>
           </ul>
         </div>
       </section>

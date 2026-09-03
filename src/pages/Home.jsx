@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
 
+import { FAQs } from '../data/FAQs';
+
 // Lazy load non-critical sections
 const About = lazy(() => import('../components/About'));
 const Services = lazy(() => import('../components/Services'));
@@ -109,6 +111,22 @@ const Home = () => {
               "bestRating": "5"
             }
           }`}
+        </script>
+
+        {/* FAQPage JSON-LD Schema for Google Rich Snippets */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": FAQs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
         </script>
       </Helmet>
       

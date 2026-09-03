@@ -27,7 +27,7 @@ const ServiceMarqueeItem = ({ service, trackX }) => {
       to={`/portfolio?category=${encodeURIComponent(service.title.toLowerCase())}`}
       className="service-card-premium marquee-item-service"
       style={{ scale: smoothScale }}
-      whileHover={{ scale: 1.15, zIndex: 100 }}
+      whileHover={{ }}
       transition={{ type: "spring", stiffness: 400, damping: 25 }}
     >
       <div className="service-card-image-wrap">

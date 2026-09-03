@@ -61,7 +61,7 @@ function AppContent() {
         <Route path="/rename-gallery" element={<ImageNamer />} />
       </Routes>
 
-      <FestiveOfferModal />
+      {/* <FestiveOfferModal /> */}
       <FloatingActions />
     </div>
   );

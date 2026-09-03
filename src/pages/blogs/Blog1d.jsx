@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 const interior = '/logo.jpeg';
 const blog4 = '/blog-images/cookscape-blog-4.webp';
 const blog4a = '/blog-images/cookscape-blog-4a.webp';
@@ -7,22 +6,6 @@ const arnavanitha = '/architects/Cookscape--Architect-navanitha.webp';
 const Blog1d = () => {
 return (
 <>
-<Helmet>
-<title> Cookscape - Interior Designer in Chennai, Modular Kitchen Designer in Chennai, Wardrobe Designer in Chennai, Home Renovation in Chennai, TV Unit in  Chennai, Kitchen Cabinet Designs In Chennai  </title>
-<meta name="keywords" content="interior designers in Chennai, modular kitchen in Chennai, interior decorators in Chennai, kitchen designers in Chennai, bedroom wardrobe designers in Chennai, home renovation in Chennai, remodeling in Chennai, kitchen renovators in Chennai, living room interior decor in Chennai, dining room interior designers in Chennai, home interior decors in Chennai, interior design company in Chennai, interior design ideas in Chennai, kitchen interior ideas in Chennai, pooja room interior designers in Chennai, kitchen cabinet designs in Chennai"/>
-<meta name="description" content="Cookscape offers expert interior design services, including modular kitchens, pooja units, wardrobes, TV units, kids' furniture, and more.
-"/>
-<meta name='copyright' content='Cookscape'/>
-<meta name='language' content='IN'/>
-<meta name='robots' content='index,follow'/>
-<meta name='topic' content='Business'/>
-<meta name='Classification' content='Interior Designer'/>
-<meta name='author' content='info@cookscape.com'/>
-<meta name='designer' content='Cookscape India Private Limited'/>
-<meta name='reply-to' content='Cookscape'/>
-<meta name='owner' content='Cookscape India Private Limited'/>
-<link rel="canonical" href="https://www.cookscape.com/what-businesses-can-be-combined-with-interior-designing-business"></link>
-</Helmet>
 <div className="container-fluid services-breadcrumb">
                     <h3 className="cookscape-services-title">Cookscape Blog</h3>
 </div>
@@ -49,7 +32,7 @@ return (
             </div>
             <div className="modal-body">
             <div className="contact-form-container">
-                    <form id="contactForm" method="post" action="https://www.cookscape.com/static/mail.php">
+                    <form id="contactForm" method="post" action="https://cookscape.in/static/mail.php">
                     <div className="row">
                                     <div className="col-12">
                                         <div className="alert alert-success contact__msg_short" style={{display: "none"}} role="alert">
